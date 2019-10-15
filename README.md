@@ -14,11 +14,11 @@
 
 ### Install from Source Code
 
-git clone https://github.com/firesharkstudios/butterfly-twilio
+git clone https://github.com/firesharkstudios/butterfly-message
 
 ## API Documentation
 
-Available [here](http://htmlpreview.github.io/?https://github.com/firesharkstudios/butterfly-twilio/blob/master/docs/api/Butterfly.Message.html).
+Available [here](http://htmlpreview.github.io/?https://github.com/firesharkstudios/butterfly-message/blob/master/docs/api/Butterfly.Message.html).
 
 ## Contributing
 
