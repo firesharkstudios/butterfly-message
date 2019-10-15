@@ -1,0 +1,241 @@
+### YamlMime:ManagedReference
+items:
+- uid: Butterfly.Message.IMessageSender
+  commentId: T:Butterfly.Message.IMessageSender
+  id: IMessageSender
+  parent: Butterfly.Message
+  children:
+  - Butterfly.Message.IMessageSender.CanSendNextAt
+  - Butterfly.Message.IMessageSender.SendAsync(System.String,System.String,System.String,System.String,System.String,System.String[])
+  langs:
+  - csharp
+  - vb
+  name: IMessageSender
+  nameWithType: IMessageSender
+  fullName: Butterfly.Message.IMessageSender
+  type: Interface
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Message/Butterfly.Message/IMessageSender.cs
+    id: IMessageSender
+    path: ../Butterfly.Message/IMessageSender.cs
+    startLine: 9
+  assemblies:
+  - Butterfly.Message
+  namespace: Butterfly.Message
+  syntax:
+    content: public interface IMessageSender
+    content.vb: Public Interface IMessageSender
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Butterfly.Message.IMessageSender.SendAsync(System.String,System.String,System.String,System.String,System.String,System.String[])
+  commentId: M:Butterfly.Message.IMessageSender.SendAsync(System.String,System.String,System.String,System.String,System.String,System.String[])
+  id: SendAsync(System.String,System.String,System.String,System.String,System.String,System.String[])
+  parent: Butterfly.Message.IMessageSender
+  langs:
+  - csharp
+  - vb
+  name: SendAsync(String, String, String, String, String, String[])
+  nameWithType: IMessageSender.SendAsync(String, String, String, String, String, String[])
+  fullName: Butterfly.Message.IMessageSender.SendAsync(System.String, System.String, System.String, System.String, System.String, System.String[])
+  type: Method
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Message/Butterfly.Message/IMessageSender.cs
+    id: SendAsync
+    path: ../Butterfly.Message/IMessageSender.cs
+    startLine: 11
+  assemblies:
+  - Butterfly.Message
+  namespace: Butterfly.Message
+  syntax:
+    content: Task<string> SendAsync(string from, string to, string subject, string bodyText, string bodyHtml, string[] attachments = null)
+    parameters:
+    - id: from
+      type: System.String
+    - id: to
+      type: System.String
+    - id: subject
+      type: System.String
+    - id: bodyText
+      type: System.String
+    - id: bodyHtml
+      type: System.String
+    - id: attachments
+      type: System.String[]
+    return:
+      type: Task{System.String}
+    content.vb: Function SendAsync(from As String, to As String, subject As String, bodyText As String, bodyHtml As String, attachments As String() = Nothing) As Task(Of String)
+  overload: Butterfly.Message.IMessageSender.SendAsync*
+  nameWithType.vb: IMessageSender.SendAsync(String, String, String, String, String, String())
+  fullName.vb: Butterfly.Message.IMessageSender.SendAsync(System.String, System.String, System.String, System.String, System.String, System.String())
+  name.vb: SendAsync(String, String, String, String, String, String())
+- uid: Butterfly.Message.IMessageSender.CanSendNextAt
+  commentId: P:Butterfly.Message.IMessageSender.CanSendNextAt
+  id: CanSendNextAt
+  parent: Butterfly.Message.IMessageSender
+  langs:
+  - csharp
+  - vb
+  name: CanSendNextAt
+  nameWithType: IMessageSender.CanSendNextAt
+  fullName: Butterfly.Message.IMessageSender.CanSendNextAt
+  type: Property
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Message/Butterfly.Message/IMessageSender.cs
+    id: CanSendNextAt
+    path: ../Butterfly.Message/IMessageSender.cs
+    startLine: 13
+  assemblies:
+  - Butterfly.Message
+  namespace: Butterfly.Message
+  syntax:
+    content: DateTime CanSendNextAt { get; }
+    parameters: []
+    return:
+      type: DateTime
+    content.vb: ReadOnly Property CanSendNextAt As DateTime
+  overload: Butterfly.Message.IMessageSender.CanSendNextAt*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+references:
+- uid: Butterfly.Message
+  commentId: N:Butterfly.Message
+  name: Butterfly.Message
+  nameWithType: Butterfly.Message
+  fullName: Butterfly.Message
+- uid: Butterfly.Message.IMessageSender.SendAsync*
+  commentId: Overload:Butterfly.Message.IMessageSender.SendAsync
+  name: SendAsync
+  nameWithType: IMessageSender.SendAsync
+  fullName: Butterfly.Message.IMessageSender.SendAsync
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.String[]
+  isExternal: true
+  name: String[]
+  nameWithType: String[]
+  fullName: System.String[]
+  nameWithType.vb: String()
+  fullName.vb: System.String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Task{System.String}
+  commentId: '!:Task{System.String}'
+  definition: Task`1
+  name: Task<String>
+  nameWithType: Task<String>
+  fullName: Task<System.String>
+  nameWithType.vb: Task(Of String)
+  fullName.vb: Task(Of System.String)
+  name.vb: Task(Of String)
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Task`1
+  isExternal: true
+  name: Task<>
+  nameWithType: Task<>
+  fullName: Task<>
+  nameWithType.vb: Task(Of )
+  fullName.vb: Task(Of )
+  name.vb: Task(Of )
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Butterfly.Message.IMessageSender.CanSendNextAt*
+  commentId: Overload:Butterfly.Message.IMessageSender.CanSendNextAt
+  name: CanSendNextAt
+  nameWithType: IMessageSender.CanSendNextAt
+  fullName: Butterfly.Message.IMessageSender.CanSendNextAt
+- uid: DateTime
+  isExternal: true
+  name: DateTime
+  nameWithType: DateTime
+  fullName: DateTime
+shouldSkipMarkup: true

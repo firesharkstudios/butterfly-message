@@ -1,0 +1,90 @@
+### YamlMime:ManagedReference
+items:
+- uid: Butterfly.Message.Aws.Test.AwsTest
+  commentId: T:Butterfly.Message.Aws.Test.AwsTest
+  id: AwsTest
+  parent: Butterfly.Message.Aws.Test
+  children:
+  - Butterfly.Message.Aws.Test.AwsTest.SendAwsSesNotifyMessage
+  langs:
+  - csharp
+  - vb
+  name: AwsTest
+  nameWithType: AwsTest
+  fullName: Butterfly.Message.Aws.Test.AwsTest
+  type: Class
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Message/Butterfly.Message.Aws.Test/AwsTest.cs
+    id: AwsTest
+    path: ../Butterfly.Message.Aws.Test/AwsTest.cs
+    startLine: 10
+  assemblies:
+  - Butterfly.Message.Aws.Test
+  namespace: Butterfly.Message.Aws.Test
+  syntax:
+    content: 'public class AwsTest : object'
+    content.vb: >-
+      Public Class AwsTest
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Butterfly.Message.Aws.Test.AwsTest.SendAwsSesNotifyMessage
+  commentId: M:Butterfly.Message.Aws.Test.AwsTest.SendAwsSesNotifyMessage
+  id: SendAwsSesNotifyMessage
+  parent: Butterfly.Message.Aws.Test.AwsTest
+  langs:
+  - csharp
+  - vb
+  name: SendAwsSesNotifyMessage()
+  nameWithType: AwsTest.SendAwsSesNotifyMessage()
+  fullName: Butterfly.Message.Aws.Test.AwsTest.SendAwsSesNotifyMessage()
+  type: Method
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Message/Butterfly.Message.Aws.Test/AwsTest.cs
+    id: SendAwsSesNotifyMessage
+    path: ../Butterfly.Message.Aws.Test/AwsTest.cs
+    startLine: 12
+  assemblies:
+  - Butterfly.Message.Aws.Test
+  namespace: Butterfly.Message.Aws.Test
+  syntax:
+    content: public Task SendAwsSesNotifyMessage()
+    return:
+      type: Task
+    content.vb: Public Function SendAwsSesNotifyMessage As Task
+  overload: Butterfly.Message.Aws.Test.AwsTest.SendAwsSesNotifyMessage*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Butterfly.Message.Aws.Test
+  commentId: N:Butterfly.Message.Aws.Test
+  name: Butterfly.Message.Aws.Test
+  nameWithType: Butterfly.Message.Aws.Test
+  fullName: Butterfly.Message.Aws.Test
+- uid: System.Object
+  commentId: T:System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Butterfly.Message.Aws.Test.AwsTest.SendAwsSesNotifyMessage*
+  commentId: Overload:Butterfly.Message.Aws.Test.AwsTest.SendAwsSesNotifyMessage
+  name: SendAwsSesNotifyMessage
+  nameWithType: AwsTest.SendAwsSesNotifyMessage
+  fullName: Butterfly.Message.Aws.Test.AwsTest.SendAwsSesNotifyMessage
+- uid: Task
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: Task
+shouldSkipMarkup: true

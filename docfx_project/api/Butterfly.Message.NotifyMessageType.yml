@@ -1,0 +1,107 @@
+### YamlMime:ManagedReference
+items:
+- uid: Butterfly.Message.NotifyMessageType
+  commentId: T:Butterfly.Message.NotifyMessageType
+  id: NotifyMessageType
+  parent: Butterfly.Message
+  children:
+  - Butterfly.Message.NotifyMessageType.Email
+  - Butterfly.Message.NotifyMessageType.PhoneText
+  langs:
+  - csharp
+  - vb
+  name: NotifyMessageType
+  nameWithType: NotifyMessageType
+  fullName: Butterfly.Message.NotifyMessageType
+  type: Enum
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Message/Butterfly.Message/SendMessageQueueManager.cs
+    id: NotifyMessageType
+    path: ../Butterfly.Message/SendMessageQueueManager.cs
+    startLine: 20
+  assemblies:
+  - Butterfly.Message
+  namespace: Butterfly.Message
+  syntax:
+    content: 'public enum NotifyMessageType : int'
+    content.vb: Public Enum NotifyMessageType As Integer
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Butterfly.Message.NotifyMessageType.Email
+  commentId: F:Butterfly.Message.NotifyMessageType.Email
+  id: Email
+  parent: Butterfly.Message.NotifyMessageType
+  langs:
+  - csharp
+  - vb
+  name: Email
+  nameWithType: NotifyMessageType.Email
+  fullName: Butterfly.Message.NotifyMessageType.Email
+  type: Field
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Message/Butterfly.Message/SendMessageQueueManager.cs
+    id: Email
+    path: ../Butterfly.Message/SendMessageQueueManager.cs
+    startLine: 21
+  assemblies:
+  - Butterfly.Message
+  namespace: Butterfly.Message
+  syntax:
+    content: Email = 0
+    return:
+      type: Butterfly.Message.NotifyMessageType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Butterfly.Message.NotifyMessageType.PhoneText
+  commentId: F:Butterfly.Message.NotifyMessageType.PhoneText
+  id: PhoneText
+  parent: Butterfly.Message.NotifyMessageType
+  langs:
+  - csharp
+  - vb
+  name: PhoneText
+  nameWithType: NotifyMessageType.PhoneText
+  fullName: Butterfly.Message.NotifyMessageType.PhoneText
+  type: Field
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Message/Butterfly.Message/SendMessageQueueManager.cs
+    id: PhoneText
+    path: ../Butterfly.Message/SendMessageQueueManager.cs
+    startLine: 22
+  assemblies:
+  - Butterfly.Message
+  namespace: Butterfly.Message
+  syntax:
+    content: PhoneText = 1
+    return:
+      type: Butterfly.Message.NotifyMessageType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Butterfly.Message
+  commentId: N:Butterfly.Message
+  name: Butterfly.Message
+  nameWithType: Butterfly.Message
+  fullName: Butterfly.Message
+- uid: Butterfly.Message.NotifyMessageType
+  commentId: T:Butterfly.Message.NotifyMessageType
+  parent: Butterfly.Message
+  name: NotifyMessageType
+  nameWithType: NotifyMessageType
+  fullName: Butterfly.Message.NotifyMessageType
+shouldSkipMarkup: true

@@ -1,0 +1,69 @@
+### YamlMime:ManagedReference
+items:
+- uid: Butterfly.Message
+  commentId: N:Butterfly.Message
+  id: Butterfly.Message
+  children:
+  - Butterfly.Message.BaseMessageSender
+  - Butterfly.Message.IMessageSender
+  - Butterfly.Message.NotifyMessageType
+  - Butterfly.Message.ScribanFormatter
+  - Butterfly.Message.SendMessage
+  - Butterfly.Message.SendMessageQueueManager
+  - Butterfly.Message.SendMessageQueueManager.NotifyMessageEngine
+  langs:
+  - csharp
+  - vb
+  name: Butterfly.Message
+  nameWithType: Butterfly.Message
+  fullName: Butterfly.Message
+  type: Namespace
+  assemblies:
+  - Butterfly.Message
+references:
+- uid: Butterfly.Message.BaseMessageSender
+  commentId: T:Butterfly.Message.BaseMessageSender
+  parent: Butterfly.Message
+  name: BaseMessageSender
+  nameWithType: BaseMessageSender
+  fullName: Butterfly.Message.BaseMessageSender
+- uid: Butterfly.Message.IMessageSender
+  commentId: T:Butterfly.Message.IMessageSender
+  parent: Butterfly.Message
+  name: IMessageSender
+  nameWithType: IMessageSender
+  fullName: Butterfly.Message.IMessageSender
+- uid: Butterfly.Message.ScribanFormatter
+  commentId: T:Butterfly.Message.ScribanFormatter
+  name: ScribanFormatter
+  nameWithType: ScribanFormatter
+  fullName: Butterfly.Message.ScribanFormatter
+- uid: Butterfly.Message.SendMessage
+  commentId: T:Butterfly.Message.SendMessage
+  parent: Butterfly.Message
+  name: SendMessage
+  nameWithType: SendMessage
+  fullName: Butterfly.Message.SendMessage
+- uid: Butterfly.Message.NotifyMessageType
+  commentId: T:Butterfly.Message.NotifyMessageType
+  parent: Butterfly.Message
+  name: NotifyMessageType
+  nameWithType: NotifyMessageType
+  fullName: Butterfly.Message.NotifyMessageType
+- uid: Butterfly.Message.SendMessageQueueManager
+  commentId: T:Butterfly.Message.SendMessageQueueManager
+  name: SendMessageQueueManager
+  nameWithType: SendMessageQueueManager
+  fullName: Butterfly.Message.SendMessageQueueManager
+- uid: Butterfly.Message.SendMessageQueueManager.NotifyMessageEngine
+  commentId: T:Butterfly.Message.SendMessageQueueManager.NotifyMessageEngine
+  parent: Butterfly.Message
+  name: SendMessageQueueManager.NotifyMessageEngine
+  nameWithType: SendMessageQueueManager.NotifyMessageEngine
+  fullName: Butterfly.Message.SendMessageQueueManager.NotifyMessageEngine
+- uid: Butterfly.Message
+  commentId: N:Butterfly.Message
+  name: Butterfly.Message
+  nameWithType: Butterfly.Message
+  fullName: Butterfly.Message
+shouldSkipMarkup: true

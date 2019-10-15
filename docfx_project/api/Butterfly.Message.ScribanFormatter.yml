@@ -1,0 +1,324 @@
+### YamlMime:ManagedReference
+items:
+- uid: Butterfly.Message.ScribanFormatter
+  commentId: T:Butterfly.Message.ScribanFormatter
+  id: ScribanFormatter
+  parent: Butterfly.Message
+  children:
+  - Butterfly.Message.ScribanFormatter.GetFormatter(System.String)
+  - Butterfly.Message.ScribanFormatter.RenderWithRelativeIncludes(Template,System.Object)
+  langs:
+  - csharp
+  - vb
+  name: ScribanFormatter
+  nameWithType: ScribanFormatter
+  fullName: Butterfly.Message.ScribanFormatter
+  type: Class
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Message/Butterfly.Message/ScribanFormatter.cs
+    id: ScribanFormatter
+    path: ../Butterfly.Message/ScribanFormatter.cs
+    startLine: 11
+  assemblies:
+  - Butterfly.Message
+  namespace: Butterfly.Message
+  syntax:
+    content: 'public static class ScribanFormatter : object'
+    content.vb: >-
+      Public Module ScribanFormatter
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Butterfly.Message.ScribanFormatter.GetFormatter(System.String)
+  commentId: M:Butterfly.Message.ScribanFormatter.GetFormatter(System.String)
+  id: GetFormatter(System.String)
+  parent: Butterfly.Message.ScribanFormatter
+  langs:
+  - csharp
+  - vb
+  name: GetFormatter(String)
+  nameWithType: ScribanFormatter.GetFormatter(String)
+  fullName: Butterfly.Message.ScribanFormatter.GetFormatter(System.String)
+  type: Method
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Message/Butterfly.Message/ScribanFormatter.cs
+    id: GetFormatter
+    path: ../Butterfly.Message/ScribanFormatter.cs
+    startLine: 13
+  assemblies:
+  - Butterfly.Message
+  namespace: Butterfly.Message
+  syntax:
+    content: public static Func<string, System.Collections.Generic.Dictionary<string, object>, string> GetFormatter(string sourceFilePath)
+    parameters:
+    - id: sourceFilePath
+      type: System.String
+    return:
+      type: Func{System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.String}
+    content.vb: Public Shared Function GetFormatter(sourceFilePath As String) As Func(Of String, System.Collections.Generic.Dictionary(Of String, Object), String)
+  overload: Butterfly.Message.ScribanFormatter.GetFormatter*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Butterfly.Message.ScribanFormatter.RenderWithRelativeIncludes(Template,System.Object)
+  commentId: M:Butterfly.Message.ScribanFormatter.RenderWithRelativeIncludes(Template,System.Object)
+  id: RenderWithRelativeIncludes(Template,System.Object)
+  isExtensionMethod: true
+  parent: Butterfly.Message.ScribanFormatter
+  langs:
+  - csharp
+  - vb
+  name: RenderWithRelativeIncludes(Template, Object)
+  nameWithType: ScribanFormatter.RenderWithRelativeIncludes(Template, Object)
+  fullName: Butterfly.Message.ScribanFormatter.RenderWithRelativeIncludes(Template, System.Object)
+  type: Method
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Message/Butterfly.Message/ScribanFormatter.cs
+    id: RenderWithRelativeIncludes
+    path: ../Butterfly.Message/ScribanFormatter.cs
+    startLine: 20
+  assemblies:
+  - Butterfly.Message
+  namespace: Butterfly.Message
+  syntax:
+    content: public static string RenderWithRelativeIncludes(this Template me, object model)
+    parameters:
+    - id: me
+      type: Template
+    - id: model
+      type: System.Object
+    return:
+      type: System.String
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function RenderWithRelativeIncludes(me As Template, model As Object) As String
+  overload: Butterfly.Message.ScribanFormatter.RenderWithRelativeIncludes*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Butterfly.Message
+  commentId: N:Butterfly.Message
+  name: Butterfly.Message
+  nameWithType: Butterfly.Message
+  fullName: Butterfly.Message
+- uid: System.Object
+  commentId: T:System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Butterfly.Message.ScribanFormatter.GetFormatter*
+  commentId: Overload:Butterfly.Message.ScribanFormatter.GetFormatter
+  name: GetFormatter
+  nameWithType: ScribanFormatter.GetFormatter
+  fullName: Butterfly.Message.ScribanFormatter.GetFormatter
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Func{System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.String}
+  commentId: '!:Func{System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.String}'
+  definition: Func`3
+  name: Func<String, System.Collections.Generic.Dictionary<String, Object>, String>
+  nameWithType: Func<String, System.Collections.Generic.Dictionary<String, Object>, String>
+  fullName: Func<System.String, System.Collections.Generic.Dictionary<System.String, System.Object>, System.String>
+  nameWithType.vb: Func(Of String, System.Collections.Generic.Dictionary(Of String, Object), String)
+  fullName.vb: Func(Of System.String, System.Collections.Generic.Dictionary(Of System.String, System.Object), System.String)
+  name.vb: Func(Of String, System.Collections.Generic.Dictionary(Of String, Object), String)
+  spec.csharp:
+  - uid: Func`3
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.Dictionary`2
+    name: System.Collections.Generic.Dictionary
+    nameWithType: System.Collections.Generic.Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Func`3
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.Dictionary`2
+    name: System.Collections.Generic.Dictionary
+    nameWithType: System.Collections.Generic.Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Func`3
+  isExternal: true
+  name: Func<, , >
+  nameWithType: Func<, , >
+  fullName: Func<, , >
+  nameWithType.vb: Func(Of , , )
+  fullName.vb: Func(Of , , )
+  name.vb: Func(Of , , )
+  spec.csharp:
+  - uid: Func`3
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Func`3
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Butterfly.Message.ScribanFormatter.RenderWithRelativeIncludes*
+  commentId: Overload:Butterfly.Message.ScribanFormatter.RenderWithRelativeIncludes
+  name: RenderWithRelativeIncludes
+  nameWithType: ScribanFormatter.RenderWithRelativeIncludes
+  fullName: Butterfly.Message.ScribanFormatter.RenderWithRelativeIncludes
+- uid: Template
+  commentId: '!:Template'
+  isExternal: true
+  name: Template
+  nameWithType: Template
+  fullName: Template
+shouldSkipMarkup: true

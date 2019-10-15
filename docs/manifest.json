@@ -1,0 +1,362 @@
+{
+  "homepages": [],
+  "source_base_path": "C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Message/docfx_project",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Butterfly.Message.Aws.AwsSesEmailMessageSender.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Butterfly.Message.Aws.AwsSesEmailMessageSender.html",
+          "hash": "gd54d7vRSTSUiYmnv9pjhA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Butterfly.Message.Aws.AwsWebApi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Butterfly.Message.Aws.AwsWebApi.html",
+          "hash": "I6Lc3z295uA3xDaueE4wlA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Butterfly.Message.Aws.Test.AwsTest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Butterfly.Message.Aws.Test.AwsTest.html",
+          "hash": "Atlz0vLu54taafBAqltE4Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Butterfly.Message.Aws.Test.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Butterfly.Message.Aws.Test.html",
+          "hash": "bnAgiSf6DoKXoxLuX/knjQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Butterfly.Message.Aws.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Butterfly.Message.Aws.html",
+          "hash": "z+2EMtowdboAtldaDYiWfA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Butterfly.Message.BaseMessageSender.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Butterfly.Message.BaseMessageSender.html",
+          "hash": "O4l6XlzEo7d8DBpN2fY8xw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Butterfly.Message.IMessageSender.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Butterfly.Message.IMessageSender.html",
+          "hash": "LNXh+dxrmNp/jA15SZhQ9g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Butterfly.Message.NotifyMessageType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Butterfly.Message.NotifyMessageType.html",
+          "hash": "Q0mQUuXjCUT5MvUSoBJn/A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Butterfly.Message.ScribanFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Butterfly.Message.ScribanFormatter.html",
+          "hash": "mWEKknydQEsWeDhW+xdqSA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Butterfly.Message.SendMessage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Butterfly.Message.SendMessage.html",
+          "hash": "5d+2xWhRp48eBFz5E8rvwQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Butterfly.Message.SendMessageQueueManager.NotifyMessageEngine.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Butterfly.Message.SendMessageQueueManager.NotifyMessageEngine.html",
+          "hash": "2wgV7oIfFfyIykH3RGU5qA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Butterfly.Message.SendMessageQueueManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Butterfly.Message.SendMessageQueueManager.html",
+          "hash": "+ZbJrm5sutDCnwF9OX7WOA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Butterfly.Message.Test.NotifyTest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Butterfly.Message.Test.NotifyTest.html",
+          "hash": "PNy4xy8zEbsF8Vt07xiDRA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Butterfly.Message.Test.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Butterfly.Message.Test.html",
+          "hash": "cTuzQOStJ5P6qEd2EcD/Ag=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Butterfly.Message.Twilio.TwilioPhoneMessageSender.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Butterfly.Message.Twilio.TwilioPhoneMessageSender.html",
+          "hash": "mYW46ALYvFZ3pVbqWCAfjA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Butterfly.Message.Twilio.TwilioWebApi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Butterfly.Message.Twilio.TwilioWebApi.html",
+          "hash": "6UYXDvXeYQaldMps+0snXw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Butterfly.Message.Twilio.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Butterfly.Message.Twilio.html",
+          "hash": "OnHKPug1BiPWmhKAPlky4w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Butterfly.Message.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Butterfly.Message.html",
+          "hash": "JgRA/R745kd3Fh7NBZ3e4A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Butterfly.Notify.Test.TwilioTest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Butterfly.Notify.Test.TwilioTest.html",
+          "hash": "AtKJXNr3Kt9O4fZiYGo/6w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Butterfly.Notify.Test.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Butterfly.Notify.Test.html",
+          "hash": "HKCVKN1buIbYgTeoKN5U2Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "LO3XnDWiEpYKNfOjJrosmA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "tIFQrOFLaL6MtAK2gvXnmA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/logo-48x48.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/logo-48x48.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "VMsjYFKFzK65cPeOh9XIJQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "J6i4D7C3ocprKq0ee27m9A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot build incrementally because docfx version changed from 2.38.1.0 to 2.46.0.0.",
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0,
+        "full_build_reason_code": "DocfxVersionChanged"
+      },
+      "processors": {
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 2,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 20,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": true,
+        "details": "Can support incremental post processing.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

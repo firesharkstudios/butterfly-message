@@ -1,0 +1,311 @@
+### YamlMime:ManagedReference
+items:
+- uid: Butterfly.Message.Aws.AwsWebApi
+  commentId: T:Butterfly.Message.Aws.AwsWebApi
+  id: AwsWebApi
+  parent: Butterfly.Message.Aws
+  children:
+  - Butterfly.Message.Aws.AwsWebApi.SetupAsync(IWebApi,System.String,System.String,System.String,Func{System.String,System.String,System.String[],Task{System.String}})
+  langs:
+  - csharp
+  - vb
+  name: AwsWebApi
+  nameWithType: AwsWebApi
+  fullName: Butterfly.Message.Aws.AwsWebApi
+  type: Class
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Message/Butterfly.Message.Aws/AwsWebApi.cs
+    id: AwsWebApi
+    path: ../Butterfly.Message.Aws/AwsWebApi.cs
+    startLine: 27
+  assemblies:
+  - Butterfly.Message.Aws
+  namespace: Butterfly.Message.Aws
+  syntax:
+    content: 'public static class AwsWebApi : object'
+    content.vb: >-
+      Public Module AwsWebApi
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Butterfly.Message.Aws.AwsWebApi.SetupAsync(IWebApi,System.String,System.String,System.String,Func{System.String,System.String,System.String[],Task{System.String}})
+  commentId: M:Butterfly.Message.Aws.AwsWebApi.SetupAsync(IWebApi,System.String,System.String,System.String,Func{System.String,System.String,System.String[],Task{System.String}})
+  id: SetupAsync(IWebApi,System.String,System.String,System.String,Func{System.String,System.String,System.String[],Task{System.String}})
+  parent: Butterfly.Message.Aws.AwsWebApi
+  langs:
+  - csharp
+  - vb
+  name: SetupAsync(IWebApi, String, String, String, Func<String, String, String[], Task<String>>)
+  nameWithType: AwsWebApi.SetupAsync(IWebApi, String, String, String, Func<String, String, String[], Task<String>>)
+  fullName: Butterfly.Message.Aws.AwsWebApi.SetupAsync(IWebApi, System.String, System.String, System.String, Func<System.String, System.String, System.String[], Task<System.String>>)
+  type: Method
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Message/Butterfly.Message.Aws/AwsWebApi.cs
+    id: SetupAsync
+    path: ../Butterfly.Message.Aws/AwsWebApi.cs
+    startLine: 32
+  assemblies:
+  - Butterfly.Message.Aws
+  namespace: Butterfly.Message.Aws
+  syntax:
+    content: public static Task SetupAsync(IWebApi webApi, string topicArn, string endPoint, string bucketName, Func<string, string, string[], Task<string>> handler)
+    parameters:
+    - id: webApi
+      type: IWebApi
+    - id: topicArn
+      type: System.String
+    - id: endPoint
+      type: System.String
+    - id: bucketName
+      type: System.String
+    - id: handler
+      type: Func{System.String,System.String,System.String[],Task{System.String}}
+    return:
+      type: Task
+    content.vb: Public Shared Function SetupAsync(webApi As IWebApi, topicArn As String, endPoint As String, bucketName As String, handler As Func(Of String, String, String(), Task(Of String))) As Task
+  overload: Butterfly.Message.Aws.AwsWebApi.SetupAsync*
+  nameWithType.vb: AwsWebApi.SetupAsync(IWebApi, String, String, String, Func(Of String, String, String(), Task(Of String)))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Butterfly.Message.Aws.AwsWebApi.SetupAsync(IWebApi, System.String, System.String, System.String, Func(Of System.String, System.String, System.String(), Task(Of System.String)))
+  name.vb: SetupAsync(IWebApi, String, String, String, Func(Of String, String, String(), Task(Of String)))
+references:
+- uid: Butterfly.Message.Aws
+  commentId: N:Butterfly.Message.Aws
+  name: Butterfly.Message.Aws
+  nameWithType: Butterfly.Message.Aws
+  fullName: Butterfly.Message.Aws
+- uid: System.Object
+  commentId: T:System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Butterfly.Message.Aws.AwsWebApi.SetupAsync*
+  commentId: Overload:Butterfly.Message.Aws.AwsWebApi.SetupAsync
+  name: SetupAsync
+  nameWithType: AwsWebApi.SetupAsync
+  fullName: Butterfly.Message.Aws.AwsWebApi.SetupAsync
+- uid: IWebApi
+  isExternal: true
+  name: IWebApi
+  nameWithType: IWebApi
+  fullName: IWebApi
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Func{System.String,System.String,System.String[],Task{System.String}}
+  commentId: '!:Func{System.String,System.String,System.String[],Task{System.String}}'
+  definition: Func`4
+  name: Func<String, String, String[], Task<String>>
+  nameWithType: Func<String, String, String[], Task<String>>
+  fullName: Func<System.String, System.String, System.String[], Task<System.String>>
+  nameWithType.vb: Func(Of String, String, String(), Task(Of String))
+  fullName.vb: Func(Of System.String, System.String, System.String(), Task(Of System.String))
+  name.vb: Func(Of String, String, String(), Task(Of String))
+  spec.csharp:
+  - uid: Func`4
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Func`4
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Task
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: Task
+- uid: Func`4
+  commentId: '!:Func`4'
+  isExternal: true
+  name: Func<, , , >
+  nameWithType: Func<, , , >
+  fullName: Func<, , , >
+  nameWithType.vb: Func(Of , , , )
+  fullName.vb: Func(Of , , , )
+  name.vb: Func(Of , , , )
+  spec.csharp:
+  - uid: Func`4
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Func`4
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+shouldSkipMarkup: true

@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Butterfly.Message.Test
+  commentId: N:Butterfly.Message.Test
+  id: Butterfly.Message.Test
+  children:
+  - Butterfly.Message.Test.NotifyTest
+  langs:
+  - csharp
+  - vb
+  name: Butterfly.Message.Test
+  nameWithType: Butterfly.Message.Test
+  fullName: Butterfly.Message.Test
+  type: Namespace
+  assemblies:
+  - Butterfly.Message.Test
+references:
+- uid: Butterfly.Message.Test.NotifyTest
+  commentId: T:Butterfly.Message.Test.NotifyTest
+  name: NotifyTest
+  nameWithType: NotifyTest
+  fullName: Butterfly.Message.Test.NotifyTest
+shouldSkipMarkup: true

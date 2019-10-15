@@ -1,0 +1,47 @@
+### YamlMime:TableOfContent
+- uid: Butterfly.Message
+  name: Butterfly.Message
+  items:
+  - uid: Butterfly.Message.BaseMessageSender
+    name: BaseMessageSender
+  - uid: Butterfly.Message.IMessageSender
+    name: IMessageSender
+  - uid: Butterfly.Message.NotifyMessageType
+    name: NotifyMessageType
+  - uid: Butterfly.Message.ScribanFormatter
+    name: ScribanFormatter
+  - uid: Butterfly.Message.SendMessage
+    name: SendMessage
+  - uid: Butterfly.Message.SendMessageQueueManager
+    name: SendMessageQueueManager
+  - uid: Butterfly.Message.SendMessageQueueManager.NotifyMessageEngine
+    name: SendMessageQueueManager.NotifyMessageEngine
+- uid: Butterfly.Message.Aws
+  name: Butterfly.Message.Aws
+  items:
+  - uid: Butterfly.Message.Aws.AwsSesEmailMessageSender
+    name: AwsSesEmailMessageSender
+  - uid: Butterfly.Message.Aws.AwsWebApi
+    name: AwsWebApi
+- uid: Butterfly.Message.Aws.Test
+  name: Butterfly.Message.Aws.Test
+  items:
+  - uid: Butterfly.Message.Aws.Test.AwsTest
+    name: AwsTest
+- uid: Butterfly.Message.Test
+  name: Butterfly.Message.Test
+  items:
+  - uid: Butterfly.Message.Test.NotifyTest
+    name: NotifyTest
+- uid: Butterfly.Message.Twilio
+  name: Butterfly.Message.Twilio
+  items:
+  - uid: Butterfly.Message.Twilio.TwilioPhoneMessageSender
+    name: TwilioPhoneMessageSender
+  - uid: Butterfly.Message.Twilio.TwilioWebApi
+    name: TwilioWebApi
+- uid: Butterfly.Notify.Test
+  name: Butterfly.Notify.Test
+  items:
+  - uid: Butterfly.Notify.Test.TwilioTest
+    name: TwilioTest

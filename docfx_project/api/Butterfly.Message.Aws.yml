@@ -1,0 +1,29 @@
+### YamlMime:ManagedReference
+items:
+- uid: Butterfly.Message.Aws
+  commentId: N:Butterfly.Message.Aws
+  id: Butterfly.Message.Aws
+  children:
+  - Butterfly.Message.Aws.AwsSesEmailMessageSender
+  - Butterfly.Message.Aws.AwsWebApi
+  langs:
+  - csharp
+  - vb
+  name: Butterfly.Message.Aws
+  nameWithType: Butterfly.Message.Aws
+  fullName: Butterfly.Message.Aws
+  type: Namespace
+  assemblies:
+  - Butterfly.Message.Aws
+references:
+- uid: Butterfly.Message.Aws.AwsSesEmailMessageSender
+  commentId: T:Butterfly.Message.Aws.AwsSesEmailMessageSender
+  name: AwsSesEmailMessageSender
+  nameWithType: AwsSesEmailMessageSender
+  fullName: Butterfly.Message.Aws.AwsSesEmailMessageSender
+- uid: Butterfly.Message.Aws.AwsWebApi
+  commentId: T:Butterfly.Message.Aws.AwsWebApi
+  name: AwsWebApi
+  nameWithType: AwsWebApi
+  fullName: Butterfly.Message.Aws.AwsWebApi
+shouldSkipMarkup: true

@@ -1,0 +1,567 @@
+### YamlMime:ManagedReference
+items:
+- uid: Butterfly.Message.BaseMessageSender
+  commentId: T:Butterfly.Message.BaseMessageSender
+  id: BaseMessageSender
+  parent: Butterfly.Message
+  children:
+  - Butterfly.Message.BaseMessageSender.#ctor(System.Int32)
+  - Butterfly.Message.BaseMessageSender.CanSendNextAt
+  - Butterfly.Message.BaseMessageSender.DoSendAsync(System.String,System.String,System.String,System.String,System.String,System.String[])
+  - Butterfly.Message.BaseMessageSender.lastSend
+  - Butterfly.Message.BaseMessageSender.SendAsync(System.String,System.String,System.String,System.String,System.String,System.String[])
+  - Butterfly.Message.BaseMessageSender.sendEveryMillis
+  langs:
+  - csharp
+  - vb
+  name: BaseMessageSender
+  nameWithType: BaseMessageSender
+  fullName: Butterfly.Message.BaseMessageSender
+  type: Class
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Message/Butterfly.Message/BaseMessageSender.cs
+    id: BaseMessageSender
+    path: ../Butterfly.Message/BaseMessageSender.cs
+    startLine: 9
+  assemblies:
+  - Butterfly.Message
+  namespace: Butterfly.Message
+  syntax:
+    content: 'public abstract class BaseMessageSender : object, IMessageSender'
+    content.vb: >-
+      Public MustInherit Class BaseMessageSender
+          Inherits Object
+          Implements IMessageSender
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Butterfly.Message.Aws.AwsSesEmailMessageSender
+  - Butterfly.Message.Twilio.TwilioPhoneMessageSender
+  implements:
+  - Butterfly.Message.IMessageSender
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+- uid: Butterfly.Message.BaseMessageSender.sendEveryMillis
+  commentId: F:Butterfly.Message.BaseMessageSender.sendEveryMillis
+  id: sendEveryMillis
+  parent: Butterfly.Message.BaseMessageSender
+  langs:
+  - csharp
+  - vb
+  name: sendEveryMillis
+  nameWithType: BaseMessageSender.sendEveryMillis
+  fullName: Butterfly.Message.BaseMessageSender.sendEveryMillis
+  type: Field
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Message/Butterfly.Message/BaseMessageSender.cs
+    id: sendEveryMillis
+    path: ../Butterfly.Message/BaseMessageSender.cs
+    startLine: 11
+  assemblies:
+  - Butterfly.Message
+  namespace: Butterfly.Message
+  syntax:
+    content: protected readonly int sendEveryMillis
+    return:
+      type: System.Int32
+    content.vb: Protected ReadOnly sendEveryMillis As Integer
+  modifiers.csharp:
+  - protected
+  - readonly
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+- uid: Butterfly.Message.BaseMessageSender.lastSend
+  commentId: F:Butterfly.Message.BaseMessageSender.lastSend
+  id: lastSend
+  parent: Butterfly.Message.BaseMessageSender
+  langs:
+  - csharp
+  - vb
+  name: lastSend
+  nameWithType: BaseMessageSender.lastSend
+  fullName: Butterfly.Message.BaseMessageSender.lastSend
+  type: Field
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Message/Butterfly.Message/BaseMessageSender.cs
+    id: lastSend
+    path: ../Butterfly.Message/BaseMessageSender.cs
+    startLine: 13
+  assemblies:
+  - Butterfly.Message
+  namespace: Butterfly.Message
+  syntax:
+    content: protected DateTime lastSend
+    return:
+      type: DateTime
+    content.vb: Protected lastSend As DateTime
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Butterfly.Message.BaseMessageSender.#ctor(System.Int32)
+  commentId: M:Butterfly.Message.BaseMessageSender.#ctor(System.Int32)
+  id: '#ctor(System.Int32)'
+  parent: Butterfly.Message.BaseMessageSender
+  langs:
+  - csharp
+  - vb
+  name: BaseMessageSender(Int32)
+  nameWithType: BaseMessageSender.BaseMessageSender(Int32)
+  fullName: Butterfly.Message.BaseMessageSender.BaseMessageSender(System.Int32)
+  type: Constructor
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Message/Butterfly.Message/BaseMessageSender.cs
+    id: .ctor
+    path: ../Butterfly.Message/BaseMessageSender.cs
+    startLine: 15
+  assemblies:
+  - Butterfly.Message
+  namespace: Butterfly.Message
+  syntax:
+    content: public BaseMessageSender(int sendEveryMillis = 1000)
+    parameters:
+    - id: sendEveryMillis
+      type: System.Int32
+    content.vb: Public Sub New(sendEveryMillis As Integer = 1000)
+  overload: Butterfly.Message.BaseMessageSender.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Butterfly.Message.BaseMessageSender.SendAsync(System.String,System.String,System.String,System.String,System.String,System.String[])
+  commentId: M:Butterfly.Message.BaseMessageSender.SendAsync(System.String,System.String,System.String,System.String,System.String,System.String[])
+  id: SendAsync(System.String,System.String,System.String,System.String,System.String,System.String[])
+  parent: Butterfly.Message.BaseMessageSender
+  langs:
+  - csharp
+  - vb
+  name: SendAsync(String, String, String, String, String, String[])
+  nameWithType: BaseMessageSender.SendAsync(String, String, String, String, String, String[])
+  fullName: Butterfly.Message.BaseMessageSender.SendAsync(System.String, System.String, System.String, System.String, System.String, System.String[])
+  type: Method
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Message/Butterfly.Message/BaseMessageSender.cs
+    id: SendAsync
+    path: ../Butterfly.Message/BaseMessageSender.cs
+    startLine: 19
+  assemblies:
+  - Butterfly.Message
+  namespace: Butterfly.Message
+  syntax:
+    content: public Task<string> SendAsync(string from, string to, string subject, string bodyText, string bodyHtml, string[] attachments)
+    parameters:
+    - id: from
+      type: System.String
+    - id: to
+      type: System.String
+    - id: subject
+      type: System.String
+    - id: bodyText
+      type: System.String
+    - id: bodyHtml
+      type: System.String
+    - id: attachments
+      type: System.String[]
+    return:
+      type: Task{System.String}
+    content.vb: Public Function SendAsync(from As String, to As String, subject As String, bodyText As String, bodyHtml As String, attachments As String()) As Task(Of String)
+  overload: Butterfly.Message.BaseMessageSender.SendAsync*
+  implements:
+  - Butterfly.Message.IMessageSender.SendAsync(System.String,System.String,System.String,System.String,System.String,System.String[])
+  nameWithType.vb: BaseMessageSender.SendAsync(String, String, String, String, String, String())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Butterfly.Message.BaseMessageSender.SendAsync(System.String, System.String, System.String, System.String, System.String, System.String())
+  name.vb: SendAsync(String, String, String, String, String, String())
+- uid: Butterfly.Message.BaseMessageSender.DoSendAsync(System.String,System.String,System.String,System.String,System.String,System.String[])
+  commentId: M:Butterfly.Message.BaseMessageSender.DoSendAsync(System.String,System.String,System.String,System.String,System.String,System.String[])
+  id: DoSendAsync(System.String,System.String,System.String,System.String,System.String,System.String[])
+  parent: Butterfly.Message.BaseMessageSender
+  langs:
+  - csharp
+  - vb
+  name: DoSendAsync(String, String, String, String, String, String[])
+  nameWithType: BaseMessageSender.DoSendAsync(String, String, String, String, String, String[])
+  fullName: Butterfly.Message.BaseMessageSender.DoSendAsync(System.String, System.String, System.String, System.String, System.String, System.String[])
+  type: Method
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Message/Butterfly.Message/BaseMessageSender.cs
+    id: DoSendAsync
+    path: ../Butterfly.Message/BaseMessageSender.cs
+    startLine: 24
+  assemblies:
+  - Butterfly.Message
+  namespace: Butterfly.Message
+  syntax:
+    content: protected abstract Task<string> DoSendAsync(string from, string to, string subject, string bodyText, string bodyHtml, string[] attachments)
+    parameters:
+    - id: from
+      type: System.String
+    - id: to
+      type: System.String
+    - id: subject
+      type: System.String
+    - id: bodyText
+      type: System.String
+    - id: bodyHtml
+      type: System.String
+    - id: attachments
+      type: System.String[]
+    return:
+      type: Task{System.String}
+    content.vb: Protected MustOverride Function DoSendAsync(from As String, to As String, subject As String, bodyText As String, bodyHtml As String, attachments As String()) As Task(Of String)
+  overload: Butterfly.Message.BaseMessageSender.DoSendAsync*
+  nameWithType.vb: BaseMessageSender.DoSendAsync(String, String, String, String, String, String())
+  modifiers.csharp:
+  - protected
+  - abstract
+  modifiers.vb:
+  - Protected
+  - MustOverride
+  fullName.vb: Butterfly.Message.BaseMessageSender.DoSendAsync(System.String, System.String, System.String, System.String, System.String, System.String())
+  name.vb: DoSendAsync(String, String, String, String, String, String())
+- uid: Butterfly.Message.BaseMessageSender.CanSendNextAt
+  commentId: P:Butterfly.Message.BaseMessageSender.CanSendNextAt
+  id: CanSendNextAt
+  parent: Butterfly.Message.BaseMessageSender
+  langs:
+  - csharp
+  - vb
+  name: CanSendNextAt
+  nameWithType: BaseMessageSender.CanSendNextAt
+  fullName: Butterfly.Message.BaseMessageSender.CanSendNextAt
+  type: Property
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Message/Butterfly.Message/BaseMessageSender.cs
+    id: CanSendNextAt
+    path: ../Butterfly.Message/BaseMessageSender.cs
+    startLine: 26
+  assemblies:
+  - Butterfly.Message
+  namespace: Butterfly.Message
+  syntax:
+    content: public DateTime CanSendNextAt { get; }
+    parameters: []
+    return:
+      type: DateTime
+    content.vb: Public ReadOnly Property CanSendNextAt As DateTime
+  overload: Butterfly.Message.BaseMessageSender.CanSendNextAt*
+  implements:
+  - Butterfly.Message.IMessageSender.CanSendNextAt
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+references:
+- uid: Butterfly.Message
+  commentId: N:Butterfly.Message
+  name: Butterfly.Message
+  nameWithType: Butterfly.Message
+  fullName: Butterfly.Message
+- uid: System.Object
+  commentId: T:System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Butterfly.Message.IMessageSender
+  commentId: T:Butterfly.Message.IMessageSender
+  parent: Butterfly.Message
+  name: IMessageSender
+  nameWithType: IMessageSender
+  fullName: Butterfly.Message.IMessageSender
+- uid: System.Int32
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: DateTime
+  isExternal: true
+  name: DateTime
+  nameWithType: DateTime
+  fullName: DateTime
+- uid: Butterfly.Message.BaseMessageSender.#ctor*
+  commentId: Overload:Butterfly.Message.BaseMessageSender.#ctor
+  name: BaseMessageSender
+  nameWithType: BaseMessageSender.BaseMessageSender
+  fullName: Butterfly.Message.BaseMessageSender.BaseMessageSender
+- uid: Butterfly.Message.BaseMessageSender.SendAsync*
+  commentId: Overload:Butterfly.Message.BaseMessageSender.SendAsync
+  name: SendAsync
+  nameWithType: BaseMessageSender.SendAsync
+  fullName: Butterfly.Message.BaseMessageSender.SendAsync
+- uid: Butterfly.Message.IMessageSender.SendAsync(System.String,System.String,System.String,System.String,System.String,System.String[])
+  commentId: M:Butterfly.Message.IMessageSender.SendAsync(System.String,System.String,System.String,System.String,System.String,System.String[])
+  parent: Butterfly.Message.IMessageSender
+  isExternal: true
+  name: SendAsync(String, String, String, String, String, String[])
+  nameWithType: IMessageSender.SendAsync(String, String, String, String, String, String[])
+  fullName: Butterfly.Message.IMessageSender.SendAsync(System.String, System.String, System.String, System.String, System.String, System.String[])
+  nameWithType.vb: IMessageSender.SendAsync(String, String, String, String, String, String())
+  fullName.vb: Butterfly.Message.IMessageSender.SendAsync(System.String, System.String, System.String, System.String, System.String, System.String())
+  name.vb: SendAsync(String, String, String, String, String, String())
+  spec.csharp:
+  - uid: Butterfly.Message.IMessageSender.SendAsync(System.String,System.String,System.String,System.String,System.String,System.String[])
+    name: SendAsync
+    nameWithType: IMessageSender.SendAsync
+    fullName: Butterfly.Message.IMessageSender.SendAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Butterfly.Message.IMessageSender.SendAsync(System.String,System.String,System.String,System.String,System.String,System.String[])
+    name: SendAsync
+    nameWithType: IMessageSender.SendAsync
+    fullName: Butterfly.Message.IMessageSender.SendAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.String[]
+  isExternal: true
+  name: String[]
+  nameWithType: String[]
+  fullName: System.String[]
+  nameWithType.vb: String()
+  fullName.vb: System.String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Task{System.String}
+  commentId: '!:Task{System.String}'
+  definition: Task`1
+  name: Task<String>
+  nameWithType: Task<String>
+  fullName: Task<System.String>
+  nameWithType.vb: Task(Of String)
+  fullName.vb: Task(Of System.String)
+  name.vb: Task(Of String)
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Task`1
+  isExternal: true
+  name: Task<>
+  nameWithType: Task<>
+  fullName: Task<>
+  nameWithType.vb: Task(Of )
+  fullName.vb: Task(Of )
+  name.vb: Task(Of )
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Butterfly.Message.BaseMessageSender.DoSendAsync*
+  commentId: Overload:Butterfly.Message.BaseMessageSender.DoSendAsync
+  name: DoSendAsync
+  nameWithType: BaseMessageSender.DoSendAsync
+  fullName: Butterfly.Message.BaseMessageSender.DoSendAsync
+- uid: Butterfly.Message.BaseMessageSender.CanSendNextAt*
+  commentId: Overload:Butterfly.Message.BaseMessageSender.CanSendNextAt
+  name: CanSendNextAt
+  nameWithType: BaseMessageSender.CanSendNextAt
+  fullName: Butterfly.Message.BaseMessageSender.CanSendNextAt
+- uid: Butterfly.Message.IMessageSender.CanSendNextAt
+  commentId: P:Butterfly.Message.IMessageSender.CanSendNextAt
+  parent: Butterfly.Message.IMessageSender
+  name: CanSendNextAt
+  nameWithType: IMessageSender.CanSendNextAt
+  fullName: Butterfly.Message.IMessageSender.CanSendNextAt
+shouldSkipMarkup: true

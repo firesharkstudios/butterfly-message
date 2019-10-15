@@ -1,0 +1,29 @@
+### YamlMime:ManagedReference
+items:
+- uid: Butterfly.Message.Twilio
+  commentId: N:Butterfly.Message.Twilio
+  id: Butterfly.Message.Twilio
+  children:
+  - Butterfly.Message.Twilio.TwilioPhoneMessageSender
+  - Butterfly.Message.Twilio.TwilioWebApi
+  langs:
+  - csharp
+  - vb
+  name: Butterfly.Message.Twilio
+  nameWithType: Butterfly.Message.Twilio
+  fullName: Butterfly.Message.Twilio
+  type: Namespace
+  assemblies:
+  - Butterfly.Message.Twilio
+references:
+- uid: Butterfly.Message.Twilio.TwilioPhoneMessageSender
+  commentId: T:Butterfly.Message.Twilio.TwilioPhoneMessageSender
+  name: TwilioPhoneMessageSender
+  nameWithType: TwilioPhoneMessageSender
+  fullName: Butterfly.Message.Twilio.TwilioPhoneMessageSender
+- uid: Butterfly.Message.Twilio.TwilioWebApi
+  commentId: T:Butterfly.Message.Twilio.TwilioWebApi
+  name: TwilioWebApi
+  nameWithType: TwilioWebApi
+  fullName: Butterfly.Message.Twilio.TwilioWebApi
+shouldSkipMarkup: true

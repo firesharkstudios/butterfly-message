@@ -1,0 +1,658 @@
+### YamlMime:ManagedReference
+items:
+- uid: Butterfly.Message.Twilio.TwilioPhoneMessageSender
+  commentId: T:Butterfly.Message.Twilio.TwilioPhoneMessageSender
+  id: TwilioPhoneMessageSender
+  parent: Butterfly.Message.Twilio
+  children:
+  - Butterfly.Message.Twilio.TwilioPhoneMessageSender.#ctor(System.String,System.String)
+  - Butterfly.Message.Twilio.TwilioPhoneMessageSender.DoSendAsync(System.String,System.String,System.String,System.String,System.String,System.String[])
+  - Butterfly.Message.Twilio.TwilioPhoneMessageSender.logger
+  - Butterfly.Message.Twilio.TwilioPhoneMessageSender.twilioAccountSid
+  - Butterfly.Message.Twilio.TwilioPhoneMessageSender.twilioAuthToken
+  langs:
+  - csharp
+  - vb
+  name: TwilioPhoneMessageSender
+  nameWithType: TwilioPhoneMessageSender
+  fullName: Butterfly.Message.Twilio.TwilioPhoneMessageSender
+  type: Class
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Message/Butterfly.Message.Twilio/TwilioPhoneMessageSender.cs
+    id: TwilioPhoneMessageSender
+    path: ../Butterfly.Message.Twilio/TwilioPhoneMessageSender.cs
+    startLine: 18
+  assemblies:
+  - Butterfly.Message.Twilio
+  namespace: Butterfly.Message.Twilio
+  syntax:
+    content: 'public class TwilioPhoneMessageSender : BaseMessageSender, IMessageSender'
+    content.vb: >-
+      Public Class TwilioPhoneMessageSender
+          Inherits BaseMessageSender
+          Implements IMessageSender
+  inheritance:
+  - System.Object
+  - Butterfly.Message.BaseMessageSender
+  implements:
+  - Butterfly.Message.IMessageSender
+  inheritedMembers:
+  - Butterfly.Message.BaseMessageSender.sendEveryMillis
+  - Butterfly.Message.BaseMessageSender.lastSend
+  - Butterfly.Message.BaseMessageSender.SendAsync(System.String,System.String,System.String,System.String,System.String,System.String[])
+  - Butterfly.Message.BaseMessageSender.CanSendNextAt
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Butterfly.Message.Twilio.TwilioPhoneMessageSender.logger
+  commentId: F:Butterfly.Message.Twilio.TwilioPhoneMessageSender.logger
+  id: logger
+  parent: Butterfly.Message.Twilio.TwilioPhoneMessageSender
+  langs:
+  - csharp
+  - vb
+  name: logger
+  nameWithType: TwilioPhoneMessageSender.logger
+  fullName: Butterfly.Message.Twilio.TwilioPhoneMessageSender.logger
+  type: Field
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Message/Butterfly.Message.Twilio/TwilioPhoneMessageSender.cs
+    id: logger
+    path: ../Butterfly.Message.Twilio/TwilioPhoneMessageSender.cs
+    startLine: 20
+  assemblies:
+  - Butterfly.Message.Twilio
+  namespace: Butterfly.Message.Twilio
+  syntax:
+    content: protected static readonly Logger logger
+    return:
+      type: Logger
+    content.vb: Protected Shared ReadOnly logger As Logger
+  modifiers.csharp:
+  - protected
+  - static
+  - readonly
+  modifiers.vb:
+  - Protected
+  - Shared
+  - ReadOnly
+- uid: Butterfly.Message.Twilio.TwilioPhoneMessageSender.twilioAccountSid
+  commentId: F:Butterfly.Message.Twilio.TwilioPhoneMessageSender.twilioAccountSid
+  id: twilioAccountSid
+  parent: Butterfly.Message.Twilio.TwilioPhoneMessageSender
+  langs:
+  - csharp
+  - vb
+  name: twilioAccountSid
+  nameWithType: TwilioPhoneMessageSender.twilioAccountSid
+  fullName: Butterfly.Message.Twilio.TwilioPhoneMessageSender.twilioAccountSid
+  type: Field
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Message/Butterfly.Message.Twilio/TwilioPhoneMessageSender.cs
+    id: twilioAccountSid
+    path: ../Butterfly.Message.Twilio/TwilioPhoneMessageSender.cs
+    startLine: 22
+  assemblies:
+  - Butterfly.Message.Twilio
+  namespace: Butterfly.Message.Twilio
+  syntax:
+    content: protected readonly string twilioAccountSid
+    return:
+      type: System.String
+    content.vb: Protected ReadOnly twilioAccountSid As String
+  modifiers.csharp:
+  - protected
+  - readonly
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+- uid: Butterfly.Message.Twilio.TwilioPhoneMessageSender.twilioAuthToken
+  commentId: F:Butterfly.Message.Twilio.TwilioPhoneMessageSender.twilioAuthToken
+  id: twilioAuthToken
+  parent: Butterfly.Message.Twilio.TwilioPhoneMessageSender
+  langs:
+  - csharp
+  - vb
+  name: twilioAuthToken
+  nameWithType: TwilioPhoneMessageSender.twilioAuthToken
+  fullName: Butterfly.Message.Twilio.TwilioPhoneMessageSender.twilioAuthToken
+  type: Field
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Message/Butterfly.Message.Twilio/TwilioPhoneMessageSender.cs
+    id: twilioAuthToken
+    path: ../Butterfly.Message.Twilio/TwilioPhoneMessageSender.cs
+    startLine: 23
+  assemblies:
+  - Butterfly.Message.Twilio
+  namespace: Butterfly.Message.Twilio
+  syntax:
+    content: protected readonly string twilioAuthToken
+    return:
+      type: System.String
+    content.vb: Protected ReadOnly twilioAuthToken As String
+  modifiers.csharp:
+  - protected
+  - readonly
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+- uid: Butterfly.Message.Twilio.TwilioPhoneMessageSender.#ctor(System.String,System.String)
+  commentId: M:Butterfly.Message.Twilio.TwilioPhoneMessageSender.#ctor(System.String,System.String)
+  id: '#ctor(System.String,System.String)'
+  parent: Butterfly.Message.Twilio.TwilioPhoneMessageSender
+  langs:
+  - csharp
+  - vb
+  name: TwilioPhoneMessageSender(String, String)
+  nameWithType: TwilioPhoneMessageSender.TwilioPhoneMessageSender(String, String)
+  fullName: Butterfly.Message.Twilio.TwilioPhoneMessageSender.TwilioPhoneMessageSender(System.String, System.String)
+  type: Constructor
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Message/Butterfly.Message.Twilio/TwilioPhoneMessageSender.cs
+    id: .ctor
+    path: ../Butterfly.Message.Twilio/TwilioPhoneMessageSender.cs
+    startLine: 25
+  assemblies:
+  - Butterfly.Message.Twilio
+  namespace: Butterfly.Message.Twilio
+  syntax:
+    content: public TwilioPhoneMessageSender(string twilioAccountSid, string twilioAuthToken)
+    parameters:
+    - id: twilioAccountSid
+      type: System.String
+    - id: twilioAuthToken
+      type: System.String
+    content.vb: Public Sub New(twilioAccountSid As String, twilioAuthToken As String)
+  overload: Butterfly.Message.Twilio.TwilioPhoneMessageSender.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Butterfly.Message.Twilio.TwilioPhoneMessageSender.DoSendAsync(System.String,System.String,System.String,System.String,System.String,System.String[])
+  commentId: M:Butterfly.Message.Twilio.TwilioPhoneMessageSender.DoSendAsync(System.String,System.String,System.String,System.String,System.String,System.String[])
+  id: DoSendAsync(System.String,System.String,System.String,System.String,System.String,System.String[])
+  parent: Butterfly.Message.Twilio.TwilioPhoneMessageSender
+  langs:
+  - csharp
+  - vb
+  name: DoSendAsync(String, String, String, String, String, String[])
+  nameWithType: TwilioPhoneMessageSender.DoSendAsync(String, String, String, String, String, String[])
+  fullName: Butterfly.Message.Twilio.TwilioPhoneMessageSender.DoSendAsync(System.String, System.String, System.String, System.String, System.String, System.String[])
+  type: Method
+  source:
+    remote:
+      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Message/Butterfly.Message.Twilio/TwilioPhoneMessageSender.cs
+    id: DoSendAsync
+    path: ../Butterfly.Message.Twilio/TwilioPhoneMessageSender.cs
+    startLine: 30
+  assemblies:
+  - Butterfly.Message.Twilio
+  namespace: Butterfly.Message.Twilio
+  syntax:
+    content: protected override Task<string> DoSendAsync(string from, string to, string subject, string bodyText, string bodyHtml, string[] attachments)
+    parameters:
+    - id: from
+      type: System.String
+    - id: to
+      type: System.String
+    - id: subject
+      type: System.String
+    - id: bodyText
+      type: System.String
+    - id: bodyHtml
+      type: System.String
+    - id: attachments
+      type: System.String[]
+    return:
+      type: Task{System.String}
+    content.vb: Protected Overrides Function DoSendAsync(from As String, to As String, subject As String, bodyText As String, bodyHtml As String, attachments As String()) As Task(Of String)
+  overridden: Butterfly.Message.BaseMessageSender.DoSendAsync(System.String,System.String,System.String,System.String,System.String,System.String[])
+  overload: Butterfly.Message.Twilio.TwilioPhoneMessageSender.DoSendAsync*
+  nameWithType.vb: TwilioPhoneMessageSender.DoSendAsync(String, String, String, String, String, String())
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+  fullName.vb: Butterfly.Message.Twilio.TwilioPhoneMessageSender.DoSendAsync(System.String, System.String, System.String, System.String, System.String, System.String())
+  name.vb: DoSendAsync(String, String, String, String, String, String())
+references:
+- uid: Butterfly.Message.Twilio
+  commentId: N:Butterfly.Message.Twilio
+  name: Butterfly.Message.Twilio
+  nameWithType: Butterfly.Message.Twilio
+  fullName: Butterfly.Message.Twilio
+- uid: System.Object
+  commentId: T:System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Butterfly.Message.BaseMessageSender
+  commentId: T:Butterfly.Message.BaseMessageSender
+  parent: Butterfly.Message
+  name: BaseMessageSender
+  nameWithType: BaseMessageSender
+  fullName: Butterfly.Message.BaseMessageSender
+- uid: Butterfly.Message.IMessageSender
+  commentId: T:Butterfly.Message.IMessageSender
+  parent: Butterfly.Message
+  name: IMessageSender
+  nameWithType: IMessageSender
+  fullName: Butterfly.Message.IMessageSender
+- uid: Butterfly.Message.BaseMessageSender.sendEveryMillis
+  commentId: F:Butterfly.Message.BaseMessageSender.sendEveryMillis
+  parent: Butterfly.Message.BaseMessageSender
+  name: sendEveryMillis
+  nameWithType: BaseMessageSender.sendEveryMillis
+  fullName: Butterfly.Message.BaseMessageSender.sendEveryMillis
+- uid: Butterfly.Message.BaseMessageSender.lastSend
+  commentId: F:Butterfly.Message.BaseMessageSender.lastSend
+  parent: Butterfly.Message.BaseMessageSender
+  name: lastSend
+  nameWithType: BaseMessageSender.lastSend
+  fullName: Butterfly.Message.BaseMessageSender.lastSend
+- uid: Butterfly.Message.BaseMessageSender.SendAsync(System.String,System.String,System.String,System.String,System.String,System.String[])
+  commentId: M:Butterfly.Message.BaseMessageSender.SendAsync(System.String,System.String,System.String,System.String,System.String,System.String[])
+  parent: Butterfly.Message.BaseMessageSender
+  isExternal: true
+  name: SendAsync(String, String, String, String, String, String[])
+  nameWithType: BaseMessageSender.SendAsync(String, String, String, String, String, String[])
+  fullName: Butterfly.Message.BaseMessageSender.SendAsync(System.String, System.String, System.String, System.String, System.String, System.String[])
+  nameWithType.vb: BaseMessageSender.SendAsync(String, String, String, String, String, String())
+  fullName.vb: Butterfly.Message.BaseMessageSender.SendAsync(System.String, System.String, System.String, System.String, System.String, System.String())
+  name.vb: SendAsync(String, String, String, String, String, String())
+  spec.csharp:
+  - uid: Butterfly.Message.BaseMessageSender.SendAsync(System.String,System.String,System.String,System.String,System.String,System.String[])
+    name: SendAsync
+    nameWithType: BaseMessageSender.SendAsync
+    fullName: Butterfly.Message.BaseMessageSender.SendAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Butterfly.Message.BaseMessageSender.SendAsync(System.String,System.String,System.String,System.String,System.String,System.String[])
+    name: SendAsync
+    nameWithType: BaseMessageSender.SendAsync
+    fullName: Butterfly.Message.BaseMessageSender.SendAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Butterfly.Message.BaseMessageSender.CanSendNextAt
+  commentId: P:Butterfly.Message.BaseMessageSender.CanSendNextAt
+  parent: Butterfly.Message.BaseMessageSender
+  name: CanSendNextAt
+  nameWithType: BaseMessageSender.CanSendNextAt
+  fullName: Butterfly.Message.BaseMessageSender.CanSendNextAt
+- uid: Butterfly.Message
+  commentId: N:Butterfly.Message
+  name: Butterfly.Message
+  nameWithType: Butterfly.Message
+  fullName: Butterfly.Message
+- uid: Logger
+  isExternal: true
+  name: Logger
+  nameWithType: Logger
+  fullName: Logger
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Butterfly.Message.Twilio.TwilioPhoneMessageSender.#ctor*
+  commentId: Overload:Butterfly.Message.Twilio.TwilioPhoneMessageSender.#ctor
+  name: TwilioPhoneMessageSender
+  nameWithType: TwilioPhoneMessageSender.TwilioPhoneMessageSender
+  fullName: Butterfly.Message.Twilio.TwilioPhoneMessageSender.TwilioPhoneMessageSender
+- uid: Butterfly.Message.BaseMessageSender.DoSendAsync(System.String,System.String,System.String,System.String,System.String,System.String[])
+  commentId: M:Butterfly.Message.BaseMessageSender.DoSendAsync(System.String,System.String,System.String,System.String,System.String,System.String[])
+  parent: Butterfly.Message.BaseMessageSender
+  isExternal: true
+  name: DoSendAsync(String, String, String, String, String, String[])
+  nameWithType: BaseMessageSender.DoSendAsync(String, String, String, String, String, String[])
+  fullName: Butterfly.Message.BaseMessageSender.DoSendAsync(System.String, System.String, System.String, System.String, System.String, System.String[])
+  nameWithType.vb: BaseMessageSender.DoSendAsync(String, String, String, String, String, String())
+  fullName.vb: Butterfly.Message.BaseMessageSender.DoSendAsync(System.String, System.String, System.String, System.String, System.String, System.String())
+  name.vb: DoSendAsync(String, String, String, String, String, String())
+  spec.csharp:
+  - uid: Butterfly.Message.BaseMessageSender.DoSendAsync(System.String,System.String,System.String,System.String,System.String,System.String[])
+    name: DoSendAsync
+    nameWithType: BaseMessageSender.DoSendAsync
+    fullName: Butterfly.Message.BaseMessageSender.DoSendAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Butterfly.Message.BaseMessageSender.DoSendAsync(System.String,System.String,System.String,System.String,System.String,System.String[])
+    name: DoSendAsync
+    nameWithType: BaseMessageSender.DoSendAsync
+    fullName: Butterfly.Message.BaseMessageSender.DoSendAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Butterfly.Message.Twilio.TwilioPhoneMessageSender.DoSendAsync*
+  commentId: Overload:Butterfly.Message.Twilio.TwilioPhoneMessageSender.DoSendAsync
+  name: DoSendAsync
+  nameWithType: TwilioPhoneMessageSender.DoSendAsync
+  fullName: Butterfly.Message.Twilio.TwilioPhoneMessageSender.DoSendAsync
+- uid: System.String[]
+  isExternal: true
+  name: String[]
+  nameWithType: String[]
+  fullName: System.String[]
+  nameWithType.vb: String()
+  fullName.vb: System.String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Task{System.String}
+  commentId: '!:Task{System.String}'
+  definition: Task`1
+  name: Task<String>
+  nameWithType: Task<String>
+  fullName: Task<System.String>
+  nameWithType.vb: Task(Of String)
+  fullName.vb: Task(Of System.String)
+  name.vb: Task(Of String)
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Task`1
+  isExternal: true
+  name: Task<>
+  nameWithType: Task<>
+  fullName: Task<>
+  nameWithType.vb: Task(Of )
+  fullName.vb: Task(Of )
+  name.vb: Task(Of )
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+shouldSkipMarkup: true
