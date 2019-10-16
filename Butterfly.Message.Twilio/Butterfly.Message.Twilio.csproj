@@ -3,16 +3,16 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
     <PackageLicenseUrl>https://www.mozilla.org/en-US/MPL/2.0/</PackageLicenseUrl>
-    <PackageProjectUrl>https://github.com/firesharkstudios/butterfly-server-dotnet</PackageProjectUrl>
-    <PackageIconUrl>https://raw.githubusercontent.com/firesharkstudios/butterfly-server-dotnet/master/img/logo-40x40.png</PackageIconUrl>
-    <RepositoryUrl>https://github.com/firesharkstudios/butterfly-server-dotnet</RepositoryUrl>
-    <PackageTags>butterfly server notify twilio</PackageTags>
-    <Product>Butterfly Message</Product>
+    <PackageProjectUrl>https://github.com/firesharkstudios/butterfly-message</PackageProjectUrl>
+    <PackageIconUrl>https://raw.githubusercontent.com/firesharkstudios/butterfly-message/master/img/logo-40x40.png</PackageIconUrl>
+    <RepositoryUrl>https://github.com/firesharkstudios/butterfly-message</RepositoryUrl>
+    <PackageTags>butterfly server message twilio</PackageTags>
+    <Product>Butterfly.Message.Twilio</Product>
     <Company>Fireshark Studios, LLC</Company>
     <Authors>Kent Johnson</Authors>
     <Copyright>Copyright 2017-2019 Fireshark Studios, LLC</Copyright>
     <Description>Implementation of Butterfly.Message for Twilio SMS</Description>
-    <Version>2.0.2</Version>
+    <Version>2.0.3</Version>
     <PackageReleaseNotes>Various improvements and bug fixes</PackageReleaseNotes>
     <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\$(MSBuildProjectName).xml</DocumentationFile>
     <LangVersion>7.1</LangVersion>

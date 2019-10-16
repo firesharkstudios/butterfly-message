@@ -33,9 +33,7 @@ items:
     content: 'public abstract class BaseMessageSender : object, IMessageSender'
     content.vb: >-
       Public MustInherit Class BaseMessageSender
-
           Inherits Object
-
           Implements IMessageSender
   inheritance:
   - System.Object

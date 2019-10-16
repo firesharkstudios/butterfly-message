@@ -4,7 +4,7 @@
 
 ## Getting Started
 
-## Install from Nuget
+### Install from Nuget
 
 | Name | Package | Install |
 | --- | --- | --- |
@@ -14,11 +14,7 @@
 
 ### Install from Source Code
 
-git clone https://github.com/firesharkstudios/butterfly-message
-
-## API Documentation
-
-Available [here](http://htmlpreview.github.io/?https://github.com/firesharkstudios/butterfly-message/blob/master/docs/api/Butterfly.Message.html).
+```git clone https://github.com/firesharkstudios/butterfly-message```
 
 ## Contributing
 

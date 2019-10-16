@@ -48,7 +48,6 @@ items:
     content: 'public class SendMessageQueueManager : object'
     content.vb: >-
       Public Class SendMessageQueueManager
-
           Inherits Object
   inheritance:
   - System.Object
