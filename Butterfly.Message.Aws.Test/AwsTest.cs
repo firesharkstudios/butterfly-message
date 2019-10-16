@@ -12,8 +12,8 @@ namespace Butterfly.Message.Aws.Test {
     public class AwsTest {
         [TestMethod]
         public async Task SendAwsSesNotifyMessage() {
-            var notifyMessageSender = new AwsSesEmailMessageSender();
-            await NotifyTest.SendEmailNotifyMessage(notifyMessageSender);
+            var messageSender = new AwsSesEmailMessageSender();
+            await MessageTest.SendEmailNotifyMessage(messageSender);
         }
     }
 }

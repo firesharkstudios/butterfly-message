@@ -12,15 +12,15 @@ using Butterfly.Db;
 
 namespace Butterfly.Message.Test {
     [TestClass]
-    public class NotifyTest {
+    public class MessageTest {
         [TestMethod]
-        public void ParseNotifyMessage() {
+        public void ParseSendMessage() {
             var email = FileX.LoadResourceAsText(Assembly.GetExecutingAssembly(), "Butterfly.Notify.Test.email.txt");
-            var templateNotifyMessage = SendMessage.Parse(email);
-            var notifyMessage = templateNotifyMessage.Evaluate(new {
+            var sendMessageTemplate = SendMessage.Parse(email);
+            var sendMessage = sendMessageTemplate.Evaluate(new {
                 first_name = "Bob"
             });
-            Assert.IsTrue(notifyMessage.bodyText.Trim().StartsWith("Hello, Bob."));
+            Assert.IsTrue(sendMessage.bodyText.Trim().StartsWith("Hello, Bob."));
         }
 
         [TestMethod]
@@ -30,7 +30,7 @@ namespace Butterfly.Message.Test {
             database.SetDefaultValue("id", tableName => Guid.NewGuid().ToString());
             database.SetDefaultValue("created_at", tableName => DateTime.Now);
 
-            var notifyMessageManager = new SendMessageQueueManager(database, emailNotifyMessageSender: notifyMessageSender);
+            var notifyMessageManager = new SendMessageQueueManager(database, emailMessageSender: notifyMessageSender);
             notifyMessageManager.Start();
             var notifyMessage = new SendMessage("kent@fireshark.com", "kent13304@yahoo.com", "Test SES", "Just testing", null);
             using (ITransaction transaction = await database.BeginTransactionAsync()) {
@@ -47,7 +47,7 @@ namespace Butterfly.Message.Test {
             database.SetDefaultValue("id", tableName => Guid.NewGuid().ToString());
             database.SetDefaultValue("created_at", tableName => DateTime.Now);
 
-            var notifyMessageManager = new SendMessageQueueManager(database, phoneNotifyMessageSender: notifyMessageSender);
+            var notifyMessageManager = new SendMessageQueueManager(database, textMessageSender: notifyMessageSender);
             notifyMessageManager.Start();
             var notifyMessage = new SendMessage("+1 316 712 7412", "+1 316 555 1212", null, "Just testing", null);
             using (ITransaction transaction = await database.BeginTransactionAsync()) {
