@@ -12,18 +12,15 @@ using Twilio;
 using Twilio.Rest.Api.V2010.Account;
 using Twilio.Types;
 
-using Butterfly.Message;
-
-namespace Butterfly.Message.Twilio
-{
-    public class TwilioPhoneMessageSender : BaseMessageSender {
+namespace Butterfly.Message.Twilio {
+    public class TwilioTextMessageSender : BaseMessageSender {
 
         protected static readonly Logger logger = LogManager.GetCurrentClassLogger();
 
         protected readonly string twilioAccountSid;
         protected readonly string twilioAuthToken;
 
-        public TwilioPhoneMessageSender(string twilioAccountSid, string twilioAuthToken) {
+        public TwilioTextMessageSender(string twilioAccountSid, string twilioAuthToken) {
             this.twilioAccountSid = twilioAccountSid;
             this.twilioAuthToken = twilioAuthToken;
         }

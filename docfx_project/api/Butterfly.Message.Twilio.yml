@@ -4,7 +4,7 @@ items:
   commentId: N:Butterfly.Message.Twilio
   id: Butterfly.Message.Twilio
   children:
-  - Butterfly.Message.Twilio.TwilioPhoneMessageSender
+  - Butterfly.Message.Twilio.TwilioTextMessageSender
   - Butterfly.Message.Twilio.TwilioWebApi
   langs:
   - csharp
@@ -16,11 +16,11 @@ items:
   assemblies:
   - Butterfly.Message.Twilio
 references:
-- uid: Butterfly.Message.Twilio.TwilioPhoneMessageSender
-  commentId: T:Butterfly.Message.Twilio.TwilioPhoneMessageSender
-  name: TwilioPhoneMessageSender
-  nameWithType: TwilioPhoneMessageSender
-  fullName: Butterfly.Message.Twilio.TwilioPhoneMessageSender
+- uid: Butterfly.Message.Twilio.TwilioTextMessageSender
+  commentId: T:Butterfly.Message.Twilio.TwilioTextMessageSender
+  name: TwilioTextMessageSender
+  nameWithType: TwilioTextMessageSender
+  fullName: Butterfly.Message.Twilio.TwilioTextMessageSender
 - uid: Butterfly.Message.Twilio.TwilioWebApi
   commentId: T:Butterfly.Message.Twilio.TwilioWebApi
   name: TwilioWebApi

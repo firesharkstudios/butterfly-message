@@ -43,6 +43,7 @@ items:
     content: 'public class SendMessage : object'
     content.vb: >-
       Public Class SendMessage
+
           Inherits Object
   inheritance:
   - System.Object

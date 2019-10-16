@@ -13,7 +13,7 @@ namespace Butterfly.Notify.Test {
     public class TwilioTest {
         [TestMethod]
         public async Task SendTwilioSmsNotifyMessage() {
-            var notifyMessageSender = new TwilioPhoneMessageSender("my-sid", "my-auth-token");
+            var notifyMessageSender = new TwilioTextMessageSender("my-sid", "my-auth-token");
             await MessageTest.SendPhoneNotifyMessage(notifyMessageSender);
         }
     }

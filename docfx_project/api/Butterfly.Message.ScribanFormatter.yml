@@ -29,6 +29,7 @@ items:
     content: 'public static class ScribanFormatter : object'
     content.vb: >-
       Public Module ScribanFormatter
+
           Inherits Object
   inheritance:
   - System.Object

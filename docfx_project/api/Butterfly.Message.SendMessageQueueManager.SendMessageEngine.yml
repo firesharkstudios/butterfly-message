@@ -38,6 +38,7 @@ items:
     content: 'protected class SendMessageEngine : object'
     content.vb: >-
       Protected Class SendMessageEngine
+
           Inherits Object
   inheritance:
   - System.Object

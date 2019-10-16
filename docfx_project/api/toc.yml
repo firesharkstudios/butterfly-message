@@ -36,8 +36,8 @@
 - uid: Butterfly.Message.Twilio
   name: Butterfly.Message.Twilio
   items:
-  - uid: Butterfly.Message.Twilio.TwilioPhoneMessageSender
-    name: TwilioPhoneMessageSender
+  - uid: Butterfly.Message.Twilio.TwilioTextMessageSender
+    name: TwilioTextMessageSender
   - uid: Butterfly.Message.Twilio.TwilioWebApi
     name: TwilioWebApi
 - uid: Butterfly.Notify.Test

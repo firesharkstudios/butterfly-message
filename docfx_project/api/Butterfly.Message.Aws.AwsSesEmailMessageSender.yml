@@ -29,7 +29,9 @@ items:
     content: 'public class AwsSesEmailMessageSender : BaseMessageSender, IMessageSender'
     content.vb: >-
       Public Class AwsSesEmailMessageSender
+
           Inherits BaseMessageSender
+
           Implements IMessageSender
   inheritance:
   - System.Object

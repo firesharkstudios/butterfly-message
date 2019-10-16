@@ -737,59 +737,59 @@ references:
   commentId: N:Butterfly.Message.Twilio
   fullName: Butterfly.Message.Twilio
   nameWithType: Butterfly.Message.Twilio
-- uid: Butterfly.Message.Twilio.TwilioPhoneMessageSender
-  name: TwilioPhoneMessageSender
-  href: api/Butterfly.Message.Twilio.TwilioPhoneMessageSender.html
-  commentId: T:Butterfly.Message.Twilio.TwilioPhoneMessageSender
-  fullName: Butterfly.Message.Twilio.TwilioPhoneMessageSender
-  nameWithType: TwilioPhoneMessageSender
-- uid: Butterfly.Message.Twilio.TwilioPhoneMessageSender.#ctor(System.String,System.String)
-  name: TwilioPhoneMessageSender(String, String)
-  href: api/Butterfly.Message.Twilio.TwilioPhoneMessageSender.html#Butterfly_Message_Twilio_TwilioPhoneMessageSender__ctor_System_String_System_String_
-  commentId: M:Butterfly.Message.Twilio.TwilioPhoneMessageSender.#ctor(System.String,System.String)
-  fullName: Butterfly.Message.Twilio.TwilioPhoneMessageSender.TwilioPhoneMessageSender(System.String, System.String)
-  nameWithType: TwilioPhoneMessageSender.TwilioPhoneMessageSender(String, String)
-- uid: Butterfly.Message.Twilio.TwilioPhoneMessageSender.#ctor*
-  name: TwilioPhoneMessageSender
-  href: api/Butterfly.Message.Twilio.TwilioPhoneMessageSender.html#Butterfly_Message_Twilio_TwilioPhoneMessageSender__ctor_
-  commentId: Overload:Butterfly.Message.Twilio.TwilioPhoneMessageSender.#ctor
+- uid: Butterfly.Message.Twilio.TwilioTextMessageSender
+  name: TwilioTextMessageSender
+  href: api/Butterfly.Message.Twilio.TwilioTextMessageSender.html
+  commentId: T:Butterfly.Message.Twilio.TwilioTextMessageSender
+  fullName: Butterfly.Message.Twilio.TwilioTextMessageSender
+  nameWithType: TwilioTextMessageSender
+- uid: Butterfly.Message.Twilio.TwilioTextMessageSender.#ctor(System.String,System.String)
+  name: TwilioTextMessageSender(String, String)
+  href: api/Butterfly.Message.Twilio.TwilioTextMessageSender.html#Butterfly_Message_Twilio_TwilioTextMessageSender__ctor_System_String_System_String_
+  commentId: M:Butterfly.Message.Twilio.TwilioTextMessageSender.#ctor(System.String,System.String)
+  fullName: Butterfly.Message.Twilio.TwilioTextMessageSender.TwilioTextMessageSender(System.String, System.String)
+  nameWithType: TwilioTextMessageSender.TwilioTextMessageSender(String, String)
+- uid: Butterfly.Message.Twilio.TwilioTextMessageSender.#ctor*
+  name: TwilioTextMessageSender
+  href: api/Butterfly.Message.Twilio.TwilioTextMessageSender.html#Butterfly_Message_Twilio_TwilioTextMessageSender__ctor_
+  commentId: Overload:Butterfly.Message.Twilio.TwilioTextMessageSender.#ctor
   isSpec: "True"
-  fullName: Butterfly.Message.Twilio.TwilioPhoneMessageSender.TwilioPhoneMessageSender
-  nameWithType: TwilioPhoneMessageSender.TwilioPhoneMessageSender
-- uid: Butterfly.Message.Twilio.TwilioPhoneMessageSender.DoSendAsync(System.String,System.String,System.String,System.String,System.String,System.String[])
+  fullName: Butterfly.Message.Twilio.TwilioTextMessageSender.TwilioTextMessageSender
+  nameWithType: TwilioTextMessageSender.TwilioTextMessageSender
+- uid: Butterfly.Message.Twilio.TwilioTextMessageSender.DoSendAsync(System.String,System.String,System.String,System.String,System.String,System.String[])
   name: DoSendAsync(String, String, String, String, String, String[])
-  href: api/Butterfly.Message.Twilio.TwilioPhoneMessageSender.html#Butterfly_Message_Twilio_TwilioPhoneMessageSender_DoSendAsync_System_String_System_String_System_String_System_String_System_String_System_String___
-  commentId: M:Butterfly.Message.Twilio.TwilioPhoneMessageSender.DoSendAsync(System.String,System.String,System.String,System.String,System.String,System.String[])
+  href: api/Butterfly.Message.Twilio.TwilioTextMessageSender.html#Butterfly_Message_Twilio_TwilioTextMessageSender_DoSendAsync_System_String_System_String_System_String_System_String_System_String_System_String___
+  commentId: M:Butterfly.Message.Twilio.TwilioTextMessageSender.DoSendAsync(System.String,System.String,System.String,System.String,System.String,System.String[])
   name.vb: DoSendAsync(String, String, String, String, String, String())
-  fullName: Butterfly.Message.Twilio.TwilioPhoneMessageSender.DoSendAsync(System.String, System.String, System.String, System.String, System.String, System.String[])
-  fullName.vb: Butterfly.Message.Twilio.TwilioPhoneMessageSender.DoSendAsync(System.String, System.String, System.String, System.String, System.String, System.String())
-  nameWithType: TwilioPhoneMessageSender.DoSendAsync(String, String, String, String, String, String[])
-  nameWithType.vb: TwilioPhoneMessageSender.DoSendAsync(String, String, String, String, String, String())
-- uid: Butterfly.Message.Twilio.TwilioPhoneMessageSender.DoSendAsync*
+  fullName: Butterfly.Message.Twilio.TwilioTextMessageSender.DoSendAsync(System.String, System.String, System.String, System.String, System.String, System.String[])
+  fullName.vb: Butterfly.Message.Twilio.TwilioTextMessageSender.DoSendAsync(System.String, System.String, System.String, System.String, System.String, System.String())
+  nameWithType: TwilioTextMessageSender.DoSendAsync(String, String, String, String, String, String[])
+  nameWithType.vb: TwilioTextMessageSender.DoSendAsync(String, String, String, String, String, String())
+- uid: Butterfly.Message.Twilio.TwilioTextMessageSender.DoSendAsync*
   name: DoSendAsync
-  href: api/Butterfly.Message.Twilio.TwilioPhoneMessageSender.html#Butterfly_Message_Twilio_TwilioPhoneMessageSender_DoSendAsync_
-  commentId: Overload:Butterfly.Message.Twilio.TwilioPhoneMessageSender.DoSendAsync
+  href: api/Butterfly.Message.Twilio.TwilioTextMessageSender.html#Butterfly_Message_Twilio_TwilioTextMessageSender_DoSendAsync_
+  commentId: Overload:Butterfly.Message.Twilio.TwilioTextMessageSender.DoSendAsync
   isSpec: "True"
-  fullName: Butterfly.Message.Twilio.TwilioPhoneMessageSender.DoSendAsync
-  nameWithType: TwilioPhoneMessageSender.DoSendAsync
-- uid: Butterfly.Message.Twilio.TwilioPhoneMessageSender.logger
+  fullName: Butterfly.Message.Twilio.TwilioTextMessageSender.DoSendAsync
+  nameWithType: TwilioTextMessageSender.DoSendAsync
+- uid: Butterfly.Message.Twilio.TwilioTextMessageSender.logger
   name: logger
-  href: api/Butterfly.Message.Twilio.TwilioPhoneMessageSender.html#Butterfly_Message_Twilio_TwilioPhoneMessageSender_logger
-  commentId: F:Butterfly.Message.Twilio.TwilioPhoneMessageSender.logger
-  fullName: Butterfly.Message.Twilio.TwilioPhoneMessageSender.logger
-  nameWithType: TwilioPhoneMessageSender.logger
-- uid: Butterfly.Message.Twilio.TwilioPhoneMessageSender.twilioAccountSid
+  href: api/Butterfly.Message.Twilio.TwilioTextMessageSender.html#Butterfly_Message_Twilio_TwilioTextMessageSender_logger
+  commentId: F:Butterfly.Message.Twilio.TwilioTextMessageSender.logger
+  fullName: Butterfly.Message.Twilio.TwilioTextMessageSender.logger
+  nameWithType: TwilioTextMessageSender.logger
+- uid: Butterfly.Message.Twilio.TwilioTextMessageSender.twilioAccountSid
   name: twilioAccountSid
-  href: api/Butterfly.Message.Twilio.TwilioPhoneMessageSender.html#Butterfly_Message_Twilio_TwilioPhoneMessageSender_twilioAccountSid
-  commentId: F:Butterfly.Message.Twilio.TwilioPhoneMessageSender.twilioAccountSid
-  fullName: Butterfly.Message.Twilio.TwilioPhoneMessageSender.twilioAccountSid
-  nameWithType: TwilioPhoneMessageSender.twilioAccountSid
-- uid: Butterfly.Message.Twilio.TwilioPhoneMessageSender.twilioAuthToken
+  href: api/Butterfly.Message.Twilio.TwilioTextMessageSender.html#Butterfly_Message_Twilio_TwilioTextMessageSender_twilioAccountSid
+  commentId: F:Butterfly.Message.Twilio.TwilioTextMessageSender.twilioAccountSid
+  fullName: Butterfly.Message.Twilio.TwilioTextMessageSender.twilioAccountSid
+  nameWithType: TwilioTextMessageSender.twilioAccountSid
+- uid: Butterfly.Message.Twilio.TwilioTextMessageSender.twilioAuthToken
   name: twilioAuthToken
-  href: api/Butterfly.Message.Twilio.TwilioPhoneMessageSender.html#Butterfly_Message_Twilio_TwilioPhoneMessageSender_twilioAuthToken
-  commentId: F:Butterfly.Message.Twilio.TwilioPhoneMessageSender.twilioAuthToken
-  fullName: Butterfly.Message.Twilio.TwilioPhoneMessageSender.twilioAuthToken
-  nameWithType: TwilioPhoneMessageSender.twilioAuthToken
+  href: api/Butterfly.Message.Twilio.TwilioTextMessageSender.html#Butterfly_Message_Twilio_TwilioTextMessageSender_twilioAuthToken
+  commentId: F:Butterfly.Message.Twilio.TwilioTextMessageSender.twilioAuthToken
+  fullName: Butterfly.Message.Twilio.TwilioTextMessageSender.twilioAuthToken
+  nameWithType: TwilioTextMessageSender.twilioAuthToken
 - uid: Butterfly.Message.Twilio.TwilioWebApi
   name: TwilioWebApi
   href: api/Butterfly.Message.Twilio.TwilioWebApi.html

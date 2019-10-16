@@ -28,6 +28,7 @@ items:
     content: 'public static class AwsWebApi : object'
     content.vb: >-
       Public Module AwsWebApi
+
           Inherits Object
   inheritance:
   - System.Object
