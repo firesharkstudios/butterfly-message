@@ -1,0 +1,113 @@
+### YamlMime:ManagedReference
+items:
+- uid: Butterfly.Message.SendMessageType
+  commentId: T:Butterfly.Message.SendMessageType
+  id: SendMessageType
+  parent: Butterfly.Message
+  children:
+  - Butterfly.Message.SendMessageType.Email
+  - Butterfly.Message.SendMessageType.Text
+  langs:
+  - csharp
+  - vb
+  name: SendMessageType
+  nameWithType: SendMessageType
+  fullName: Butterfly.Message.SendMessageType
+  type: Enum
+  source:
+    remote:
+      path: Butterfly.Message/SendMessageQueueManager.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-message.git
+    id: SendMessageType
+    path: ../Butterfly.Message/SendMessageQueueManager.cs
+    startLine: 19
+  assemblies:
+  - Butterfly.Message
+  namespace: Butterfly.Message
+  syntax:
+    content: 'public enum SendMessageType : int'
+    content.vb: Public Enum SendMessageType As Integer
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Butterfly.Message.SendMessageType.Email
+  commentId: F:Butterfly.Message.SendMessageType.Email
+  id: Email
+  parent: Butterfly.Message.SendMessageType
+  langs:
+  - csharp
+  - vb
+  name: Email
+  nameWithType: SendMessageType.Email
+  fullName: Butterfly.Message.SendMessageType.Email
+  type: Field
+  source:
+    remote:
+      path: Butterfly.Message/SendMessageQueueManager.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-message.git
+    id: Email
+    path: ../Butterfly.Message/SendMessageQueueManager.cs
+    startLine: 20
+  assemblies:
+  - Butterfly.Message
+  namespace: Butterfly.Message
+  syntax:
+    content: Email = 0
+    return:
+      type: Butterfly.Message.SendMessageType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Butterfly.Message.SendMessageType.Text
+  commentId: F:Butterfly.Message.SendMessageType.Text
+  id: Text
+  parent: Butterfly.Message.SendMessageType
+  langs:
+  - csharp
+  - vb
+  name: Text
+  nameWithType: SendMessageType.Text
+  fullName: Butterfly.Message.SendMessageType.Text
+  type: Field
+  source:
+    remote:
+      path: Butterfly.Message/SendMessageQueueManager.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-message.git
+    id: Text
+    path: ../Butterfly.Message/SendMessageQueueManager.cs
+    startLine: 21
+  assemblies:
+  - Butterfly.Message
+  namespace: Butterfly.Message
+  syntax:
+    content: Text = 1
+    return:
+      type: Butterfly.Message.SendMessageType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Butterfly.Message
+  commentId: N:Butterfly.Message
+  name: Butterfly.Message
+  nameWithType: Butterfly.Message
+  fullName: Butterfly.Message
+- uid: Butterfly.Message.SendMessageType
+  commentId: T:Butterfly.Message.SendMessageType
+  parent: Butterfly.Message
+  name: SendMessageType
+  nameWithType: SendMessageType
+  fullName: Butterfly.Message.SendMessageType
+shouldSkipMarkup: true

@@ -6,11 +6,11 @@ items:
   children:
   - Butterfly.Message.BaseMessageSender
   - Butterfly.Message.IMessageSender
-  - Butterfly.Message.NotifyMessageType
   - Butterfly.Message.ScribanFormatter
   - Butterfly.Message.SendMessage
   - Butterfly.Message.SendMessageQueueManager
-  - Butterfly.Message.SendMessageQueueManager.NotifyMessageEngine
+  - Butterfly.Message.SendMessageQueueManager.SendMessageEngine
+  - Butterfly.Message.SendMessageType
   langs:
   - csharp
   - vb
@@ -44,23 +44,23 @@ references:
   name: SendMessage
   nameWithType: SendMessage
   fullName: Butterfly.Message.SendMessage
-- uid: Butterfly.Message.NotifyMessageType
-  commentId: T:Butterfly.Message.NotifyMessageType
+- uid: Butterfly.Message.SendMessageType
+  commentId: T:Butterfly.Message.SendMessageType
   parent: Butterfly.Message
-  name: NotifyMessageType
-  nameWithType: NotifyMessageType
-  fullName: Butterfly.Message.NotifyMessageType
+  name: SendMessageType
+  nameWithType: SendMessageType
+  fullName: Butterfly.Message.SendMessageType
 - uid: Butterfly.Message.SendMessageQueueManager
   commentId: T:Butterfly.Message.SendMessageQueueManager
   name: SendMessageQueueManager
   nameWithType: SendMessageQueueManager
   fullName: Butterfly.Message.SendMessageQueueManager
-- uid: Butterfly.Message.SendMessageQueueManager.NotifyMessageEngine
-  commentId: T:Butterfly.Message.SendMessageQueueManager.NotifyMessageEngine
+- uid: Butterfly.Message.SendMessageQueueManager.SendMessageEngine
+  commentId: T:Butterfly.Message.SendMessageQueueManager.SendMessageEngine
   parent: Butterfly.Message
-  name: SendMessageQueueManager.NotifyMessageEngine
-  nameWithType: SendMessageQueueManager.NotifyMessageEngine
-  fullName: Butterfly.Message.SendMessageQueueManager.NotifyMessageEngine
+  name: SendMessageQueueManager.SendMessageEngine
+  nameWithType: SendMessageQueueManager.SendMessageEngine
+  fullName: Butterfly.Message.SendMessageQueueManager.SendMessageEngine
 - uid: Butterfly.Message
   commentId: N:Butterfly.Message
   name: Butterfly.Message

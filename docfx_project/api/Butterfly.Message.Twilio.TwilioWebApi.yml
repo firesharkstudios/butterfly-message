@@ -5,7 +5,7 @@ items:
   id: TwilioWebApi
   parent: Butterfly.Message.Twilio
   children:
-  - Butterfly.Message.Twilio.TwilioWebApi.Setup(IWebApi,Func{System.String,System.String,System.String,System.String[],Task{System.String}})
+  - Butterfly.Message.Twilio.TwilioWebApi.Setup(Butterfly.Web.WebApi.IWebApi,Func{System.String,System.String,System.String,System.String[],Task{System.String}})
   langs:
   - csharp
   - vb
@@ -15,7 +15,9 @@ items:
   type: Class
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Message/Butterfly.Message.Twilio/TwilioWebApi.cs
+      path: Butterfly.Message.Twilio/TwilioWebApi.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-message.git
     id: TwilioWebApi
     path: ../Butterfly.Message.Twilio/TwilioWebApi.cs
     startLine: 17
@@ -36,20 +38,22 @@ items:
   modifiers.vb:
   - Public
   - Module
-- uid: Butterfly.Message.Twilio.TwilioWebApi.Setup(IWebApi,Func{System.String,System.String,System.String,System.String[],Task{System.String}})
-  commentId: M:Butterfly.Message.Twilio.TwilioWebApi.Setup(IWebApi,Func{System.String,System.String,System.String,System.String[],Task{System.String}})
-  id: Setup(IWebApi,Func{System.String,System.String,System.String,System.String[],Task{System.String}})
+- uid: Butterfly.Message.Twilio.TwilioWebApi.Setup(Butterfly.Web.WebApi.IWebApi,Func{System.String,System.String,System.String,System.String[],Task{System.String}})
+  commentId: M:Butterfly.Message.Twilio.TwilioWebApi.Setup(Butterfly.Web.WebApi.IWebApi,Func{System.String,System.String,System.String,System.String[],Task{System.String}})
+  id: Setup(Butterfly.Web.WebApi.IWebApi,Func{System.String,System.String,System.String,System.String[],Task{System.String}})
   parent: Butterfly.Message.Twilio.TwilioWebApi
   langs:
   - csharp
   - vb
   name: Setup(IWebApi, Func<String, String, String, String[], Task<String>>)
   nameWithType: TwilioWebApi.Setup(IWebApi, Func<String, String, String, String[], Task<String>>)
-  fullName: Butterfly.Message.Twilio.TwilioWebApi.Setup(IWebApi, Func<System.String, System.String, System.String, System.String[], Task<System.String>>)
+  fullName: Butterfly.Message.Twilio.TwilioWebApi.Setup(Butterfly.Web.WebApi.IWebApi, Func<System.String, System.String, System.String, System.String[], Task<System.String>>)
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Message/Butterfly.Message.Twilio/TwilioWebApi.cs
+      path: Butterfly.Message.Twilio/TwilioWebApi.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-message.git
     id: Setup
     path: ../Butterfly.Message.Twilio/TwilioWebApi.cs
     startLine: 20
@@ -60,7 +64,7 @@ items:
     content: public static void Setup(IWebApi webApi, Func<string, string, string, string[], Task<string>> handler)
     parameters:
     - id: webApi
-      type: IWebApi
+      type: Butterfly.Web.WebApi.IWebApi
     - id: handler
       type: Func{System.String,System.String,System.String,System.String[],Task{System.String}}
     content.vb: Public Shared Sub Setup(webApi As IWebApi, handler As Func(Of String, String, String, String(), Task(Of String)))
@@ -72,7 +76,7 @@ items:
   modifiers.vb:
   - Public
   - Shared
-  fullName.vb: Butterfly.Message.Twilio.TwilioWebApi.Setup(IWebApi, Func(Of System.String, System.String, System.String, System.String(), Task(Of System.String)))
+  fullName.vb: Butterfly.Message.Twilio.TwilioWebApi.Setup(Butterfly.Web.WebApi.IWebApi, Func(Of System.String, System.String, System.String, System.String(), Task(Of System.String)))
   name.vb: Setup(IWebApi, Func(Of String, String, String, String(), Task(Of String)))
 references:
 - uid: Butterfly.Message.Twilio
@@ -91,11 +95,12 @@ references:
   name: Setup
   nameWithType: TwilioWebApi.Setup
   fullName: Butterfly.Message.Twilio.TwilioWebApi.Setup
-- uid: IWebApi
-  isExternal: true
+- uid: Butterfly.Web.WebApi.IWebApi
+  commentId: T:Butterfly.Web.WebApi.IWebApi
+  parent: Butterfly.Web.WebApi
   name: IWebApi
   nameWithType: IWebApi
-  fullName: IWebApi
+  fullName: Butterfly.Web.WebApi.IWebApi
 - uid: Func{System.String,System.String,System.String,System.String[],Task{System.String}}
   commentId: '!:Func{System.String,System.String,System.String,System.String[],Task{System.String}}'
   definition: Func`5
@@ -231,6 +236,11 @@ references:
   - name: )
     nameWithType: )
     fullName: )
+- uid: Butterfly.Web.WebApi
+  commentId: N:Butterfly.Web.WebApi
+  name: Butterfly.Web.WebApi
+  nameWithType: Butterfly.Web.WebApi
+  fullName: Butterfly.Web.WebApi
 - uid: Func`5
   commentId: '!:Func`5'
   isExternal: true

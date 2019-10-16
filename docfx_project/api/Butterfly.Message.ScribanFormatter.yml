@@ -16,7 +16,9 @@ items:
   type: Class
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Message/Butterfly.Message/ScribanFormatter.cs
+      path: Butterfly.Message/ScribanFormatter.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-message.git
     id: ScribanFormatter
     path: ../Butterfly.Message/ScribanFormatter.cs
     startLine: 11
@@ -50,7 +52,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Message/Butterfly.Message/ScribanFormatter.cs
+      path: Butterfly.Message/ScribanFormatter.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-message.git
     id: GetFormatter
     path: ../Butterfly.Message/ScribanFormatter.cs
     startLine: 13
@@ -86,7 +90,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Message/Butterfly.Message/ScribanFormatter.cs
+      path: Butterfly.Message/ScribanFormatter.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-message.git
     id: RenderWithRelativeIncludes
     path: ../Butterfly.Message/ScribanFormatter.cs
     startLine: 20

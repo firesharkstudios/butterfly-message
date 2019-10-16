@@ -15,7 +15,9 @@ items:
   type: Class
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Message/Butterfly.Message.Twilio.Test/TwilioTest.cs
+      path: Butterfly.Message.Twilio.Test/TwilioTest.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-message.git
     id: TwilioTest
     path: ../Butterfly.Message.Twilio.Test/TwilioTest.cs
     startLine: 11
@@ -48,7 +50,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Message/Butterfly.Message.Twilio.Test/TwilioTest.cs
+      path: Butterfly.Message.Twilio.Test/TwilioTest.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-message.git
     id: SendTwilioSmsNotifyMessage
     path: ../Butterfly.Message.Twilio.Test/TwilioTest.cs
     startLine: 13

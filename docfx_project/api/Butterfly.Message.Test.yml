@@ -4,7 +4,7 @@ items:
   commentId: N:Butterfly.Message.Test
   id: Butterfly.Message.Test
   children:
-  - Butterfly.Message.Test.NotifyTest
+  - Butterfly.Message.Test.MessageTest
   langs:
   - csharp
   - vb
@@ -15,9 +15,9 @@ items:
   assemblies:
   - Butterfly.Message.Test
 references:
-- uid: Butterfly.Message.Test.NotifyTest
-  commentId: T:Butterfly.Message.Test.NotifyTest
-  name: NotifyTest
-  nameWithType: NotifyTest
-  fullName: Butterfly.Message.Test.NotifyTest
+- uid: Butterfly.Message.Test.MessageTest
+  commentId: T:Butterfly.Message.Test.MessageTest
+  name: MessageTest
+  nameWithType: MessageTest
+  fullName: Butterfly.Message.Test.MessageTest
 shouldSkipMarkup: true

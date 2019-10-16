@@ -30,7 +30,9 @@ items:
   type: Class
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Message/Butterfly.Message/SendMessage.cs
+      path: Butterfly.Message/SendMessage.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-message.git
     id: SendMessage
     path: ../Butterfly.Message/SendMessage.cs
     startLine: 16
@@ -63,7 +65,9 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Message/Butterfly.Message/SendMessage.cs
+      path: Butterfly.Message/SendMessage.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-message.git
     id: logger
     path: ../Butterfly.Message/SendMessage.cs
     startLine: 18
@@ -96,7 +100,9 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Message/Butterfly.Message/SendMessage.cs
+      path: Butterfly.Message/SendMessage.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-message.git
     id: from
     path: ../Butterfly.Message/SendMessage.cs
     startLine: 20
@@ -127,7 +133,9 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Message/Butterfly.Message/SendMessage.cs
+      path: Butterfly.Message/SendMessage.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-message.git
     id: to
     path: ../Butterfly.Message/SendMessage.cs
     startLine: 21
@@ -158,7 +166,9 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Message/Butterfly.Message/SendMessage.cs
+      path: Butterfly.Message/SendMessage.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-message.git
     id: subject
     path: ../Butterfly.Message/SendMessage.cs
     startLine: 22
@@ -189,7 +199,9 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Message/Butterfly.Message/SendMessage.cs
+      path: Butterfly.Message/SendMessage.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-message.git
     id: bodyText
     path: ../Butterfly.Message/SendMessage.cs
     startLine: 23
@@ -220,7 +232,9 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Message/Butterfly.Message/SendMessage.cs
+      path: Butterfly.Message/SendMessage.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-message.git
     id: bodyHtml
     path: ../Butterfly.Message/SendMessage.cs
     startLine: 24
@@ -251,7 +265,9 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Message/Butterfly.Message/SendMessage.cs
+      path: Butterfly.Message/SendMessage.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-message.git
     id: priority
     path: ../Butterfly.Message/SendMessage.cs
     startLine: 25
@@ -282,7 +298,9 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Message/Butterfly.Message/SendMessage.cs
+      path: Butterfly.Message/SendMessage.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-message.git
     id: extraData
     path: ../Butterfly.Message/SendMessage.cs
     startLine: 27
@@ -311,7 +329,9 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Message/Butterfly.Message/SendMessage.cs
+      path: Butterfly.Message/SendMessage.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-message.git
     id: formatter
     path: ../Butterfly.Message/SendMessage.cs
     startLine: 28
@@ -340,7 +360,9 @@ items:
   type: Constructor
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Message/Butterfly.Message/SendMessage.cs
+      path: Butterfly.Message/SendMessage.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-message.git
     id: .ctor
     path: ../Butterfly.Message/SendMessage.cs
     startLine: 30
@@ -381,7 +403,9 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Message/Butterfly.Message/SendMessage.cs
+      path: Butterfly.Message/SendMessage.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-message.git
     id: TEXT_SECTION_NAME
     path: ../Butterfly.Message/SendMessage.cs
     startLine: 40
@@ -412,7 +436,9 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Message/Butterfly.Message/SendMessage.cs
+      path: Butterfly.Message/SendMessage.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-message.git
     id: HTML_SECTION_NAME
     path: ../Butterfly.Message/SendMessage.cs
     startLine: 41
@@ -443,7 +469,9 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Message/Butterfly.Message/SendMessage.cs
+      path: Butterfly.Message/SendMessage.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-message.git
     id: SECTION_DELIM
     path: ../Butterfly.Message/SendMessage.cs
     startLine: 42
@@ -474,7 +502,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Message/Butterfly.Message/SendMessage.cs
+      path: Butterfly.Message/SendMessage.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-message.git
     id: Evaluate
     path: ../Butterfly.Message/SendMessage.cs
     startLine: 44
@@ -507,7 +537,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Message/Butterfly.Message/SendMessage.cs
+      path: Butterfly.Message/SendMessage.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-message.git
     id: ParseFile
     path: ../Butterfly.Message/SendMessage.cs
     startLine: 66
@@ -542,7 +574,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Message/Butterfly.Message/SendMessage.cs
+      path: Butterfly.Message/SendMessage.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-message.git
     id: Parse
     path: ../Butterfly.Message/SendMessage.cs
     startLine: 72

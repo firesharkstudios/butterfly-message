@@ -15,7 +15,9 @@ items:
   type: Class
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Message/Butterfly.Message.Aws.Test/AwsTest.cs
+      path: Butterfly.Message.Aws.Test/AwsTest.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-message.git
     id: AwsTest
     path: ../Butterfly.Message.Aws.Test/AwsTest.cs
     startLine: 10
@@ -48,7 +50,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Message/Butterfly.Message.Aws.Test/AwsTest.cs
+      path: Butterfly.Message.Aws.Test/AwsTest.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-message.git
     id: SendAwsSesNotifyMessage
     path: ../Butterfly.Message.Aws.Test/AwsTest.cs
     startLine: 12

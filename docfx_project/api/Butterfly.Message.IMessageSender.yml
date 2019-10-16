@@ -16,7 +16,9 @@ items:
   type: Interface
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Message/Butterfly.Message/IMessageSender.cs
+      path: Butterfly.Message/IMessageSender.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-message.git
     id: IMessageSender
     path: ../Butterfly.Message/IMessageSender.cs
     startLine: 9
@@ -45,7 +47,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Message/Butterfly.Message/IMessageSender.cs
+      path: Butterfly.Message/IMessageSender.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-message.git
     id: SendAsync
     path: ../Butterfly.Message/IMessageSender.cs
     startLine: 11
@@ -87,7 +91,9 @@ items:
   type: Property
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Message/Butterfly.Message/IMessageSender.cs
+      path: Butterfly.Message/IMessageSender.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-message.git
     id: CanSendNextAt
     path: ../Butterfly.Message/IMessageSender.cs
     startLine: 13

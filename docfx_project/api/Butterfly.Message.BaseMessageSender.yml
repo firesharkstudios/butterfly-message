@@ -20,7 +20,9 @@ items:
   type: Class
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Message/Butterfly.Message/BaseMessageSender.cs
+      path: Butterfly.Message/BaseMessageSender.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-message.git
     id: BaseMessageSender
     path: ../Butterfly.Message/BaseMessageSender.cs
     startLine: 9
@@ -61,7 +63,9 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Message/Butterfly.Message/BaseMessageSender.cs
+      path: Butterfly.Message/BaseMessageSender.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-message.git
     id: sendEveryMillis
     path: ../Butterfly.Message/BaseMessageSender.cs
     startLine: 11
@@ -92,7 +96,9 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Message/Butterfly.Message/BaseMessageSender.cs
+      path: Butterfly.Message/BaseMessageSender.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-message.git
     id: lastSend
     path: ../Butterfly.Message/BaseMessageSender.cs
     startLine: 13
@@ -121,7 +127,9 @@ items:
   type: Constructor
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Message/Butterfly.Message/BaseMessageSender.cs
+      path: Butterfly.Message/BaseMessageSender.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-message.git
     id: .ctor
     path: ../Butterfly.Message/BaseMessageSender.cs
     startLine: 15
@@ -152,7 +160,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Message/Butterfly.Message/BaseMessageSender.cs
+      path: Butterfly.Message/BaseMessageSender.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-message.git
     id: SendAsync
     path: ../Butterfly.Message/BaseMessageSender.cs
     startLine: 19
@@ -200,7 +210,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Message/Butterfly.Message/BaseMessageSender.cs
+      path: Butterfly.Message/BaseMessageSender.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-message.git
     id: DoSendAsync
     path: ../Butterfly.Message/BaseMessageSender.cs
     startLine: 24
@@ -248,7 +260,9 @@ items:
   type: Property
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Message/Butterfly.Message/BaseMessageSender.cs
+      path: Butterfly.Message/BaseMessageSender.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-message.git
     id: CanSendNextAt
     path: ../Butterfly.Message/BaseMessageSender.cs
     startLine: 26

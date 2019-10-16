@@ -19,7 +19,9 @@ items:
   type: Class
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Message/Butterfly.Message.Twilio/TwilioPhoneMessageSender.cs
+      path: Butterfly.Message.Twilio/TwilioPhoneMessageSender.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-message.git
     id: TwilioPhoneMessageSender
     path: ../Butterfly.Message.Twilio/TwilioPhoneMessageSender.cs
     startLine: 18
@@ -61,7 +63,9 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Message/Butterfly.Message.Twilio/TwilioPhoneMessageSender.cs
+      path: Butterfly.Message.Twilio/TwilioPhoneMessageSender.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-message.git
     id: logger
     path: ../Butterfly.Message.Twilio/TwilioPhoneMessageSender.cs
     startLine: 20
@@ -94,7 +98,9 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Message/Butterfly.Message.Twilio/TwilioPhoneMessageSender.cs
+      path: Butterfly.Message.Twilio/TwilioPhoneMessageSender.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-message.git
     id: twilioAccountSid
     path: ../Butterfly.Message.Twilio/TwilioPhoneMessageSender.cs
     startLine: 22
@@ -125,7 +131,9 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Message/Butterfly.Message.Twilio/TwilioPhoneMessageSender.cs
+      path: Butterfly.Message.Twilio/TwilioPhoneMessageSender.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-message.git
     id: twilioAuthToken
     path: ../Butterfly.Message.Twilio/TwilioPhoneMessageSender.cs
     startLine: 23
@@ -156,7 +164,9 @@ items:
   type: Constructor
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Message/Butterfly.Message.Twilio/TwilioPhoneMessageSender.cs
+      path: Butterfly.Message.Twilio/TwilioPhoneMessageSender.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-message.git
     id: .ctor
     path: ../Butterfly.Message.Twilio/TwilioPhoneMessageSender.cs
     startLine: 25
@@ -189,7 +199,9 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Message/Butterfly.Message.Twilio/TwilioPhoneMessageSender.cs
+      path: Butterfly.Message.Twilio/TwilioPhoneMessageSender.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-message.git
     id: DoSendAsync
     path: ../Butterfly.Message.Twilio/TwilioPhoneMessageSender.cs
     startLine: 30

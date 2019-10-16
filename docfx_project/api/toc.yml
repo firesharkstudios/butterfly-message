@@ -6,16 +6,16 @@
     name: BaseMessageSender
   - uid: Butterfly.Message.IMessageSender
     name: IMessageSender
-  - uid: Butterfly.Message.NotifyMessageType
-    name: NotifyMessageType
   - uid: Butterfly.Message.ScribanFormatter
     name: ScribanFormatter
   - uid: Butterfly.Message.SendMessage
     name: SendMessage
   - uid: Butterfly.Message.SendMessageQueueManager
     name: SendMessageQueueManager
-  - uid: Butterfly.Message.SendMessageQueueManager.NotifyMessageEngine
-    name: SendMessageQueueManager.NotifyMessageEngine
+  - uid: Butterfly.Message.SendMessageQueueManager.SendMessageEngine
+    name: SendMessageQueueManager.SendMessageEngine
+  - uid: Butterfly.Message.SendMessageType
+    name: SendMessageType
 - uid: Butterfly.Message.Aws
   name: Butterfly.Message.Aws
   items:
@@ -31,8 +31,8 @@
 - uid: Butterfly.Message.Test
   name: Butterfly.Message.Test
   items:
-  - uid: Butterfly.Message.Test.NotifyTest
-    name: NotifyTest
+  - uid: Butterfly.Message.Test.MessageTest
+    name: MessageTest
 - uid: Butterfly.Message.Twilio
   name: Butterfly.Message.Twilio
   items:

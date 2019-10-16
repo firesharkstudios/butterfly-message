@@ -94,7 +94,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public SendMessageQueueManager(IDatabase database, IMessageSender emailNotifyMessageSender = null, IMessageSender phoneNotifyMessageSender = null, string notifyMessageTableName = &quot;notify_message&quot;, string notifyVerifyTableName = &quot;notify_verify&quot;, int verifyCodeExpiresSeconds = 3600, string verifyEmailFile = null, string verifyPhoneTextFile = null, string verifyCodeFormat = &quot;###-###&quot;)</code></pre>
+    <pre><code class="lang-csharp hljs">public SendMessageQueueManager(IDatabase database, IMessageSender emailMessageSender = null, IMessageSender textMessageSender = null, string sendMessageTableName = &quot;send_message&quot;, string sendVerifyTableName = &quot;send_verify&quot;, int verifyCodeExpiresSeconds = 3600, string verifyEmailFile = null, string verifyPhoneTextFile = null, string verifyCodeFormat = &quot;###-###&quot;)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -113,22 +113,22 @@
       </tr>
       <tr>
         <td><a class="xref" href="Butterfly.Message.IMessageSender.html">IMessageSender</a></td>
-        <td><span class="parametername">emailNotifyMessageSender</span></td>
+        <td><span class="parametername">emailMessageSender</span></td>
         <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="Butterfly.Message.IMessageSender.html">IMessageSender</a></td>
-        <td><span class="parametername">phoneNotifyMessageSender</span></td>
+        <td><span class="parametername">textMessageSender</span></td>
         <td></td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">notifyMessageTableName</span></td>
+        <td><span class="parametername">sendMessageTableName</span></td>
         <td></td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">notifyVerifyTableName</span></td>
+        <td><span class="parametername">sendVerifyTableName</span></td>
         <td></td>
       </tr>
       <tr>
@@ -199,12 +199,12 @@
       </tr>
     </tbody>
   </table>
-  <h4 id="Butterfly_Message_SendMessageQueueManager_emailNotifyMessageEngine" data-uid="Butterfly.Message.SendMessageQueueManager.emailNotifyMessageEngine">emailNotifyMessageEngine</h4>
+  <h4 id="Butterfly_Message_SendMessageQueueManager_emailSendMessageEngine" data-uid="Butterfly.Message.SendMessageQueueManager.emailSendMessageEngine">emailSendMessageEngine</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected readonly SendMessageQueueManager.NotifyMessageEngine emailNotifyMessageEngine</code></pre>
+    <pre><code class="lang-csharp hljs">protected readonly SendMessageQueueManager.SendMessageEngine emailSendMessageEngine</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -216,7 +216,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Butterfly.Message.SendMessageQueueManager.NotifyMessageEngine.html">SendMessageQueueManager.NotifyMessageEngine</a></td>
+        <td><a class="xref" href="Butterfly.Message.SendMessageQueueManager.SendMessageEngine.html">SendMessageQueueManager.SendMessageEngine</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -243,50 +243,6 @@
       </tr>
     </tbody>
   </table>
-  <h4 id="Butterfly_Message_SendMessageQueueManager_notifyMessageTableName" data-uid="Butterfly.Message.SendMessageQueueManager.notifyMessageTableName">notifyMessageTableName</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected readonly string notifyMessageTableName</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="Butterfly_Message_SendMessageQueueManager_notifyVerifyTableName" data-uid="Butterfly.Message.SendMessageQueueManager.notifyVerifyTableName">notifyVerifyTableName</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected readonly string notifyVerifyTableName</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <h4 id="Butterfly_Message_SendMessageQueueManager_PHONE_FIELD_VALIDATOR" data-uid="Butterfly.Message.SendMessageQueueManager.PHONE_FIELD_VALIDATOR">PHONE_FIELD_VALIDATOR</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
@@ -309,28 +265,6 @@
       </tr>
     </tbody>
   </table>
-  <h4 id="Butterfly_Message_SendMessageQueueManager_phoneNotifyMessageEngine" data-uid="Butterfly.Message.SendMessageQueueManager.phoneNotifyMessageEngine">phoneNotifyMessageEngine</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected readonly SendMessageQueueManager.NotifyMessageEngine phoneNotifyMessageEngine</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Butterfly.Message.SendMessageQueueManager.NotifyMessageEngine.html">SendMessageQueueManager.NotifyMessageEngine</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <h4 id="Butterfly_Message_SendMessageQueueManager_RANDOM" data-uid="Butterfly.Message.SendMessageQueueManager.RANDOM">RANDOM</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
@@ -349,6 +283,72 @@
     <tbody>
       <tr>
         <td><span class="xref">Random</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="Butterfly_Message_SendMessageQueueManager_sendMessageTableName" data-uid="Butterfly.Message.SendMessageQueueManager.sendMessageTableName">sendMessageTableName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly string sendMessageTableName</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="Butterfly_Message_SendMessageQueueManager_sendVerifyTableName" data-uid="Butterfly.Message.SendMessageQueueManager.sendVerifyTableName">sendVerifyTableName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly string sendVerifyTableName</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="Butterfly_Message_SendMessageQueueManager_textSendMessageEngine" data-uid="Butterfly.Message.SendMessageQueueManager.textSendMessageEngine">textSendMessageEngine</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly SendMessageQueueManager.SendMessageEngine textSendMessageEngine</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Butterfly.Message.SendMessageQueueManager.SendMessageEngine.html">SendMessageQueueManager.SendMessageEngine</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -397,12 +397,12 @@
       </tr>
     </tbody>
   </table>
-  <h4 id="Butterfly_Message_SendMessageQueueManager_verifyEmailNotifyMessage" data-uid="Butterfly.Message.SendMessageQueueManager.verifyEmailNotifyMessage">verifyEmailNotifyMessage</h4>
+  <h4 id="Butterfly_Message_SendMessageQueueManager_verifyEmailSendMessage" data-uid="Butterfly.Message.SendMessageQueueManager.verifyEmailSendMessage">verifyEmailSendMessage</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected readonly SendMessage verifyEmailNotifyMessage</code></pre>
+    <pre><code class="lang-csharp hljs">protected readonly SendMessage verifyEmailSendMessage</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -419,12 +419,12 @@
       </tr>
     </tbody>
   </table>
-  <h4 id="Butterfly_Message_SendMessageQueueManager_verifyPhoneNotifyMessage" data-uid="Butterfly.Message.SendMessageQueueManager.verifyPhoneNotifyMessage">verifyPhoneNotifyMessage</h4>
+  <h4 id="Butterfly_Message_SendMessageQueueManager_verifyTextSendMessage" data-uid="Butterfly.Message.SendMessageQueueManager.verifyTextSendMessage">verifyTextSendMessage</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected readonly SendMessage verifyPhoneNotifyMessage</code></pre>
+    <pre><code class="lang-csharp hljs">protected readonly SendMessage verifyTextSendMessage</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -443,13 +443,13 @@
   </table>
   <h3 id="methods">Methods
   </h3>
-  <a id="Butterfly_Message_SendMessageQueueManager_DetectNotifyMessageType_" data-uid="Butterfly.Message.SendMessageQueueManager.DetectNotifyMessageType*"></a>
-  <h4 id="Butterfly_Message_SendMessageQueueManager_DetectNotifyMessageType_System_String_" data-uid="Butterfly.Message.SendMessageQueueManager.DetectNotifyMessageType(System.String)">DetectNotifyMessageType(String)</h4>
+  <a id="Butterfly_Message_SendMessageQueueManager_DetectSendMessageType_" data-uid="Butterfly.Message.SendMessageQueueManager.DetectSendMessageType*"></a>
+  <h4 id="Butterfly_Message_SendMessageQueueManager_DetectSendMessageType_System_String_" data-uid="Butterfly.Message.SendMessageQueueManager.DetectSendMessageType(System.String)">DetectSendMessageType(String)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected NotifyMessageType DetectNotifyMessageType(string to)</code></pre>
+    <pre><code class="lang-csharp hljs">protected SendMessageType DetectSendMessageType(string to)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -478,7 +478,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Butterfly.Message.NotifyMessageType.html">NotifyMessageType</a></td>
+        <td><a class="xref" href="Butterfly.Message.SendMessageType.html">SendMessageType</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -491,7 +491,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task Queue(ITransaction transaction, params SendMessage[] notifyMessages)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task Queue(ITransaction transaction, params SendMessage[] sendMessages)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -510,7 +510,7 @@
       </tr>
       <tr>
         <td><a class="xref" href="Butterfly.Message.SendMessage.html">SendMessage</a>[]</td>
-        <td><span class="parametername">notifyMessages</span></td>
+        <td><span class="parametername">sendMessages</span></td>
         <td></td>
       </tr>
     </tbody>

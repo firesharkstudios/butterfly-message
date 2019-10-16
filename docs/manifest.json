@@ -21,7 +21,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Butterfly.Message.Aws.AwsWebApi.html",
-          "hash": "I6Lc3z295uA3xDaueE4wlA=="
+          "hash": "DJz68DGK9zj0wD5bxh8/xA=="
         }
       },
       "is_incremental": false,
@@ -89,18 +89,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Butterfly.Message.NotifyMessageType.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Butterfly.Message.NotifyMessageType.html",
-          "hash": "Q0mQUuXjCUT5MvUSoBJn/A=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Butterfly.Message.ScribanFormatter.yml",
       "output": {
         ".html": {
@@ -125,11 +113,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Butterfly.Message.SendMessageQueueManager.NotifyMessageEngine.yml",
+      "source_relative_path": "api/Butterfly.Message.SendMessageQueueManager.SendMessageEngine.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Butterfly.Message.SendMessageQueueManager.NotifyMessageEngine.html",
-          "hash": "2wgV7oIfFfyIykH3RGU5qA=="
+          "relative_path": "api/Butterfly.Message.SendMessageQueueManager.SendMessageEngine.html",
+          "hash": "Q6e5cHFyqiYNlMct4cg5HA=="
         }
       },
       "is_incremental": false,
@@ -141,7 +129,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Butterfly.Message.SendMessageQueueManager.html",
-          "hash": "+ZbJrm5sutDCnwF9OX7WOA=="
+          "hash": "x8ZyI5btjjL5HqY0GMzONg=="
         }
       },
       "is_incremental": false,
@@ -149,11 +137,23 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Butterfly.Message.Test.NotifyTest.yml",
+      "source_relative_path": "api/Butterfly.Message.SendMessageType.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Butterfly.Message.Test.NotifyTest.html",
-          "hash": "PNy4xy8zEbsF8Vt07xiDRA=="
+          "relative_path": "api/Butterfly.Message.SendMessageType.html",
+          "hash": "KiahHQr1AB1wgJkzib9DkA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Butterfly.Message.Test.MessageTest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Butterfly.Message.Test.MessageTest.html",
+          "hash": "maDxyH0saDJeB2NEp7zD3w=="
         }
       },
       "is_incremental": false,
@@ -165,7 +165,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Butterfly.Message.Test.html",
-          "hash": "cTuzQOStJ5P6qEd2EcD/Ag=="
+          "hash": "qGORYHxwNiEFg6GO/fOcKw=="
         }
       },
       "is_incremental": false,
@@ -189,7 +189,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Butterfly.Message.Twilio.TwilioWebApi.html",
-          "hash": "6UYXDvXeYQaldMps+0snXw=="
+          "hash": "f1uATuRU/bCdNYPbWXUfow=="
         }
       },
       "is_incremental": false,
@@ -213,7 +213,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Butterfly.Message.html",
-          "hash": "JgRA/R745kd3Fh7NBZ3e4A=="
+          "hash": "yceufAzqL8+munIBDTmWYg=="
         }
       },
       "is_incremental": false,
@@ -261,7 +261,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "tIFQrOFLaL6MtAK2gvXnmA=="
+          "hash": "SGtVkUAoy4VV9UIJRZYG9Q=="
         }
       },
       "is_incremental": false,
@@ -287,7 +287,7 @@
           "hash": "VMsjYFKFzK65cPeOh9XIJQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -306,14 +306,19 @@
   "incremental_info": [
     {
       "status": {
-        "can_incremental": false,
-        "details": "Cannot build incrementally because docfx version changed from 2.38.1.0 to 2.46.0.0.",
+        "can_incremental": true,
         "incrementalPhase": "build",
         "total_file_count": 0,
-        "skipped_file_count": 0,
-        "full_build_reason_code": "DocfxVersionChanged"
+        "skipped_file_count": 0
       },
       "processors": {
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
@@ -321,24 +326,17 @@
           "total_file_count": 0,
           "skipped_file_count": 0
         },
-        "ConceptualDocumentProcessor": {
-          "can_incremental": false,
-          "incrementalPhase": "build",
-          "total_file_count": 2,
-          "skipped_file_count": 0
-        },
         "ManagedReferenceDocumentProcessor": {
-          "can_incremental": false,
+          "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 20,
-          "skipped_file_count": 0
+          "skipped_file_count": 4
         },
-        "TocDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 0,
-          "skipped_file_count": 0
+          "total_file_count": 2,
+          "skipped_file_count": 2
         }
       }
     },

@@ -1,0 +1,189 @@
+### YamlMime:ManagedReference
+items:
+- uid: Butterfly.Message.Test.MessageTest
+  commentId: T:Butterfly.Message.Test.MessageTest
+  id: MessageTest
+  parent: Butterfly.Message.Test
+  children:
+  - Butterfly.Message.Test.MessageTest.ParseSendMessage
+  - Butterfly.Message.Test.MessageTest.SendEmailNotifyMessage(Butterfly.Message.IMessageSender)
+  - Butterfly.Message.Test.MessageTest.SendPhoneNotifyMessage(Butterfly.Message.IMessageSender)
+  langs:
+  - csharp
+  - vb
+  name: MessageTest
+  nameWithType: MessageTest
+  fullName: Butterfly.Message.Test.MessageTest
+  type: Class
+  source:
+    remote:
+      path: Butterfly.Message.Test/MessageTest.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-message.git
+    id: MessageTest
+    path: ../Butterfly.Message.Test/MessageTest.cs
+    startLine: 13
+  assemblies:
+  - Butterfly.Message.Test
+  namespace: Butterfly.Message.Test
+  syntax:
+    content: 'public class MessageTest : object'
+    content.vb: >-
+      Public Class MessageTest
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Butterfly.Message.Test.MessageTest.ParseSendMessage
+  commentId: M:Butterfly.Message.Test.MessageTest.ParseSendMessage
+  id: ParseSendMessage
+  parent: Butterfly.Message.Test.MessageTest
+  langs:
+  - csharp
+  - vb
+  name: ParseSendMessage()
+  nameWithType: MessageTest.ParseSendMessage()
+  fullName: Butterfly.Message.Test.MessageTest.ParseSendMessage()
+  type: Method
+  source:
+    remote:
+      path: Butterfly.Message.Test/MessageTest.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-message.git
+    id: ParseSendMessage
+    path: ../Butterfly.Message.Test/MessageTest.cs
+    startLine: 15
+  assemblies:
+  - Butterfly.Message.Test
+  namespace: Butterfly.Message.Test
+  syntax:
+    content: public void ParseSendMessage()
+    content.vb: Public Sub ParseSendMessage
+  overload: Butterfly.Message.Test.MessageTest.ParseSendMessage*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Butterfly.Message.Test.MessageTest.SendEmailNotifyMessage(Butterfly.Message.IMessageSender)
+  commentId: M:Butterfly.Message.Test.MessageTest.SendEmailNotifyMessage(Butterfly.Message.IMessageSender)
+  id: SendEmailNotifyMessage(Butterfly.Message.IMessageSender)
+  parent: Butterfly.Message.Test.MessageTest
+  langs:
+  - csharp
+  - vb
+  name: SendEmailNotifyMessage(IMessageSender)
+  nameWithType: MessageTest.SendEmailNotifyMessage(IMessageSender)
+  fullName: Butterfly.Message.Test.MessageTest.SendEmailNotifyMessage(Butterfly.Message.IMessageSender)
+  type: Method
+  source:
+    remote:
+      path: Butterfly.Message.Test/MessageTest.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-message.git
+    id: SendEmailNotifyMessage
+    path: ../Butterfly.Message.Test/MessageTest.cs
+    startLine: 25
+  assemblies:
+  - Butterfly.Message.Test
+  namespace: Butterfly.Message.Test
+  syntax:
+    content: public static Task SendEmailNotifyMessage(IMessageSender notifyMessageSender)
+    parameters:
+    - id: notifyMessageSender
+      type: Butterfly.Message.IMessageSender
+    return:
+      type: Task
+    content.vb: Public Shared Function SendEmailNotifyMessage(notifyMessageSender As IMessageSender) As Task
+  overload: Butterfly.Message.Test.MessageTest.SendEmailNotifyMessage*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Butterfly.Message.Test.MessageTest.SendPhoneNotifyMessage(Butterfly.Message.IMessageSender)
+  commentId: M:Butterfly.Message.Test.MessageTest.SendPhoneNotifyMessage(Butterfly.Message.IMessageSender)
+  id: SendPhoneNotifyMessage(Butterfly.Message.IMessageSender)
+  parent: Butterfly.Message.Test.MessageTest
+  langs:
+  - csharp
+  - vb
+  name: SendPhoneNotifyMessage(IMessageSender)
+  nameWithType: MessageTest.SendPhoneNotifyMessage(IMessageSender)
+  fullName: Butterfly.Message.Test.MessageTest.SendPhoneNotifyMessage(Butterfly.Message.IMessageSender)
+  type: Method
+  source:
+    remote:
+      path: Butterfly.Message.Test/MessageTest.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-message.git
+    id: SendPhoneNotifyMessage
+    path: ../Butterfly.Message.Test/MessageTest.cs
+    startLine: 42
+  assemblies:
+  - Butterfly.Message.Test
+  namespace: Butterfly.Message.Test
+  syntax:
+    content: public static Task SendPhoneNotifyMessage(IMessageSender notifyMessageSender)
+    parameters:
+    - id: notifyMessageSender
+      type: Butterfly.Message.IMessageSender
+    return:
+      type: Task
+    content.vb: Public Shared Function SendPhoneNotifyMessage(notifyMessageSender As IMessageSender) As Task
+  overload: Butterfly.Message.Test.MessageTest.SendPhoneNotifyMessage*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Butterfly.Message.Test
+  commentId: N:Butterfly.Message.Test
+  name: Butterfly.Message.Test
+  nameWithType: Butterfly.Message.Test
+  fullName: Butterfly.Message.Test
+- uid: System.Object
+  commentId: T:System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Butterfly.Message.Test.MessageTest.ParseSendMessage*
+  commentId: Overload:Butterfly.Message.Test.MessageTest.ParseSendMessage
+  name: ParseSendMessage
+  nameWithType: MessageTest.ParseSendMessage
+  fullName: Butterfly.Message.Test.MessageTest.ParseSendMessage
+- uid: Butterfly.Message.Test.MessageTest.SendEmailNotifyMessage*
+  commentId: Overload:Butterfly.Message.Test.MessageTest.SendEmailNotifyMessage
+  name: SendEmailNotifyMessage
+  nameWithType: MessageTest.SendEmailNotifyMessage
+  fullName: Butterfly.Message.Test.MessageTest.SendEmailNotifyMessage
+- uid: Butterfly.Message.IMessageSender
+  commentId: T:Butterfly.Message.IMessageSender
+  parent: Butterfly.Message
+  name: IMessageSender
+  nameWithType: IMessageSender
+  fullName: Butterfly.Message.IMessageSender
+- uid: Task
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: Task
+- uid: Butterfly.Message
+  commentId: N:Butterfly.Message
+  name: Butterfly.Message
+  nameWithType: Butterfly.Message
+  fullName: Butterfly.Message
+- uid: Butterfly.Message.Test.MessageTest.SendPhoneNotifyMessage*
+  commentId: Overload:Butterfly.Message.Test.MessageTest.SendPhoneNotifyMessage
+  name: SendPhoneNotifyMessage
+  nameWithType: MessageTest.SendPhoneNotifyMessage
+  fullName: Butterfly.Message.Test.MessageTest.SendPhoneNotifyMessage
+shouldSkipMarkup: true

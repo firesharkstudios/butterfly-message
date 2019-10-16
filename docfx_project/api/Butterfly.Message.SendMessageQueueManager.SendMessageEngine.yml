@@ -1,0 +1,627 @@
+### YamlMime:ManagedReference
+items:
+- uid: Butterfly.Message.SendMessageQueueManager.SendMessageEngine
+  commentId: T:Butterfly.Message.SendMessageQueueManager.SendMessageEngine
+  id: SendMessageQueueManager.SendMessageEngine
+  parent: Butterfly.Message
+  children:
+  - Butterfly.Message.SendMessageQueueManager.SendMessageEngine.#ctor(Butterfly.Message.SendMessageType,Butterfly.Message.IMessageSender,Butterfly.Db.IDatabase,System.String)
+  - Butterfly.Message.SendMessageQueueManager.SendMessageEngine.cancellationTokenSource
+  - Butterfly.Message.SendMessageQueueManager.SendMessageEngine.database
+  - Butterfly.Message.SendMessageQueueManager.SendMessageEngine.Pulse
+  - Butterfly.Message.SendMessageQueueManager.SendMessageEngine.Queue(Butterfly.Db.ITransaction,System.String,System.String,System.String,System.String,System.String,System.Byte,System.Collections.Generic.Dictionary{System.String,System.Object})
+  - Butterfly.Message.SendMessageQueueManager.SendMessageEngine.sendMessageSender
+  - Butterfly.Message.SendMessageQueueManager.SendMessageEngine.sendMessageTableName
+  - Butterfly.Message.SendMessageQueueManager.SendMessageEngine.sendMessageType
+  - Butterfly.Message.SendMessageQueueManager.SendMessageEngine.Start
+  - Butterfly.Message.SendMessageQueueManager.SendMessageEngine.started
+  - Butterfly.Message.SendMessageQueueManager.SendMessageEngine.Stop
+  langs:
+  - csharp
+  - vb
+  name: SendMessageQueueManager.SendMessageEngine
+  nameWithType: SendMessageQueueManager.SendMessageEngine
+  fullName: Butterfly.Message.SendMessageQueueManager.SendMessageEngine
+  type: Class
+  source:
+    remote:
+      path: Butterfly.Message/SendMessageQueueManager.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-message.git
+    id: SendMessageEngine
+    path: ../Butterfly.Message/SendMessageQueueManager.cs
+    startLine: 200
+  assemblies:
+  - Butterfly.Message
+  namespace: Butterfly.Message
+  syntax:
+    content: 'protected class SendMessageEngine : object'
+    content.vb: >-
+      Protected Class SendMessageEngine
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - protected
+  - class
+  modifiers.vb:
+  - Protected
+  - Class
+- uid: Butterfly.Message.SendMessageQueueManager.SendMessageEngine.sendMessageType
+  commentId: F:Butterfly.Message.SendMessageQueueManager.SendMessageEngine.sendMessageType
+  id: sendMessageType
+  parent: Butterfly.Message.SendMessageQueueManager.SendMessageEngine
+  langs:
+  - csharp
+  - vb
+  name: sendMessageType
+  nameWithType: SendMessageQueueManager.SendMessageEngine.sendMessageType
+  fullName: Butterfly.Message.SendMessageQueueManager.SendMessageEngine.sendMessageType
+  type: Field
+  source:
+    remote:
+      path: Butterfly.Message/SendMessageQueueManager.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-message.git
+    id: sendMessageType
+    path: ../Butterfly.Message/SendMessageQueueManager.cs
+    startLine: 201
+  assemblies:
+  - Butterfly.Message
+  namespace: Butterfly.Message
+  syntax:
+    content: protected readonly SendMessageType sendMessageType
+    return:
+      type: Butterfly.Message.SendMessageType
+    content.vb: Protected ReadOnly sendMessageType As SendMessageType
+  modifiers.csharp:
+  - protected
+  - readonly
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+- uid: Butterfly.Message.SendMessageQueueManager.SendMessageEngine.sendMessageSender
+  commentId: F:Butterfly.Message.SendMessageQueueManager.SendMessageEngine.sendMessageSender
+  id: sendMessageSender
+  parent: Butterfly.Message.SendMessageQueueManager.SendMessageEngine
+  langs:
+  - csharp
+  - vb
+  name: sendMessageSender
+  nameWithType: SendMessageQueueManager.SendMessageEngine.sendMessageSender
+  fullName: Butterfly.Message.SendMessageQueueManager.SendMessageEngine.sendMessageSender
+  type: Field
+  source:
+    remote:
+      path: Butterfly.Message/SendMessageQueueManager.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-message.git
+    id: sendMessageSender
+    path: ../Butterfly.Message/SendMessageQueueManager.cs
+    startLine: 202
+  assemblies:
+  - Butterfly.Message
+  namespace: Butterfly.Message
+  syntax:
+    content: protected readonly IMessageSender sendMessageSender
+    return:
+      type: Butterfly.Message.IMessageSender
+    content.vb: Protected ReadOnly sendMessageSender As IMessageSender
+  modifiers.csharp:
+  - protected
+  - readonly
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+- uid: Butterfly.Message.SendMessageQueueManager.SendMessageEngine.database
+  commentId: F:Butterfly.Message.SendMessageQueueManager.SendMessageEngine.database
+  id: database
+  parent: Butterfly.Message.SendMessageQueueManager.SendMessageEngine
+  langs:
+  - csharp
+  - vb
+  name: database
+  nameWithType: SendMessageQueueManager.SendMessageEngine.database
+  fullName: Butterfly.Message.SendMessageQueueManager.SendMessageEngine.database
+  type: Field
+  source:
+    remote:
+      path: Butterfly.Message/SendMessageQueueManager.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-message.git
+    id: database
+    path: ../Butterfly.Message/SendMessageQueueManager.cs
+    startLine: 203
+  assemblies:
+  - Butterfly.Message
+  namespace: Butterfly.Message
+  syntax:
+    content: protected readonly IDatabase database
+    return:
+      type: Butterfly.Db.IDatabase
+    content.vb: Protected ReadOnly database As IDatabase
+  modifiers.csharp:
+  - protected
+  - readonly
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+- uid: Butterfly.Message.SendMessageQueueManager.SendMessageEngine.sendMessageTableName
+  commentId: F:Butterfly.Message.SendMessageQueueManager.SendMessageEngine.sendMessageTableName
+  id: sendMessageTableName
+  parent: Butterfly.Message.SendMessageQueueManager.SendMessageEngine
+  langs:
+  - csharp
+  - vb
+  name: sendMessageTableName
+  nameWithType: SendMessageQueueManager.SendMessageEngine.sendMessageTableName
+  fullName: Butterfly.Message.SendMessageQueueManager.SendMessageEngine.sendMessageTableName
+  type: Field
+  source:
+    remote:
+      path: Butterfly.Message/SendMessageQueueManager.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-message.git
+    id: sendMessageTableName
+    path: ../Butterfly.Message/SendMessageQueueManager.cs
+    startLine: 204
+  assemblies:
+  - Butterfly.Message
+  namespace: Butterfly.Message
+  syntax:
+    content: protected readonly string sendMessageTableName
+    return:
+      type: System.String
+    content.vb: Protected ReadOnly sendMessageTableName As String
+  modifiers.csharp:
+  - protected
+  - readonly
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+- uid: Butterfly.Message.SendMessageQueueManager.SendMessageEngine.cancellationTokenSource
+  commentId: F:Butterfly.Message.SendMessageQueueManager.SendMessageEngine.cancellationTokenSource
+  id: cancellationTokenSource
+  parent: Butterfly.Message.SendMessageQueueManager.SendMessageEngine
+  langs:
+  - csharp
+  - vb
+  name: cancellationTokenSource
+  nameWithType: SendMessageQueueManager.SendMessageEngine.cancellationTokenSource
+  fullName: Butterfly.Message.SendMessageQueueManager.SendMessageEngine.cancellationTokenSource
+  type: Field
+  source:
+    remote:
+      path: Butterfly.Message/SendMessageQueueManager.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-message.git
+    id: cancellationTokenSource
+    path: ../Butterfly.Message/SendMessageQueueManager.cs
+    startLine: 206
+  assemblies:
+  - Butterfly.Message
+  namespace: Butterfly.Message
+  syntax:
+    content: protected CancellationTokenSource cancellationTokenSource
+    return:
+      type: CancellationTokenSource
+    content.vb: Protected cancellationTokenSource As CancellationTokenSource
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Butterfly.Message.SendMessageQueueManager.SendMessageEngine.#ctor(Butterfly.Message.SendMessageType,Butterfly.Message.IMessageSender,Butterfly.Db.IDatabase,System.String)
+  commentId: M:Butterfly.Message.SendMessageQueueManager.SendMessageEngine.#ctor(Butterfly.Message.SendMessageType,Butterfly.Message.IMessageSender,Butterfly.Db.IDatabase,System.String)
+  id: '#ctor(Butterfly.Message.SendMessageType,Butterfly.Message.IMessageSender,Butterfly.Db.IDatabase,System.String)'
+  parent: Butterfly.Message.SendMessageQueueManager.SendMessageEngine
+  langs:
+  - csharp
+  - vb
+  name: SendMessageEngine(SendMessageType, IMessageSender, IDatabase, String)
+  nameWithType: SendMessageQueueManager.SendMessageEngine.SendMessageEngine(SendMessageType, IMessageSender, IDatabase, String)
+  fullName: Butterfly.Message.SendMessageQueueManager.SendMessageEngine.SendMessageEngine(Butterfly.Message.SendMessageType, Butterfly.Message.IMessageSender, Butterfly.Db.IDatabase, System.String)
+  type: Constructor
+  source:
+    remote:
+      path: Butterfly.Message/SendMessageQueueManager.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-message.git
+    id: .ctor
+    path: ../Butterfly.Message/SendMessageQueueManager.cs
+    startLine: 208
+  assemblies:
+  - Butterfly.Message
+  namespace: Butterfly.Message
+  syntax:
+    content: public SendMessageEngine(SendMessageType sendMessageType, IMessageSender sendMessageSender, IDatabase database, string sendMessageTableName)
+    parameters:
+    - id: sendMessageType
+      type: Butterfly.Message.SendMessageType
+    - id: sendMessageSender
+      type: Butterfly.Message.IMessageSender
+    - id: database
+      type: Butterfly.Db.IDatabase
+    - id: sendMessageTableName
+      type: System.String
+    content.vb: Public Sub New(sendMessageType As SendMessageType, sendMessageSender As IMessageSender, database As IDatabase, sendMessageTableName As String)
+  overload: Butterfly.Message.SendMessageQueueManager.SendMessageEngine.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Butterfly.Message.SendMessageQueueManager.SendMessageEngine.started
+  commentId: F:Butterfly.Message.SendMessageQueueManager.SendMessageEngine.started
+  id: started
+  parent: Butterfly.Message.SendMessageQueueManager.SendMessageEngine
+  langs:
+  - csharp
+  - vb
+  name: started
+  nameWithType: SendMessageQueueManager.SendMessageEngine.started
+  fullName: Butterfly.Message.SendMessageQueueManager.SendMessageEngine.started
+  type: Field
+  source:
+    remote:
+      path: Butterfly.Message/SendMessageQueueManager.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-message.git
+    id: started
+    path: ../Butterfly.Message/SendMessageQueueManager.cs
+    startLine: 215
+  assemblies:
+  - Butterfly.Message
+  namespace: Butterfly.Message
+  syntax:
+    content: protected bool started
+    return:
+      type: System.Boolean
+    content.vb: Protected started As Boolean
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Butterfly.Message.SendMessageQueueManager.SendMessageEngine.Start
+  commentId: M:Butterfly.Message.SendMessageQueueManager.SendMessageEngine.Start
+  id: Start
+  parent: Butterfly.Message.SendMessageQueueManager.SendMessageEngine
+  langs:
+  - csharp
+  - vb
+  name: Start()
+  nameWithType: SendMessageQueueManager.SendMessageEngine.Start()
+  fullName: Butterfly.Message.SendMessageQueueManager.SendMessageEngine.Start()
+  type: Method
+  source:
+    remote:
+      path: Butterfly.Message/SendMessageQueueManager.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-message.git
+    id: Start
+    path: ../Butterfly.Message/SendMessageQueueManager.cs
+    startLine: 217
+  assemblies:
+  - Butterfly.Message
+  namespace: Butterfly.Message
+  syntax:
+    content: public void Start()
+    content.vb: Public Sub Start
+  overload: Butterfly.Message.SendMessageQueueManager.SendMessageEngine.Start*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Butterfly.Message.SendMessageQueueManager.SendMessageEngine.Stop
+  commentId: M:Butterfly.Message.SendMessageQueueManager.SendMessageEngine.Stop
+  id: Stop
+  parent: Butterfly.Message.SendMessageQueueManager.SendMessageEngine
+  langs:
+  - csharp
+  - vb
+  name: Stop()
+  nameWithType: SendMessageQueueManager.SendMessageEngine.Stop()
+  fullName: Butterfly.Message.SendMessageQueueManager.SendMessageEngine.Stop()
+  type: Method
+  source:
+    remote:
+      path: Butterfly.Message/SendMessageQueueManager.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-message.git
+    id: Stop
+    path: ../Butterfly.Message/SendMessageQueueManager.cs
+    startLine: 223
+  assemblies:
+  - Butterfly.Message
+  namespace: Butterfly.Message
+  syntax:
+    content: public void Stop()
+    content.vb: Public Sub Stop
+  overload: Butterfly.Message.SendMessageQueueManager.SendMessageEngine.Stop*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Butterfly.Message.SendMessageQueueManager.SendMessageEngine.Queue(Butterfly.Db.ITransaction,System.String,System.String,System.String,System.String,System.String,System.Byte,System.Collections.Generic.Dictionary{System.String,System.Object})
+  commentId: M:Butterfly.Message.SendMessageQueueManager.SendMessageEngine.Queue(Butterfly.Db.ITransaction,System.String,System.String,System.String,System.String,System.String,System.Byte,System.Collections.Generic.Dictionary{System.String,System.Object})
+  id: Queue(Butterfly.Db.ITransaction,System.String,System.String,System.String,System.String,System.String,System.Byte,System.Collections.Generic.Dictionary{System.String,System.Object})
+  parent: Butterfly.Message.SendMessageQueueManager.SendMessageEngine
+  langs:
+  - csharp
+  - vb
+  name: Queue(ITransaction, String, String, String, String, String, Byte, System.Collections.Generic.Dictionary<String, Object>)
+  nameWithType: SendMessageQueueManager.SendMessageEngine.Queue(ITransaction, String, String, String, String, String, Byte, System.Collections.Generic.Dictionary<String, Object>)
+  fullName: Butterfly.Message.SendMessageQueueManager.SendMessageEngine.Queue(Butterfly.Db.ITransaction, System.String, System.String, System.String, System.String, System.String, System.Byte, System.Collections.Generic.Dictionary<System.String, System.Object>)
+  type: Method
+  source:
+    remote:
+      path: Butterfly.Message/SendMessageQueueManager.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-message.git
+    id: Queue
+    path: ../Butterfly.Message/SendMessageQueueManager.cs
+    startLine: 228
+  assemblies:
+  - Butterfly.Message
+  namespace: Butterfly.Message
+  syntax:
+    content: public Task Queue(ITransaction transaction, string from, string to, string subject, string bodyText, string bodyHtml, byte priority, System.Collections.Generic.Dictionary<string, object> extraData)
+    parameters:
+    - id: transaction
+      type: Butterfly.Db.ITransaction
+    - id: from
+      type: System.String
+    - id: to
+      type: System.String
+    - id: subject
+      type: System.String
+    - id: bodyText
+      type: System.String
+    - id: bodyHtml
+      type: System.String
+    - id: priority
+      type: System.Byte
+    - id: extraData
+      type: System.Collections.Generic.Dictionary{System.String,System.Object}
+    return:
+      type: Task
+    content.vb: Public Function Queue(transaction As ITransaction, from As String, to As String, subject As String, bodyText As String, bodyHtml As String, priority As Byte, extraData As System.Collections.Generic.Dictionary(Of String, Object)) As Task
+  overload: Butterfly.Message.SendMessageQueueManager.SendMessageEngine.Queue*
+  nameWithType.vb: SendMessageQueueManager.SendMessageEngine.Queue(ITransaction, String, String, String, String, String, Byte, System.Collections.Generic.Dictionary(Of String, Object))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Butterfly.Message.SendMessageQueueManager.SendMessageEngine.Queue(Butterfly.Db.ITransaction, System.String, System.String, System.String, System.String, System.String, System.Byte, System.Collections.Generic.Dictionary(Of System.String, System.Object))
+  name.vb: Queue(ITransaction, String, String, String, String, String, Byte, System.Collections.Generic.Dictionary(Of String, Object))
+- uid: Butterfly.Message.SendMessageQueueManager.SendMessageEngine.Pulse
+  commentId: M:Butterfly.Message.SendMessageQueueManager.SendMessageEngine.Pulse
+  id: Pulse
+  parent: Butterfly.Message.SendMessageQueueManager.SendMessageEngine
+  langs:
+  - csharp
+  - vb
+  name: Pulse()
+  nameWithType: SendMessageQueueManager.SendMessageEngine.Pulse()
+  fullName: Butterfly.Message.SendMessageQueueManager.SendMessageEngine.Pulse()
+  type: Method
+  source:
+    remote:
+      path: Butterfly.Message/SendMessageQueueManager.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-message.git
+    id: Pulse
+    path: ../Butterfly.Message/SendMessageQueueManager.cs
+    startLine: 243
+  assemblies:
+  - Butterfly.Message
+  namespace: Butterfly.Message
+  syntax:
+    content: public void Pulse()
+    content.vb: Public Sub Pulse
+  overload: Butterfly.Message.SendMessageQueueManager.SendMessageEngine.Pulse*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Butterfly.Message
+  commentId: N:Butterfly.Message
+  name: Butterfly.Message
+  nameWithType: Butterfly.Message
+  fullName: Butterfly.Message
+- uid: System.Object
+  commentId: T:System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Butterfly.Message.SendMessageType
+  commentId: T:Butterfly.Message.SendMessageType
+  parent: Butterfly.Message
+  name: SendMessageType
+  nameWithType: SendMessageType
+  fullName: Butterfly.Message.SendMessageType
+- uid: Butterfly.Message.IMessageSender
+  commentId: T:Butterfly.Message.IMessageSender
+  parent: Butterfly.Message
+  name: IMessageSender
+  nameWithType: IMessageSender
+  fullName: Butterfly.Message.IMessageSender
+- uid: Butterfly.Db.IDatabase
+  commentId: T:Butterfly.Db.IDatabase
+  parent: Butterfly.Db
+  name: IDatabase
+  nameWithType: IDatabase
+  fullName: Butterfly.Db.IDatabase
+- uid: Butterfly.Db
+  commentId: N:Butterfly.Db
+  name: Butterfly.Db
+  nameWithType: Butterfly.Db
+  fullName: Butterfly.Db
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: CancellationTokenSource
+  commentId: '!:CancellationTokenSource'
+  isExternal: true
+  name: CancellationTokenSource
+  nameWithType: CancellationTokenSource
+  fullName: CancellationTokenSource
+- uid: Butterfly.Message.SendMessageQueueManager.SendMessageEngine.#ctor*
+  commentId: Overload:Butterfly.Message.SendMessageQueueManager.SendMessageEngine.#ctor
+  name: SendMessageEngine
+  nameWithType: SendMessageQueueManager.SendMessageEngine.SendMessageEngine
+  fullName: Butterfly.Message.SendMessageQueueManager.SendMessageEngine.SendMessageEngine
+- uid: System.Boolean
+  commentId: '!:System.Boolean'
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Butterfly.Message.SendMessageQueueManager.SendMessageEngine.Start*
+  commentId: Overload:Butterfly.Message.SendMessageQueueManager.SendMessageEngine.Start
+  name: Start
+  nameWithType: SendMessageQueueManager.SendMessageEngine.Start
+  fullName: Butterfly.Message.SendMessageQueueManager.SendMessageEngine.Start
+- uid: Butterfly.Message.SendMessageQueueManager.SendMessageEngine.Stop*
+  commentId: Overload:Butterfly.Message.SendMessageQueueManager.SendMessageEngine.Stop
+  name: Stop
+  nameWithType: SendMessageQueueManager.SendMessageEngine.Stop
+  fullName: Butterfly.Message.SendMessageQueueManager.SendMessageEngine.Stop
+- uid: Butterfly.Message.SendMessageQueueManager.SendMessageEngine.Queue*
+  commentId: Overload:Butterfly.Message.SendMessageQueueManager.SendMessageEngine.Queue
+  name: Queue
+  nameWithType: SendMessageQueueManager.SendMessageEngine.Queue
+  fullName: Butterfly.Message.SendMessageQueueManager.SendMessageEngine.Queue
+- uid: Butterfly.Db.ITransaction
+  commentId: T:Butterfly.Db.ITransaction
+  parent: Butterfly.Db
+  name: ITransaction
+  nameWithType: ITransaction
+  fullName: Butterfly.Db.ITransaction
+- uid: System.Byte
+  isExternal: true
+  name: Byte
+  nameWithType: Byte
+  fullName: System.Byte
+- uid: System.Collections.Generic.Dictionary{System.String,System.Object}
+  commentId: '!:System.Collections.Generic.Dictionary{System.String,System.Object}'
+  definition: System.Collections.Generic.Dictionary`2
+  name: System.Collections.Generic.Dictionary<String, Object>
+  nameWithType: System.Collections.Generic.Dictionary<String, Object>
+  fullName: System.Collections.Generic.Dictionary<System.String, System.Object>
+  nameWithType.vb: System.Collections.Generic.Dictionary(Of String, Object)
+  fullName.vb: System.Collections.Generic.Dictionary(Of System.String, System.Object)
+  name.vb: System.Collections.Generic.Dictionary(Of String, Object)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: System.Collections.Generic.Dictionary
+    nameWithType: System.Collections.Generic.Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: System.Collections.Generic.Dictionary
+    nameWithType: System.Collections.Generic.Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Task
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: Task
+- uid: System.Collections.Generic.Dictionary`2
+  isExternal: true
+  name: System.Collections.Generic.Dictionary<, >
+  nameWithType: System.Collections.Generic.Dictionary<, >
+  fullName: System.Collections.Generic.Dictionary<, >
+  nameWithType.vb: System.Collections.Generic.Dictionary(Of , )
+  fullName.vb: System.Collections.Generic.Dictionary(Of , )
+  name.vb: System.Collections.Generic.Dictionary(Of , )
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: System.Collections.Generic.Dictionary
+    nameWithType: System.Collections.Generic.Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: System.Collections.Generic.Dictionary
+    nameWithType: System.Collections.Generic.Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Butterfly.Message.SendMessageQueueManager.SendMessageEngine.Pulse*
+  commentId: Overload:Butterfly.Message.SendMessageQueueManager.SendMessageEngine.Pulse
+  name: Pulse
+  nameWithType: SendMessageQueueManager.SendMessageEngine.Pulse
+  fullName: Butterfly.Message.SendMessageQueueManager.SendMessageEngine.Pulse
+shouldSkipMarkup: true

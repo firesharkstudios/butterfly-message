@@ -5,7 +5,7 @@ items:
   id: AwsWebApi
   parent: Butterfly.Message.Aws
   children:
-  - Butterfly.Message.Aws.AwsWebApi.SetupAsync(IWebApi,System.String,System.String,System.String,Func{System.String,System.String,System.String[],Task{System.String}})
+  - Butterfly.Message.Aws.AwsWebApi.SetupAsync(Butterfly.Web.WebApi.IWebApi,System.String,System.String,System.String,Func{System.String,System.String,System.String[],Task{System.String}})
   langs:
   - csharp
   - vb
@@ -15,7 +15,9 @@ items:
   type: Class
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Message/Butterfly.Message.Aws/AwsWebApi.cs
+      path: Butterfly.Message.Aws/AwsWebApi.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-message.git
     id: AwsWebApi
     path: ../Butterfly.Message.Aws/AwsWebApi.cs
     startLine: 27
@@ -36,20 +38,22 @@ items:
   modifiers.vb:
   - Public
   - Module
-- uid: Butterfly.Message.Aws.AwsWebApi.SetupAsync(IWebApi,System.String,System.String,System.String,Func{System.String,System.String,System.String[],Task{System.String}})
-  commentId: M:Butterfly.Message.Aws.AwsWebApi.SetupAsync(IWebApi,System.String,System.String,System.String,Func{System.String,System.String,System.String[],Task{System.String}})
-  id: SetupAsync(IWebApi,System.String,System.String,System.String,Func{System.String,System.String,System.String[],Task{System.String}})
+- uid: Butterfly.Message.Aws.AwsWebApi.SetupAsync(Butterfly.Web.WebApi.IWebApi,System.String,System.String,System.String,Func{System.String,System.String,System.String[],Task{System.String}})
+  commentId: M:Butterfly.Message.Aws.AwsWebApi.SetupAsync(Butterfly.Web.WebApi.IWebApi,System.String,System.String,System.String,Func{System.String,System.String,System.String[],Task{System.String}})
+  id: SetupAsync(Butterfly.Web.WebApi.IWebApi,System.String,System.String,System.String,Func{System.String,System.String,System.String[],Task{System.String}})
   parent: Butterfly.Message.Aws.AwsWebApi
   langs:
   - csharp
   - vb
   name: SetupAsync(IWebApi, String, String, String, Func<String, String, String[], Task<String>>)
   nameWithType: AwsWebApi.SetupAsync(IWebApi, String, String, String, Func<String, String, String[], Task<String>>)
-  fullName: Butterfly.Message.Aws.AwsWebApi.SetupAsync(IWebApi, System.String, System.String, System.String, Func<System.String, System.String, System.String[], Task<System.String>>)
+  fullName: Butterfly.Message.Aws.AwsWebApi.SetupAsync(Butterfly.Web.WebApi.IWebApi, System.String, System.String, System.String, Func<System.String, System.String, System.String[], Task<System.String>>)
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Message/Butterfly.Message.Aws/AwsWebApi.cs
+      path: Butterfly.Message.Aws/AwsWebApi.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-message.git
     id: SetupAsync
     path: ../Butterfly.Message.Aws/AwsWebApi.cs
     startLine: 32
@@ -60,7 +64,7 @@ items:
     content: public static Task SetupAsync(IWebApi webApi, string topicArn, string endPoint, string bucketName, Func<string, string, string[], Task<string>> handler)
     parameters:
     - id: webApi
-      type: IWebApi
+      type: Butterfly.Web.WebApi.IWebApi
     - id: topicArn
       type: System.String
     - id: endPoint
@@ -80,7 +84,7 @@ items:
   modifiers.vb:
   - Public
   - Shared
-  fullName.vb: Butterfly.Message.Aws.AwsWebApi.SetupAsync(IWebApi, System.String, System.String, System.String, Func(Of System.String, System.String, System.String(), Task(Of System.String)))
+  fullName.vb: Butterfly.Message.Aws.AwsWebApi.SetupAsync(Butterfly.Web.WebApi.IWebApi, System.String, System.String, System.String, Func(Of System.String, System.String, System.String(), Task(Of System.String)))
   name.vb: SetupAsync(IWebApi, String, String, String, Func(Of String, String, String(), Task(Of String)))
 references:
 - uid: Butterfly.Message.Aws
@@ -99,11 +103,12 @@ references:
   name: SetupAsync
   nameWithType: AwsWebApi.SetupAsync
   fullName: Butterfly.Message.Aws.AwsWebApi.SetupAsync
-- uid: IWebApi
-  isExternal: true
+- uid: Butterfly.Web.WebApi.IWebApi
+  commentId: T:Butterfly.Web.WebApi.IWebApi
+  parent: Butterfly.Web.WebApi
   name: IWebApi
   nameWithType: IWebApi
-  fullName: IWebApi
+  fullName: Butterfly.Web.WebApi.IWebApi
 - uid: System.String
   isExternal: true
   name: String
@@ -233,6 +238,11 @@ references:
   name: Task
   nameWithType: Task
   fullName: Task
+- uid: Butterfly.Web.WebApi
+  commentId: N:Butterfly.Web.WebApi
+  name: Butterfly.Web.WebApi
+  nameWithType: Butterfly.Web.WebApi
+  fullName: Butterfly.Web.WebApi
 - uid: Func`4
   commentId: '!:Func`4'
   isExternal: true

@@ -9,12 +9,13 @@
     <PackageTags>butterfly server realtime rest api webserver database push</PackageTags>
     <Authors>Kent Johnsonn</Authors>
     <Company>Fireshark Studios, LLC</Company>
-    <Product>Butterfly Server .NET</Product>
-    <Copyright>Copyright 2017-2018 Fireshark Studios, LLC</Copyright>
-    <Version>2.0.0</Version>
+    <Product>Butterfly Message</Product>
+    <Copyright>Copyright 2017-2019 Fireshark Studios, LLC</Copyright>
+    <Version>2.0.1</Version>
     <PackageReleaseNotes>Various improvements and bug fixes</PackageReleaseNotes>
     <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\$(MSBuildProjectName).xml</DocumentationFile>
     <LangVersion>7.1</LangVersion>
+    <Description>Send emails and text messages via the same API in C#</Description>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">

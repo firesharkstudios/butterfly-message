@@ -7,25 +7,25 @@ items:
   children:
   - Butterfly.Message.SendMessageQueueManager.#ctor(Butterfly.Db.IDatabase,Butterfly.Message.IMessageSender,Butterfly.Message.IMessageSender,System.String,System.String,System.Int32,System.String,System.String,System.String)
   - Butterfly.Message.SendMessageQueueManager.database
-  - Butterfly.Message.SendMessageQueueManager.DetectNotifyMessageType(System.String)
+  - Butterfly.Message.SendMessageQueueManager.DetectSendMessageType(System.String)
   - Butterfly.Message.SendMessageQueueManager.EMAIL_FIELD_VALIDATOR
-  - Butterfly.Message.SendMessageQueueManager.emailNotifyMessageEngine
+  - Butterfly.Message.SendMessageQueueManager.emailSendMessageEngine
   - Butterfly.Message.SendMessageQueueManager.logger
-  - Butterfly.Message.SendMessageQueueManager.notifyMessageTableName
-  - Butterfly.Message.SendMessageQueueManager.notifyVerifyTableName
   - Butterfly.Message.SendMessageQueueManager.PHONE_FIELD_VALIDATOR
-  - Butterfly.Message.SendMessageQueueManager.phoneNotifyMessageEngine
   - Butterfly.Message.SendMessageQueueManager.Queue(Butterfly.Db.ITransaction,Butterfly.Message.SendMessage[])
   - Butterfly.Message.SendMessageQueueManager.RANDOM
+  - Butterfly.Message.SendMessageQueueManager.sendMessageTableName
   - Butterfly.Message.SendMessageQueueManager.SendVerifyCodeAsync(System.String)
+  - Butterfly.Message.SendMessageQueueManager.sendVerifyTableName
   - Butterfly.Message.SendMessageQueueManager.Start
   - Butterfly.Message.SendMessageQueueManager.Stop
+  - Butterfly.Message.SendMessageQueueManager.textSendMessageEngine
   - Butterfly.Message.SendMessageQueueManager.Validate(System.String)
   - Butterfly.Message.SendMessageQueueManager.VerifyAsync(System.String,System.Int32)
   - Butterfly.Message.SendMessageQueueManager.verifyCodeExpiresSeconds
   - Butterfly.Message.SendMessageQueueManager.verifyCodeFormat
-  - Butterfly.Message.SendMessageQueueManager.verifyEmailNotifyMessage
-  - Butterfly.Message.SendMessageQueueManager.verifyPhoneNotifyMessage
+  - Butterfly.Message.SendMessageQueueManager.verifyEmailSendMessage
+  - Butterfly.Message.SendMessageQueueManager.verifyTextSendMessage
   langs:
   - csharp
   - vb
@@ -35,10 +35,12 @@ items:
   type: Class
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Message/Butterfly.Message/SendMessageQueueManager.cs
+      path: Butterfly.Message/SendMessageQueueManager.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-message.git
     id: SendMessageQueueManager
     path: ../Butterfly.Message/SendMessageQueueManager.cs
-    startLine: 25
+    startLine: 24
   assemblies:
   - Butterfly.Message
   namespace: Butterfly.Message
@@ -68,10 +70,12 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Message/Butterfly.Message/SendMessageQueueManager.cs
+      path: Butterfly.Message/SendMessageQueueManager.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-message.git
     id: logger
     path: ../Butterfly.Message/SendMessageQueueManager.cs
-    startLine: 27
+    startLine: 26
   assemblies:
   - Butterfly.Message
   namespace: Butterfly.Message
@@ -101,10 +105,12 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Message/Butterfly.Message/SendMessageQueueManager.cs
+      path: Butterfly.Message/SendMessageQueueManager.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-message.git
     id: database
     path: ../Butterfly.Message/SendMessageQueueManager.cs
-    startLine: 29
+    startLine: 28
   assemblies:
   - Butterfly.Message
   namespace: Butterfly.Message
@@ -119,124 +125,132 @@ items:
   modifiers.vb:
   - Protected
   - ReadOnly
-- uid: Butterfly.Message.SendMessageQueueManager.emailNotifyMessageEngine
-  commentId: F:Butterfly.Message.SendMessageQueueManager.emailNotifyMessageEngine
-  id: emailNotifyMessageEngine
+- uid: Butterfly.Message.SendMessageQueueManager.emailSendMessageEngine
+  commentId: F:Butterfly.Message.SendMessageQueueManager.emailSendMessageEngine
+  id: emailSendMessageEngine
   parent: Butterfly.Message.SendMessageQueueManager
   langs:
   - csharp
   - vb
-  name: emailNotifyMessageEngine
-  nameWithType: SendMessageQueueManager.emailNotifyMessageEngine
-  fullName: Butterfly.Message.SendMessageQueueManager.emailNotifyMessageEngine
+  name: emailSendMessageEngine
+  nameWithType: SendMessageQueueManager.emailSendMessageEngine
+  fullName: Butterfly.Message.SendMessageQueueManager.emailSendMessageEngine
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Message/Butterfly.Message/SendMessageQueueManager.cs
-    id: emailNotifyMessageEngine
+      path: Butterfly.Message/SendMessageQueueManager.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-message.git
+    id: emailSendMessageEngine
+    path: ../Butterfly.Message/SendMessageQueueManager.cs
+    startLine: 30
+  assemblies:
+  - Butterfly.Message
+  namespace: Butterfly.Message
+  syntax:
+    content: protected readonly SendMessageQueueManager.SendMessageEngine emailSendMessageEngine
+    return:
+      type: Butterfly.Message.SendMessageQueueManager.SendMessageEngine
+    content.vb: Protected ReadOnly emailSendMessageEngine As SendMessageQueueManager.SendMessageEngine
+  modifiers.csharp:
+  - protected
+  - readonly
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+- uid: Butterfly.Message.SendMessageQueueManager.textSendMessageEngine
+  commentId: F:Butterfly.Message.SendMessageQueueManager.textSendMessageEngine
+  id: textSendMessageEngine
+  parent: Butterfly.Message.SendMessageQueueManager
+  langs:
+  - csharp
+  - vb
+  name: textSendMessageEngine
+  nameWithType: SendMessageQueueManager.textSendMessageEngine
+  fullName: Butterfly.Message.SendMessageQueueManager.textSendMessageEngine
+  type: Field
+  source:
+    remote:
+      path: Butterfly.Message/SendMessageQueueManager.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-message.git
+    id: textSendMessageEngine
     path: ../Butterfly.Message/SendMessageQueueManager.cs
     startLine: 31
   assemblies:
   - Butterfly.Message
   namespace: Butterfly.Message
   syntax:
-    content: protected readonly SendMessageQueueManager.NotifyMessageEngine emailNotifyMessageEngine
+    content: protected readonly SendMessageQueueManager.SendMessageEngine textSendMessageEngine
     return:
-      type: Butterfly.Message.SendMessageQueueManager.NotifyMessageEngine
-    content.vb: Protected ReadOnly emailNotifyMessageEngine As SendMessageQueueManager.NotifyMessageEngine
+      type: Butterfly.Message.SendMessageQueueManager.SendMessageEngine
+    content.vb: Protected ReadOnly textSendMessageEngine As SendMessageQueueManager.SendMessageEngine
   modifiers.csharp:
   - protected
   - readonly
   modifiers.vb:
   - Protected
   - ReadOnly
-- uid: Butterfly.Message.SendMessageQueueManager.phoneNotifyMessageEngine
-  commentId: F:Butterfly.Message.SendMessageQueueManager.phoneNotifyMessageEngine
-  id: phoneNotifyMessageEngine
+- uid: Butterfly.Message.SendMessageQueueManager.sendMessageTableName
+  commentId: F:Butterfly.Message.SendMessageQueueManager.sendMessageTableName
+  id: sendMessageTableName
   parent: Butterfly.Message.SendMessageQueueManager
   langs:
   - csharp
   - vb
-  name: phoneNotifyMessageEngine
-  nameWithType: SendMessageQueueManager.phoneNotifyMessageEngine
-  fullName: Butterfly.Message.SendMessageQueueManager.phoneNotifyMessageEngine
+  name: sendMessageTableName
+  nameWithType: SendMessageQueueManager.sendMessageTableName
+  fullName: Butterfly.Message.SendMessageQueueManager.sendMessageTableName
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Message/Butterfly.Message/SendMessageQueueManager.cs
-    id: phoneNotifyMessageEngine
+      path: Butterfly.Message/SendMessageQueueManager.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-message.git
+    id: sendMessageTableName
     path: ../Butterfly.Message/SendMessageQueueManager.cs
-    startLine: 32
+    startLine: 33
   assemblies:
   - Butterfly.Message
   namespace: Butterfly.Message
   syntax:
-    content: protected readonly SendMessageQueueManager.NotifyMessageEngine phoneNotifyMessageEngine
+    content: protected readonly string sendMessageTableName
     return:
-      type: Butterfly.Message.SendMessageQueueManager.NotifyMessageEngine
-    content.vb: Protected ReadOnly phoneNotifyMessageEngine As SendMessageQueueManager.NotifyMessageEngine
+      type: System.String
+    content.vb: Protected ReadOnly sendMessageTableName As String
   modifiers.csharp:
   - protected
   - readonly
   modifiers.vb:
   - Protected
   - ReadOnly
-- uid: Butterfly.Message.SendMessageQueueManager.notifyMessageTableName
-  commentId: F:Butterfly.Message.SendMessageQueueManager.notifyMessageTableName
-  id: notifyMessageTableName
+- uid: Butterfly.Message.SendMessageQueueManager.sendVerifyTableName
+  commentId: F:Butterfly.Message.SendMessageQueueManager.sendVerifyTableName
+  id: sendVerifyTableName
   parent: Butterfly.Message.SendMessageQueueManager
   langs:
   - csharp
   - vb
-  name: notifyMessageTableName
-  nameWithType: SendMessageQueueManager.notifyMessageTableName
-  fullName: Butterfly.Message.SendMessageQueueManager.notifyMessageTableName
+  name: sendVerifyTableName
+  nameWithType: SendMessageQueueManager.sendVerifyTableName
+  fullName: Butterfly.Message.SendMessageQueueManager.sendVerifyTableName
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Message/Butterfly.Message/SendMessageQueueManager.cs
-    id: notifyMessageTableName
+      path: Butterfly.Message/SendMessageQueueManager.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-message.git
+    id: sendVerifyTableName
     path: ../Butterfly.Message/SendMessageQueueManager.cs
     startLine: 34
   assemblies:
   - Butterfly.Message
   namespace: Butterfly.Message
   syntax:
-    content: protected readonly string notifyMessageTableName
+    content: protected readonly string sendVerifyTableName
     return:
       type: System.String
-    content.vb: Protected ReadOnly notifyMessageTableName As String
-  modifiers.csharp:
-  - protected
-  - readonly
-  modifiers.vb:
-  - Protected
-  - ReadOnly
-- uid: Butterfly.Message.SendMessageQueueManager.notifyVerifyTableName
-  commentId: F:Butterfly.Message.SendMessageQueueManager.notifyVerifyTableName
-  id: notifyVerifyTableName
-  parent: Butterfly.Message.SendMessageQueueManager
-  langs:
-  - csharp
-  - vb
-  name: notifyVerifyTableName
-  nameWithType: SendMessageQueueManager.notifyVerifyTableName
-  fullName: Butterfly.Message.SendMessageQueueManager.notifyVerifyTableName
-  type: Field
-  source:
-    remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Message/Butterfly.Message/SendMessageQueueManager.cs
-    id: notifyVerifyTableName
-    path: ../Butterfly.Message/SendMessageQueueManager.cs
-    startLine: 35
-  assemblies:
-  - Butterfly.Message
-  namespace: Butterfly.Message
-  syntax:
-    content: protected readonly string notifyVerifyTableName
-    return:
-      type: System.String
-    content.vb: Protected ReadOnly notifyVerifyTableName As String
+    content.vb: Protected ReadOnly sendVerifyTableName As String
   modifiers.csharp:
   - protected
   - readonly
@@ -256,10 +270,12 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Message/Butterfly.Message/SendMessageQueueManager.cs
+      path: Butterfly.Message/SendMessageQueueManager.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-message.git
     id: verifyCodeExpiresSeconds
     path: ../Butterfly.Message/SendMessageQueueManager.cs
-    startLine: 36
+    startLine: 35
   assemblies:
   - Butterfly.Message
   namespace: Butterfly.Message
@@ -274,62 +290,66 @@ items:
   modifiers.vb:
   - Protected
   - ReadOnly
-- uid: Butterfly.Message.SendMessageQueueManager.verifyEmailNotifyMessage
-  commentId: F:Butterfly.Message.SendMessageQueueManager.verifyEmailNotifyMessage
-  id: verifyEmailNotifyMessage
+- uid: Butterfly.Message.SendMessageQueueManager.verifyEmailSendMessage
+  commentId: F:Butterfly.Message.SendMessageQueueManager.verifyEmailSendMessage
+  id: verifyEmailSendMessage
   parent: Butterfly.Message.SendMessageQueueManager
   langs:
   - csharp
   - vb
-  name: verifyEmailNotifyMessage
-  nameWithType: SendMessageQueueManager.verifyEmailNotifyMessage
-  fullName: Butterfly.Message.SendMessageQueueManager.verifyEmailNotifyMessage
+  name: verifyEmailSendMessage
+  nameWithType: SendMessageQueueManager.verifyEmailSendMessage
+  fullName: Butterfly.Message.SendMessageQueueManager.verifyEmailSendMessage
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Message/Butterfly.Message/SendMessageQueueManager.cs
-    id: verifyEmailNotifyMessage
+      path: Butterfly.Message/SendMessageQueueManager.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-message.git
+    id: verifyEmailSendMessage
     path: ../Butterfly.Message/SendMessageQueueManager.cs
-    startLine: 38
+    startLine: 37
   assemblies:
   - Butterfly.Message
   namespace: Butterfly.Message
   syntax:
-    content: protected readonly SendMessage verifyEmailNotifyMessage
+    content: protected readonly SendMessage verifyEmailSendMessage
     return:
       type: Butterfly.Message.SendMessage
-    content.vb: Protected ReadOnly verifyEmailNotifyMessage As SendMessage
+    content.vb: Protected ReadOnly verifyEmailSendMessage As SendMessage
   modifiers.csharp:
   - protected
   - readonly
   modifiers.vb:
   - Protected
   - ReadOnly
-- uid: Butterfly.Message.SendMessageQueueManager.verifyPhoneNotifyMessage
-  commentId: F:Butterfly.Message.SendMessageQueueManager.verifyPhoneNotifyMessage
-  id: verifyPhoneNotifyMessage
+- uid: Butterfly.Message.SendMessageQueueManager.verifyTextSendMessage
+  commentId: F:Butterfly.Message.SendMessageQueueManager.verifyTextSendMessage
+  id: verifyTextSendMessage
   parent: Butterfly.Message.SendMessageQueueManager
   langs:
   - csharp
   - vb
-  name: verifyPhoneNotifyMessage
-  nameWithType: SendMessageQueueManager.verifyPhoneNotifyMessage
-  fullName: Butterfly.Message.SendMessageQueueManager.verifyPhoneNotifyMessage
+  name: verifyTextSendMessage
+  nameWithType: SendMessageQueueManager.verifyTextSendMessage
+  fullName: Butterfly.Message.SendMessageQueueManager.verifyTextSendMessage
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Message/Butterfly.Message/SendMessageQueueManager.cs
-    id: verifyPhoneNotifyMessage
+      path: Butterfly.Message/SendMessageQueueManager.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-message.git
+    id: verifyTextSendMessage
     path: ../Butterfly.Message/SendMessageQueueManager.cs
-    startLine: 39
+    startLine: 38
   assemblies:
   - Butterfly.Message
   namespace: Butterfly.Message
   syntax:
-    content: protected readonly SendMessage verifyPhoneNotifyMessage
+    content: protected readonly SendMessage verifyTextSendMessage
     return:
       type: Butterfly.Message.SendMessage
-    content.vb: Protected ReadOnly verifyPhoneNotifyMessage As SendMessage
+    content.vb: Protected ReadOnly verifyTextSendMessage As SendMessage
   modifiers.csharp:
   - protected
   - readonly
@@ -349,10 +369,12 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Message/Butterfly.Message/SendMessageQueueManager.cs
+      path: Butterfly.Message/SendMessageQueueManager.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-message.git
     id: verifyCodeFormat
     path: ../Butterfly.Message/SendMessageQueueManager.cs
-    startLine: 40
+    startLine: 39
   assemblies:
   - Butterfly.Message
   namespace: Butterfly.Message
@@ -380,10 +402,12 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Message/Butterfly.Message/SendMessageQueueManager.cs
+      path: Butterfly.Message/SendMessageQueueManager.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-message.git
     id: EMAIL_FIELD_VALIDATOR
     path: ../Butterfly.Message/SendMessageQueueManager.cs
-    startLine: 42
+    startLine: 41
   assemblies:
   - Butterfly.Message
   namespace: Butterfly.Message
@@ -413,10 +437,12 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Message/Butterfly.Message/SendMessageQueueManager.cs
+      path: Butterfly.Message/SendMessageQueueManager.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-message.git
     id: PHONE_FIELD_VALIDATOR
     path: ../Butterfly.Message/SendMessageQueueManager.cs
-    startLine: 43
+    startLine: 42
   assemblies:
   - Butterfly.Message
   namespace: Butterfly.Message
@@ -446,10 +472,12 @@ items:
   type: Field
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Message/Butterfly.Message/SendMessageQueueManager.cs
+      path: Butterfly.Message/SendMessageQueueManager.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-message.git
     id: RANDOM
     path: ../Butterfly.Message/SendMessageQueueManager.cs
-    startLine: 45
+    startLine: 44
   assemblies:
   - Butterfly.Message
   namespace: Butterfly.Message
@@ -479,25 +507,27 @@ items:
   type: Constructor
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Message/Butterfly.Message/SendMessageQueueManager.cs
+      path: Butterfly.Message/SendMessageQueueManager.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-message.git
     id: .ctor
     path: ../Butterfly.Message/SendMessageQueueManager.cs
-    startLine: 47
+    startLine: 46
   assemblies:
   - Butterfly.Message
   namespace: Butterfly.Message
   syntax:
-    content: public SendMessageQueueManager(IDatabase database, IMessageSender emailNotifyMessageSender = null, IMessageSender phoneNotifyMessageSender = null, string notifyMessageTableName = "notify_message", string notifyVerifyTableName = "notify_verify", int verifyCodeExpiresSeconds = 3600, string verifyEmailFile = null, string verifyPhoneTextFile = null, string verifyCodeFormat = "###-###")
+    content: public SendMessageQueueManager(IDatabase database, IMessageSender emailMessageSender = null, IMessageSender textMessageSender = null, string sendMessageTableName = "send_message", string sendVerifyTableName = "send_verify", int verifyCodeExpiresSeconds = 3600, string verifyEmailFile = null, string verifyPhoneTextFile = null, string verifyCodeFormat = "###-###")
     parameters:
     - id: database
       type: Butterfly.Db.IDatabase
-    - id: emailNotifyMessageSender
+    - id: emailMessageSender
       type: Butterfly.Message.IMessageSender
-    - id: phoneNotifyMessageSender
+    - id: textMessageSender
       type: Butterfly.Message.IMessageSender
-    - id: notifyMessageTableName
+    - id: sendMessageTableName
       type: System.String
-    - id: notifyVerifyTableName
+    - id: sendVerifyTableName
       type: System.String
     - id: verifyCodeExpiresSeconds
       type: System.Int32
@@ -507,7 +537,7 @@ items:
       type: System.String
     - id: verifyCodeFormat
       type: System.String
-    content.vb: Public Sub New(database As IDatabase, emailNotifyMessageSender As IMessageSender = Nothing, phoneNotifyMessageSender As IMessageSender = Nothing, notifyMessageTableName As String = "notify_message", notifyVerifyTableName As String = "notify_verify", verifyCodeExpiresSeconds As Integer = 3600, verifyEmailFile As String = Nothing, verifyPhoneTextFile As String = Nothing, verifyCodeFormat As String = "###-###")
+    content.vb: Public Sub New(database As IDatabase, emailMessageSender As IMessageSender = Nothing, textMessageSender As IMessageSender = Nothing, sendMessageTableName As String = "send_message", sendVerifyTableName As String = "send_verify", verifyCodeExpiresSeconds As Integer = 3600, verifyEmailFile As String = Nothing, verifyPhoneTextFile As String = Nothing, verifyCodeFormat As String = "###-###")
   overload: Butterfly.Message.SendMessageQueueManager.#ctor*
   modifiers.csharp:
   - public
@@ -526,10 +556,12 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Message/Butterfly.Message/SendMessageQueueManager.cs
+      path: Butterfly.Message/SendMessageQueueManager.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-message.git
     id: Start
     path: ../Butterfly.Message/SendMessageQueueManager.cs
-    startLine: 60
+    startLine: 59
   assemblies:
   - Butterfly.Message
   namespace: Butterfly.Message
@@ -554,10 +586,12 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Message/Butterfly.Message/SendMessageQueueManager.cs
+      path: Butterfly.Message/SendMessageQueueManager.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-message.git
     id: Stop
     path: ../Butterfly.Message/SendMessageQueueManager.cs
-    startLine: 65
+    startLine: 64
   assemblies:
   - Butterfly.Message
   namespace: Butterfly.Message
@@ -582,10 +616,12 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Message/Butterfly.Message/SendMessageQueueManager.cs
+      path: Butterfly.Message/SendMessageQueueManager.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-message.git
     id: SendVerifyCodeAsync
     path: ../Butterfly.Message/SendMessageQueueManager.cs
-    startLine: 70
+    startLine: 69
   assemblies:
   - Butterfly.Message
   namespace: Butterfly.Message
@@ -615,10 +651,12 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Message/Butterfly.Message/SendMessageQueueManager.cs
+      path: Butterfly.Message/SendMessageQueueManager.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-message.git
     id: VerifyAsync
     path: ../Butterfly.Message/SendMessageQueueManager.cs
-    startLine: 129
+    startLine: 128
   assemblies:
   - Butterfly.Message
   namespace: Butterfly.Message
@@ -650,10 +688,12 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Message/Butterfly.Message/SendMessageQueueManager.cs
+      path: Butterfly.Message/SendMessageQueueManager.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-message.git
     id: Validate
     path: ../Butterfly.Message/SendMessageQueueManager.cs
-    startLine: 144
+    startLine: 143
   assemblies:
   - Butterfly.Message
   namespace: Butterfly.Message
@@ -685,28 +725,30 @@ items:
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Message/Butterfly.Message/SendMessageQueueManager.cs
+      path: Butterfly.Message/SendMessageQueueManager.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-message.git
     id: Queue
     path: ../Butterfly.Message/SendMessageQueueManager.cs
-    startLine: 160
+    startLine: 159
   assemblies:
   - Butterfly.Message
   namespace: Butterfly.Message
   summary: "\n\n"
   example: []
   syntax:
-    content: public Task Queue(ITransaction transaction, params SendMessage[] notifyMessages)
+    content: public Task Queue(ITransaction transaction, params SendMessage[] sendMessages)
     parameters:
     - id: transaction
       type: Butterfly.Db.ITransaction
       description: ''
-    - id: notifyMessages
+    - id: sendMessages
       type: Butterfly.Message.SendMessage[]
       description: ''
     return:
       type: Task
       description: ''
-    content.vb: Public Function Queue(transaction As ITransaction, ParamArray notifyMessages As SendMessage()) As Task
+    content.vb: Public Function Queue(transaction As ITransaction, ParamArray sendMessages As SendMessage()) As Task
   overload: Butterfly.Message.SendMessageQueueManager.Queue*
   nameWithType.vb: SendMessageQueueManager.Queue(ITransaction, SendMessage())
   modifiers.csharp:
@@ -715,35 +757,37 @@ items:
   - Public
   fullName.vb: Butterfly.Message.SendMessageQueueManager.Queue(Butterfly.Db.ITransaction, Butterfly.Message.SendMessage())
   name.vb: Queue(ITransaction, SendMessage())
-- uid: Butterfly.Message.SendMessageQueueManager.DetectNotifyMessageType(System.String)
-  commentId: M:Butterfly.Message.SendMessageQueueManager.DetectNotifyMessageType(System.String)
-  id: DetectNotifyMessageType(System.String)
+- uid: Butterfly.Message.SendMessageQueueManager.DetectSendMessageType(System.String)
+  commentId: M:Butterfly.Message.SendMessageQueueManager.DetectSendMessageType(System.String)
+  id: DetectSendMessageType(System.String)
   parent: Butterfly.Message.SendMessageQueueManager
   langs:
   - csharp
   - vb
-  name: DetectNotifyMessageType(String)
-  nameWithType: SendMessageQueueManager.DetectNotifyMessageType(String)
-  fullName: Butterfly.Message.SendMessageQueueManager.DetectNotifyMessageType(System.String)
+  name: DetectSendMessageType(String)
+  nameWithType: SendMessageQueueManager.DetectSendMessageType(String)
+  fullName: Butterfly.Message.SendMessageQueueManager.DetectSendMessageType(System.String)
   type: Method
   source:
     remote:
-      path: C:/Users/kent1/Documents/Visual Studio 2019/Projects/Butterfly.Message/Butterfly.Message/SendMessageQueueManager.cs
-    id: DetectNotifyMessageType
+      path: Butterfly.Message/SendMessageQueueManager.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-message.git
+    id: DetectSendMessageType
     path: ../Butterfly.Message/SendMessageQueueManager.cs
-    startLine: 194
+    startLine: 193
   assemblies:
   - Butterfly.Message
   namespace: Butterfly.Message
   syntax:
-    content: protected NotifyMessageType DetectNotifyMessageType(string to)
+    content: protected SendMessageType DetectSendMessageType(string to)
     parameters:
     - id: to
       type: System.String
     return:
-      type: Butterfly.Message.NotifyMessageType
-    content.vb: Protected Function DetectNotifyMessageType(to As String) As NotifyMessageType
-  overload: Butterfly.Message.SendMessageQueueManager.DetectNotifyMessageType*
+      type: Butterfly.Message.SendMessageType
+    content.vb: Protected Function DetectSendMessageType(to As String) As SendMessageType
+  overload: Butterfly.Message.SendMessageQueueManager.DetectSendMessageType*
   modifiers.csharp:
   - protected
   modifiers.vb:
@@ -776,12 +820,12 @@ references:
   name: Butterfly.Db
   nameWithType: Butterfly.Db
   fullName: Butterfly.Db
-- uid: Butterfly.Message.SendMessageQueueManager.NotifyMessageEngine
-  commentId: T:Butterfly.Message.SendMessageQueueManager.NotifyMessageEngine
+- uid: Butterfly.Message.SendMessageQueueManager.SendMessageEngine
+  commentId: T:Butterfly.Message.SendMessageQueueManager.SendMessageEngine
   parent: Butterfly.Message
-  name: SendMessageQueueManager.NotifyMessageEngine
-  nameWithType: SendMessageQueueManager.NotifyMessageEngine
-  fullName: Butterfly.Message.SendMessageQueueManager.NotifyMessageEngine
+  name: SendMessageQueueManager.SendMessageEngine
+  nameWithType: SendMessageQueueManager.SendMessageEngine
+  fullName: Butterfly.Message.SendMessageQueueManager.SendMessageEngine
 - uid: System.String
   isExternal: true
   name: String
@@ -973,15 +1017,15 @@ references:
   - name: ()
     nameWithType: ()
     fullName: ()
-- uid: Butterfly.Message.SendMessageQueueManager.DetectNotifyMessageType*
-  commentId: Overload:Butterfly.Message.SendMessageQueueManager.DetectNotifyMessageType
-  name: DetectNotifyMessageType
-  nameWithType: SendMessageQueueManager.DetectNotifyMessageType
-  fullName: Butterfly.Message.SendMessageQueueManager.DetectNotifyMessageType
-- uid: Butterfly.Message.NotifyMessageType
-  commentId: T:Butterfly.Message.NotifyMessageType
+- uid: Butterfly.Message.SendMessageQueueManager.DetectSendMessageType*
+  commentId: Overload:Butterfly.Message.SendMessageQueueManager.DetectSendMessageType
+  name: DetectSendMessageType
+  nameWithType: SendMessageQueueManager.DetectSendMessageType
+  fullName: Butterfly.Message.SendMessageQueueManager.DetectSendMessageType
+- uid: Butterfly.Message.SendMessageType
+  commentId: T:Butterfly.Message.SendMessageType
   parent: Butterfly.Message
-  name: NotifyMessageType
-  nameWithType: NotifyMessageType
-  fullName: Butterfly.Message.NotifyMessageType
+  name: SendMessageType
+  nameWithType: SendMessageType
+  fullName: Butterfly.Message.SendMessageType
 shouldSkipMarkup: true

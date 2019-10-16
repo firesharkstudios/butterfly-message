@@ -1,6 +1,6 @@
 # Butterfly.Message ![Butterfly Logo](https://raw.githubusercontent.com/firesharkstudios/Butterfly/master/img/logo-40x40.png) 
 
-> Collection of utility methods used in the Butterfly Server
+> Send emails and text messages via the same API in C#
 
 ## Getting Started
 
