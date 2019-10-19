@@ -8,10 +8,12 @@
 
   <ItemGroup>
     <None Remove="db.sql" />
+    <None Remove="email.txt" />
   </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Include="db.sql" />
+    <EmbeddedResource Include="email.txt" />
   </ItemGroup>
 
   <ItemGroup>

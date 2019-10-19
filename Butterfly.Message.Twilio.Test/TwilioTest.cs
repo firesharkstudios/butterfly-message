@@ -5,10 +5,9 @@ using System.Threading.Tasks;
 
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-using Butterfly.Message.Twilio;
 using Butterfly.Message.Test;
 
-namespace Butterfly.Notify.Test {
+namespace Butterfly.Message.Twilio.Test {
     [TestClass]
     public class TwilioTest {
         [TestMethod]

@@ -7,15 +7,15 @@ using System.Threading.Tasks;
 
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-using Butterfly.Util;
 using Butterfly.Db;
+using Butterfly.Util;
 
 namespace Butterfly.Message.Test {
     [TestClass]
     public class MessageTest {
         [TestMethod]
         public void ParseSendMessage() {
-            var email = FileX.LoadResourceAsText(Assembly.GetExecutingAssembly(), "Butterfly.Notify.Test.email.txt");
+            var email = FileX.LoadResourceAsText(Assembly.GetExecutingAssembly(), "Butterfly.Message.Test.email.txt");
             var sendMessageTemplate = SendMessage.Parse(email);
             var sendMessage = sendMessageTemplate.Evaluate(new {
                 first_name = "Bob"
@@ -26,7 +26,7 @@ namespace Butterfly.Message.Test {
         [TestMethod]
         public static async Task SendEmailNotifyMessage(IMessageSender notifyMessageSender) {
             var database = new Db.Memory.MemoryDatabase();
-            await database.CreateFromResourceFileAsync(Assembly.GetExecutingAssembly(), "Butterfly.Notify.Test.db.sql");
+            await database.CreateFromResourceFileAsync(Assembly.GetExecutingAssembly(), "Butterfly.Message.Test.db.sql");
             database.SetDefaultValue("id", tableName => Guid.NewGuid().ToString());
             database.SetDefaultValue("created_at", tableName => DateTime.Now);
 
@@ -43,7 +43,7 @@ namespace Butterfly.Message.Test {
         [TestMethod]
         public static async Task SendPhoneNotifyMessage(IMessageSender notifyMessageSender) {
             var database = new Db.Memory.MemoryDatabase();
-            await database.CreateFromResourceFileAsync(Assembly.GetExecutingAssembly(), "Butterfly.Notify.Test.db.sql");
+            await database.CreateFromResourceFileAsync(Assembly.GetExecutingAssembly(), "Butterfly.Message.Test.db.sql");
             database.SetDefaultValue("id", tableName => Guid.NewGuid().ToString());
             database.SetDefaultValue("created_at", tableName => DateTime.Now);
 
