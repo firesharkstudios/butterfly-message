@@ -2,18 +2,14 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-using System.Collections.Generic;
+using System.IO;
 using System.Threading.Tasks;
 
 using Amazon.SimpleEmail;
 using Amazon.SimpleEmail.Model;
 
-using NLog;
-
-using Butterfly.Message;
-using System.IO;
 using MimeKit;
-using Amazon;
+using NLog;
 
 namespace Butterfly.Message.Aws {
     public class AwsSesEmailMessageSender : BaseMessageSender {

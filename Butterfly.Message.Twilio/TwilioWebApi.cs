@@ -11,7 +11,6 @@ using NLog;
 
 using Butterfly.Util;
 using Butterfly.Web.WebApi;
-using Butterfly.Web;
 
 namespace Butterfly.Message.Twilio {
 

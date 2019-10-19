@@ -248,8 +248,6 @@ namespace Butterfly.Message {
             async Task Run() {
                 this.started = true;
                 while (this.started) {
-                    DateTime start = DateTime.Now;
-
                     Dict message = await this.database.SelectRowAsync(
                         @"SELECT *
                         FROM " + this.sendMessageTableName + @"
@@ -269,7 +267,6 @@ namespace Butterfly.Message {
                         logger.Trace("Run():Waking up");
                     }
                     else {
-                        SendMessageType sendMessageType = message.GetAs("type", SendMessageType.Email);
                         string sentMessageId = null;
                         string error = null;
                         try {

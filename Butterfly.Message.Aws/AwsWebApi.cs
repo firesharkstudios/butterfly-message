@@ -9,9 +9,6 @@ using System.Threading.Tasks;
 
 using NLog;
 
-using Butterfly.Util;
-using Butterfly.Web.WebApi;
-
 using Amazon.S3;
 using Amazon.S3.Model;
 
@@ -20,8 +17,10 @@ using Amazon.SimpleNotificationService.Model;
 
 using MimeKit;
 
+using Butterfly.Util;
+using Butterfly.Web.WebApi;
+
 using Dict = System.Collections.Generic.Dictionary<string, object>;
-using Butterfly.Web;
 
 namespace Butterfly.Message.Aws {
 
