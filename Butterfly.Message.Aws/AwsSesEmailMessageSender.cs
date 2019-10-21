@@ -16,11 +16,23 @@ namespace Butterfly.Message.Aws {
 
         protected static readonly Logger logger = LogManager.GetCurrentClassLogger();
 
+        protected readonly string awsAccessKeyId;
+        protected readonly string awsSecretAccessKey;
+        
+        // Uses the persisted settings from running aws configure
+        public AwsSesEmailMessageSender() {
+        }
+
+        public AwsSesEmailMessageSender(string awsAccessKeyId, string awsSecretAccessKey) {
+            this.awsAccessKeyId = awsAccessKeyId;
+            this.awsSecretAccessKey = awsSecretAccessKey;
+        }
+
         // Based on https://github.com/gianluis90/amazon-send-email/blob/master/SendEmailWithAttachments/Program.cs
         protected override async Task<string> DoSendAsync(string from, string to, string subject, string bodyText, string bodyHtml, string[] attachments) {
             logger.Debug($"DoSendAsync():from={from},to={to},subject={subject}");
 
-            using (var client = new AmazonSimpleEmailServiceClient(Amazon.RegionEndpoint.USEast1))
+            using (var client = this.GetClient())
             using (var messageStream = new MemoryStream()) {
                 var message = new MimeMessage();
                 var builder = new BodyBuilder() { TextBody = bodyText };
@@ -48,6 +60,14 @@ namespace Butterfly.Message.Aws {
             }
         }
 
+        protected AmazonSimpleEmailServiceClient GetClient() {
+            if (string.IsNullOrEmpty(this.awsAccessKeyId)) {
+                return new AmazonSimpleEmailServiceClient(Amazon.RegionEndpoint.USEast1))
+            }
+            else {
+                return new AmazonSimpleEmailServiceClient(this.awsAccessKeyId, this.awsSecretAccessKey, Amazon.RegionEndpoint.USEast1))
+            }
+        }
         /*
         protected override async Task<string> DoSendAsync(string from, string to, string subject, string bodyText, string bodyHtml) {
             logger.Debug($"DoSendAsync():from={from},to={to},subject={subject}");
