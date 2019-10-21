@@ -36,13 +36,6 @@ var welcomeEmail = welcomeEmailSendMessage.Evaluate(new Dict {
 });
 sendMessageQueueManager.Queue(welcomeEmail);
 
-// Send welcome email
-var welcomeEmail = welcomeEmailSendMessage.Evaluate(new Dict {
-    ["first_name"] = "Kent",
-    ["to"] = "kent@fireshark.com",
-});
-sendMessageQueueManager.Queue(welcomeEmail);
-
 // Send welcome text
 var welcomeText = welcomeTextSendMessage.Evaluate(new Dict {
     ["first_name"] = "Kent",
