@@ -8,6 +8,7 @@ items:
   - Butterfly.Message.IMessageSender
   - Butterfly.Message.ScribanEvaluator
   - Butterfly.Message.SendMessage
+  - Butterfly.Message.SendMessageFileParser
   - Butterfly.Message.SendMessageQueueManager
   - Butterfly.Message.SendMessageQueueManager.SendMessageEngine
   - Butterfly.Message.SendMessageType
@@ -45,6 +46,11 @@ references:
   name: SendMessage
   nameWithType: SendMessage
   fullName: Butterfly.Message.SendMessage
+- uid: Butterfly.Message.SendMessageFileParser
+  commentId: T:Butterfly.Message.SendMessageFileParser
+  name: SendMessageFileParser
+  nameWithType: SendMessageFileParser
+  fullName: Butterfly.Message.SendMessageFileParser
 - uid: Butterfly.Message.SendMessageType
   commentId: T:Butterfly.Message.SendMessageType
   parent: Butterfly.Message

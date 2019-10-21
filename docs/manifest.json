@@ -93,7 +93,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Butterfly.Message.ScribanEvaluator.html",
-          "hash": "uO1ieHc/sBEkjwk03dAsAQ=="
+          "hash": "p8sL7cxUokXWXi4D87n2ig=="
         }
       },
       "is_incremental": false,
@@ -105,7 +105,19 @@
       "output": {
         ".html": {
           "relative_path": "api/Butterfly.Message.SendMessage.html",
-          "hash": "JWFSxkGpWi20/MX+hbE1nQ=="
+          "hash": "gCw8DKXKM03rtUOuvR4nGg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Butterfly.Message.SendMessageFileParser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Butterfly.Message.SendMessageFileParser.html",
+          "hash": "q6uGNQ7R3LCQQ89aE//+DA=="
         }
       },
       "is_incremental": false,
@@ -249,7 +261,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Butterfly.Message.html",
-          "hash": "pi5KhD221GPoWeKzgUTEIQ=="
+          "hash": "4n2OKZatf2LjxEx6gTuSWw=="
         }
       },
       "is_incremental": false,
@@ -273,7 +285,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "F89HNHJ4YmSMfgZ6t12vcw=="
+          "hash": "ebou4WjP64rnqV/Z/bj8QA=="
         }
       },
       "is_incremental": false,
@@ -347,8 +359,8 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 21,
-          "skipped_file_count": 11
+          "total_file_count": 22,
+          "skipped_file_count": 18
         }
       }
     },

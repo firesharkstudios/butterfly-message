@@ -94,7 +94,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public SendMessage(string from, string to, string subject, string bodyText, string bodyHtml = null, byte priority = null, Func&lt;string, System.Collections.Generic.Dictionary&lt;string, object&gt;, string, string&gt; evaluator = null, string sourceFile = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public SendMessage(string from, string to, string subject, string bodyText, string bodyHtml = null, byte priority = null, Func&lt;string, System.Collections.Generic.Dictionary&lt;string, object&gt;, string, string&gt; evaluator = null, string path = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -143,7 +143,7 @@
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">sourceFile</span></td>
+        <td><span class="parametername">path</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -304,6 +304,28 @@
       </tr>
     </tbody>
   </table>
+  <h4 id="Butterfly_Message_SendMessage_path" data-uid="Butterfly.Message.SendMessage.path">path</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly string path</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h4 id="Butterfly_Message_SendMessage_priority" data-uid="Butterfly.Message.SendMessage.priority">priority</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
@@ -332,28 +354,6 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected const string SECTION_DELIM = null</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="Butterfly_Message_SendMessage_sourceFile" data-uid="Butterfly.Message.SendMessage.sourceFile">sourceFile</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public readonly string sourceFile</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -484,7 +484,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static SendMessage Parse(string text, Func&lt;string, System.Collections.Generic.Dictionary&lt;string, object&gt;, string, string&gt; evaluator, string sourceFile)</code></pre>
+    <pre><code class="lang-csharp hljs">public static SendMessage Parse(string text, Func&lt;string, System.Collections.Generic.Dictionary&lt;string, object&gt;, string, string&gt; evaluator, string path = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -508,52 +508,7 @@
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">sourceFile</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Butterfly.Message.SendMessage.html">SendMessage</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="Butterfly_Message_SendMessage_ParseFile_" data-uid="Butterfly.Message.SendMessage.ParseFile*"></a>
-  <h4 id="Butterfly_Message_SendMessage_ParseFile_System_String_Dictionary_System_String_Func_System_String_System_Collections_Generic_Dictionary_System_String_System_Object__System_String_System_String___" data-uid="Butterfly.Message.SendMessage.ParseFile(System.String,Dictionary{System.String,Func{System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.String,System.String}})">ParseFile(String, Dictionary&lt;String, Func&lt;String, System.Collections.Generic.Dictionary&lt;String, Object&gt;, String, String&gt;&gt;)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static SendMessage ParseFile(string fileName, Dictionary&lt;string, Func&lt;string, System.Collections.Generic.Dictionary&lt;string, object&gt;, string, string&gt;&gt; evaluatorByExtension)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">fileName</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">Func</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Object</span>&gt;, <span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;&gt;</td>
-        <td><span class="parametername">evaluatorByExtension</span></td>
+        <td><span class="parametername">path</span></td>
         <td></td>
       </tr>
     </tbody>

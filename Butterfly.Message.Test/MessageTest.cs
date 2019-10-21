@@ -16,7 +16,7 @@ namespace Butterfly.Message.Test {
         [TestMethod]
         public void ParseSendMessage() {
             var email = FileX.LoadResourceAsText(Assembly.GetExecutingAssembly(), "Butterfly.Message.Test.email.txt");
-            var sendMessageTemplate = SendMessage.Parse(email);
+            var sendMessageTemplate = SendMessage.Parse(email, SimpleEvaluator.Evaluate);
             var sendMessage = sendMessageTemplate.Evaluate(new {
                 first_name = "Bob"
             });

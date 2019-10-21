@@ -11,8 +11,8 @@ using Dict = System.Collections.Generic.Dictionary<string, object>;
 namespace Butterfly.Message {
     public static class ScribanEvaluator {
 
-        public static string Evaluate(string text, Dict vars, string sourceFilePath) {
-            Template template = Template.Parse(text, sourceFilePath: sourceFilePath);
+        public static string Evaluate(string text, Dict vars, string path) {
+            Template template = Template.Parse(text, sourceFilePath: path);
             return template.RenderWithRelativeIncludes(vars);
         }
 

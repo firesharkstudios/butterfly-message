@@ -10,6 +10,8 @@
     name: ScribanEvaluator
   - uid: Butterfly.Message.SendMessage
     name: SendMessage
+  - uid: Butterfly.Message.SendMessageFileParser
+    name: SendMessageFileParser
   - uid: Butterfly.Message.SendMessageQueueManager
     name: SendMessageQueueManager
   - uid: Butterfly.Message.SendMessageQueueManager.SendMessageEngine

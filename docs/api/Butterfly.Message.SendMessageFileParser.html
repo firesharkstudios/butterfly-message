@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class ScribanEvaluator
+    <title>Class SendMessageFileParser
    | Butterfly Server .NET API Documentation </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class ScribanEvaluator
+    <meta name="title" content="Class SendMessageFileParser
    | Butterfly Server .NET API Documentation ">
     <meta name="generator" content="docfx 2.46.0.0">
     
@@ -68,33 +68,84 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Butterfly.Message.ScribanEvaluator">
+            <article class="content wrap" id="_content" data-uid="Butterfly.Message.SendMessageFileParser">
   
   
-  <h1 id="Butterfly_Message_ScribanEvaluator" data-uid="Butterfly.Message.ScribanEvaluator" class="text-break">Class ScribanEvaluator
+  <h1 id="Butterfly_Message_SendMessageFileParser" data-uid="Butterfly.Message.SendMessageFileParser" class="text-break">Class SendMessageFileParser
   </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">ScribanEvaluator</span></div>
+    <div class="level1"><span class="xref">SendMessageFileParser</span></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Butterfly.Message.html">Butterfly.Message</a></h6>
   <h6><strong>Assembly</strong>: Butterfly.Message.dll</h6>
-  <h5 id="Butterfly_Message_ScribanEvaluator_syntax">Syntax</h5>
+  <h5 id="Butterfly_Message_SendMessageFileParser_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class ScribanEvaluator : object</code></pre>
+    <pre><code class="lang-csharp hljs">public class SendMessageFileParser : object</code></pre>
   </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <a id="Butterfly_Message_SendMessageFileParser__ctor_" data-uid="Butterfly.Message.SendMessageFileParser.#ctor*"></a>
+  <h4 id="Butterfly_Message_SendMessageFileParser__ctor_Dictionary_System_String_Func_System_String_System_Collections_Generic_Dictionary_System_String_System_Object__System_String_System_String___" data-uid="Butterfly.Message.SendMessageFileParser.#ctor(Dictionary{System.String,Func{System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.String,System.String}})">SendMessageFileParser(Dictionary&lt;String, Func&lt;String, System.Collections.Generic.Dictionary&lt;String, Object&gt;, String, String&gt;&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SendMessageFileParser(Dictionary&lt;string, Func&lt;string, System.Collections.Generic.Dictionary&lt;string, object&gt;, string, string&gt;&gt; evaluatorByExtension = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">Func</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Object</span>&gt;, <span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;&gt;</td>
+        <td><span class="parametername">evaluatorByExtension</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <h4 id="Butterfly_Message_SendMessageFileParser_evaluatorByExtension" data-uid="Butterfly.Message.SendMessageFileParser.evaluatorByExtension">evaluatorByExtension</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Dictionary&lt;string, Func&lt;string, System.Collections.Generic.Dictionary&lt;string, object&gt;, string, string&gt;&gt; evaluatorByExtension</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">Func</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Object</span>&gt;, <span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="methods">Methods
   </h3>
-  <a id="Butterfly_Message_ScribanEvaluator_Evaluate_" data-uid="Butterfly.Message.ScribanEvaluator.Evaluate*"></a>
-  <h4 id="Butterfly_Message_ScribanEvaluator_Evaluate_System_String_System_Collections_Generic_Dictionary_System_String_System_Object__System_String_" data-uid="Butterfly.Message.ScribanEvaluator.Evaluate(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.String)">Evaluate(String, System.Collections.Generic.Dictionary&lt;String, Object&gt;, String)</h4>
+  <a id="Butterfly_Message_SendMessageFileParser_Parse_" data-uid="Butterfly.Message.SendMessageFileParser.Parse*"></a>
+  <h4 id="Butterfly_Message_SendMessageFileParser_Parse_System_String_" data-uid="Butterfly.Message.SendMessageFileParser.Parse(System.String)">Parse(String)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string Evaluate(string text, System.Collections.Generic.Dictionary&lt;string, object&gt; vars, string path)</code></pre>
+    <pre><code class="lang-csharp hljs">public SendMessage Parse(string fileName)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -108,17 +159,7 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">text</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Object</span>&gt;</td>
-        <td><span class="parametername">vars</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">path</span></td>
+        <td><span class="parametername">fileName</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -133,52 +174,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="Butterfly_Message_ScribanEvaluator_RenderWithRelativeIncludes_" data-uid="Butterfly.Message.ScribanEvaluator.RenderWithRelativeIncludes*"></a>
-  <h4 id="Butterfly_Message_ScribanEvaluator_RenderWithRelativeIncludes_Template_System_Object_" data-uid="Butterfly.Message.ScribanEvaluator.RenderWithRelativeIncludes(Template,System.Object)">RenderWithRelativeIncludes(Template, Object)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string RenderWithRelativeIncludes(this Template me, object model)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Template</span></td>
-        <td><span class="parametername">me</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Object</span></td>
-        <td><span class="parametername">model</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="Butterfly.Message.SendMessage.html">SendMessage</a></td>
         <td></td>
       </tr>
     </tbody>

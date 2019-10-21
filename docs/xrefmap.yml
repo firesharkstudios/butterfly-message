@@ -327,22 +327,12 @@ references:
   isSpec: "True"
   fullName: Butterfly.Message.SendMessage.Parse
   nameWithType: SendMessage.Parse
-- uid: Butterfly.Message.SendMessage.ParseFile(System.String,Dictionary{System.String,Func{System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.String,System.String}})
-  name: ParseFile(String, Dictionary<String, Func<String, System.Collections.Generic.Dictionary<String, Object>, String, String>>)
-  href: api/Butterfly.Message.SendMessage.html#Butterfly_Message_SendMessage_ParseFile_System_String_Dictionary_System_String_Func_System_String_System_Collections_Generic_Dictionary_System_String_System_Object__System_String_System_String___
-  commentId: M:Butterfly.Message.SendMessage.ParseFile(System.String,Dictionary{System.String,Func{System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.String,System.String}})
-  name.vb: ParseFile(String, Dictionary(Of String, Func(Of String, System.Collections.Generic.Dictionary(Of String, Object), String, String)))
-  fullName: Butterfly.Message.SendMessage.ParseFile(System.String, Dictionary<System.String, Func<System.String, System.Collections.Generic.Dictionary<System.String, System.Object>, System.String, System.String>>)
-  fullName.vb: Butterfly.Message.SendMessage.ParseFile(System.String, Dictionary(Of System.String, Func(Of System.String, System.Collections.Generic.Dictionary(Of System.String, System.Object), System.String, System.String)))
-  nameWithType: SendMessage.ParseFile(String, Dictionary<String, Func<String, System.Collections.Generic.Dictionary<String, Object>, String, String>>)
-  nameWithType.vb: SendMessage.ParseFile(String, Dictionary(Of String, Func(Of String, System.Collections.Generic.Dictionary(Of String, Object), String, String)))
-- uid: Butterfly.Message.SendMessage.ParseFile*
-  name: ParseFile
-  href: api/Butterfly.Message.SendMessage.html#Butterfly_Message_SendMessage_ParseFile_
-  commentId: Overload:Butterfly.Message.SendMessage.ParseFile
-  isSpec: "True"
-  fullName: Butterfly.Message.SendMessage.ParseFile
-  nameWithType: SendMessage.ParseFile
+- uid: Butterfly.Message.SendMessage.path
+  name: path
+  href: api/Butterfly.Message.SendMessage.html#Butterfly_Message_SendMessage_path
+  commentId: F:Butterfly.Message.SendMessage.path
+  fullName: Butterfly.Message.SendMessage.path
+  nameWithType: SendMessage.path
 - uid: Butterfly.Message.SendMessage.priority
   name: priority
   href: api/Butterfly.Message.SendMessage.html#Butterfly_Message_SendMessage_priority
@@ -355,12 +345,6 @@ references:
   commentId: F:Butterfly.Message.SendMessage.SECTION_DELIM
   fullName: Butterfly.Message.SendMessage.SECTION_DELIM
   nameWithType: SendMessage.SECTION_DELIM
-- uid: Butterfly.Message.SendMessage.sourceFile
-  name: sourceFile
-  href: api/Butterfly.Message.SendMessage.html#Butterfly_Message_SendMessage_sourceFile
-  commentId: F:Butterfly.Message.SendMessage.sourceFile
-  fullName: Butterfly.Message.SendMessage.sourceFile
-  nameWithType: SendMessage.sourceFile
 - uid: Butterfly.Message.SendMessage.subject
   name: subject
   href: api/Butterfly.Message.SendMessage.html#Butterfly_Message_SendMessage_subject
@@ -379,6 +363,47 @@ references:
   commentId: F:Butterfly.Message.SendMessage.to
   fullName: Butterfly.Message.SendMessage.to
   nameWithType: SendMessage.to
+- uid: Butterfly.Message.SendMessageFileParser
+  name: SendMessageFileParser
+  href: api/Butterfly.Message.SendMessageFileParser.html
+  commentId: T:Butterfly.Message.SendMessageFileParser
+  fullName: Butterfly.Message.SendMessageFileParser
+  nameWithType: SendMessageFileParser
+- uid: Butterfly.Message.SendMessageFileParser.#ctor(Dictionary{System.String,Func{System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.String,System.String}})
+  name: SendMessageFileParser(Dictionary<String, Func<String, System.Collections.Generic.Dictionary<String, Object>, String, String>>)
+  href: api/Butterfly.Message.SendMessageFileParser.html#Butterfly_Message_SendMessageFileParser__ctor_Dictionary_System_String_Func_System_String_System_Collections_Generic_Dictionary_System_String_System_Object__System_String_System_String___
+  commentId: M:Butterfly.Message.SendMessageFileParser.#ctor(Dictionary{System.String,Func{System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.String,System.String}})
+  name.vb: SendMessageFileParser(Dictionary(Of String, Func(Of String, System.Collections.Generic.Dictionary(Of String, Object), String, String)))
+  fullName: Butterfly.Message.SendMessageFileParser.SendMessageFileParser(Dictionary<System.String, Func<System.String, System.Collections.Generic.Dictionary<System.String, System.Object>, System.String, System.String>>)
+  fullName.vb: Butterfly.Message.SendMessageFileParser.SendMessageFileParser(Dictionary(Of System.String, Func(Of System.String, System.Collections.Generic.Dictionary(Of System.String, System.Object), System.String, System.String)))
+  nameWithType: SendMessageFileParser.SendMessageFileParser(Dictionary<String, Func<String, System.Collections.Generic.Dictionary<String, Object>, String, String>>)
+  nameWithType.vb: SendMessageFileParser.SendMessageFileParser(Dictionary(Of String, Func(Of String, System.Collections.Generic.Dictionary(Of String, Object), String, String)))
+- uid: Butterfly.Message.SendMessageFileParser.#ctor*
+  name: SendMessageFileParser
+  href: api/Butterfly.Message.SendMessageFileParser.html#Butterfly_Message_SendMessageFileParser__ctor_
+  commentId: Overload:Butterfly.Message.SendMessageFileParser.#ctor
+  isSpec: "True"
+  fullName: Butterfly.Message.SendMessageFileParser.SendMessageFileParser
+  nameWithType: SendMessageFileParser.SendMessageFileParser
+- uid: Butterfly.Message.SendMessageFileParser.evaluatorByExtension
+  name: evaluatorByExtension
+  href: api/Butterfly.Message.SendMessageFileParser.html#Butterfly_Message_SendMessageFileParser_evaluatorByExtension
+  commentId: F:Butterfly.Message.SendMessageFileParser.evaluatorByExtension
+  fullName: Butterfly.Message.SendMessageFileParser.evaluatorByExtension
+  nameWithType: SendMessageFileParser.evaluatorByExtension
+- uid: Butterfly.Message.SendMessageFileParser.Parse(System.String)
+  name: Parse(String)
+  href: api/Butterfly.Message.SendMessageFileParser.html#Butterfly_Message_SendMessageFileParser_Parse_System_String_
+  commentId: M:Butterfly.Message.SendMessageFileParser.Parse(System.String)
+  fullName: Butterfly.Message.SendMessageFileParser.Parse(System.String)
+  nameWithType: SendMessageFileParser.Parse(String)
+- uid: Butterfly.Message.SendMessageFileParser.Parse*
+  name: Parse
+  href: api/Butterfly.Message.SendMessageFileParser.html#Butterfly_Message_SendMessageFileParser_Parse_
+  commentId: Overload:Butterfly.Message.SendMessageFileParser.Parse
+  isSpec: "True"
+  fullName: Butterfly.Message.SendMessageFileParser.Parse
+  nameWithType: SendMessageFileParser.Parse
 - uid: Butterfly.Message.SendMessageQueueManager
   name: SendMessageQueueManager
   href: api/Butterfly.Message.SendMessageQueueManager.html

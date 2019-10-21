@@ -62,17 +62,17 @@ items:
   - Butterfly.Message
   namespace: Butterfly.Message
   syntax:
-    content: public static string Evaluate(string text, System.Collections.Generic.Dictionary<string, object> vars, string sourceFilePath)
+    content: public static string Evaluate(string text, System.Collections.Generic.Dictionary<string, object> vars, string path)
     parameters:
     - id: text
       type: System.String
     - id: vars
       type: System.Collections.Generic.Dictionary{System.String,System.Object}
-    - id: sourceFilePath
+    - id: path
       type: System.String
     return:
       type: System.String
-    content.vb: Public Shared Function Evaluate(text As String, vars As System.Collections.Generic.Dictionary(Of String, Object), sourceFilePath As String) As String
+    content.vb: Public Shared Function Evaluate(text As String, vars As System.Collections.Generic.Dictionary(Of String, Object), path As String) As String
   overload: Butterfly.Message.ScribanEvaluator.Evaluate*
   nameWithType.vb: ScribanEvaluator.Evaluate(String, System.Collections.Generic.Dictionary(Of String, Object), String)
   modifiers.csharp:

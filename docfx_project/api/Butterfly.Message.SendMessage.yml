@@ -15,10 +15,9 @@ items:
   - Butterfly.Message.SendMessage.HTML_SECTION_NAME
   - Butterfly.Message.SendMessage.logger
   - Butterfly.Message.SendMessage.Parse(System.String,Func{System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.String,System.String},System.String)
-  - Butterfly.Message.SendMessage.ParseFile(System.String,Dictionary{System.String,Func{System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.String,System.String}})
+  - Butterfly.Message.SendMessage.path
   - Butterfly.Message.SendMessage.priority
   - Butterfly.Message.SendMessage.SECTION_DELIM
-  - Butterfly.Message.SendMessage.sourceFile
   - Butterfly.Message.SendMessage.subject
   - Butterfly.Message.SendMessage.TEXT_SECTION_NAME
   - Butterfly.Message.SendMessage.to
@@ -319,33 +318,33 @@ items:
   modifiers.vb:
   - Public
   - ReadOnly
-- uid: Butterfly.Message.SendMessage.sourceFile
-  commentId: F:Butterfly.Message.SendMessage.sourceFile
-  id: sourceFile
+- uid: Butterfly.Message.SendMessage.path
+  commentId: F:Butterfly.Message.SendMessage.path
+  id: path
   parent: Butterfly.Message.SendMessage
   langs:
   - csharp
   - vb
-  name: sourceFile
-  nameWithType: SendMessage.sourceFile
-  fullName: Butterfly.Message.SendMessage.sourceFile
+  name: path
+  nameWithType: SendMessage.path
+  fullName: Butterfly.Message.SendMessage.path
   type: Field
   source:
     remote:
       path: Butterfly.Message/SendMessage.cs
       branch: master
       repo: https://github.com/firesharkstudios/butterfly-message.git
-    id: sourceFile
+    id: path
     path: ../Butterfly.Message/SendMessage.cs
     startLine: 27
   assemblies:
   - Butterfly.Message
   namespace: Butterfly.Message
   syntax:
-    content: public readonly string sourceFile
+    content: public readonly string path
     return:
       type: System.String
-    content.vb: Public ReadOnly sourceFile As String
+    content.vb: Public ReadOnly path As String
   modifiers.csharp:
   - public
   - readonly
@@ -406,7 +405,7 @@ items:
   - Butterfly.Message
   namespace: Butterfly.Message
   syntax:
-    content: public SendMessage(string from, string to, string subject, string bodyText, string bodyHtml = null, byte priority = null, Func<string, System.Collections.Generic.Dictionary<string, object>, string, string> evaluator = null, string sourceFile = null)
+    content: public SendMessage(string from, string to, string subject, string bodyText, string bodyHtml = null, byte priority = null, Func<string, System.Collections.Generic.Dictionary<string, object>, string, string> evaluator = null, string path = null)
     parameters:
     - id: from
       type: System.String
@@ -422,9 +421,9 @@ items:
       type: System.Byte
     - id: evaluator
       type: Func{System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.String,System.String}
-    - id: sourceFile
+    - id: path
       type: System.String
-    content.vb: Public Sub New(from As String, to As String, subject As String, bodyText As String, bodyHtml As String = Nothing, priority As Byte = Nothing, evaluator As Func(Of String, System.Collections.Generic.Dictionary(Of String, Object), String, String) = Nothing, sourceFile As String = Nothing)
+    content.vb: Public Sub New(from As String, to As String, subject As String, bodyText As String, bodyHtml As String = Nothing, priority As Byte = Nothing, evaluator As Func(Of String, System.Collections.Generic.Dictionary(Of String, Object), String, String) = Nothing, path As String = Nothing)
   overload: Butterfly.Message.SendMessage.#ctor*
   nameWithType.vb: SendMessage.SendMessage(String, String, String, String, String, Byte, Func(Of String, System.Collections.Generic.Dictionary(Of String, Object), String, String), String)
   modifiers.csharp:
@@ -567,48 +566,6 @@ items:
   - public
   modifiers.vb:
   - Public
-- uid: Butterfly.Message.SendMessage.ParseFile(System.String,Dictionary{System.String,Func{System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.String,System.String}})
-  commentId: M:Butterfly.Message.SendMessage.ParseFile(System.String,Dictionary{System.String,Func{System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.String,System.String}})
-  id: ParseFile(System.String,Dictionary{System.String,Func{System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.String,System.String}})
-  parent: Butterfly.Message.SendMessage
-  langs:
-  - csharp
-  - vb
-  name: ParseFile(String, Dictionary<String, Func<String, System.Collections.Generic.Dictionary<String, Object>, String, String>>)
-  nameWithType: SendMessage.ParseFile(String, Dictionary<String, Func<String, System.Collections.Generic.Dictionary<String, Object>, String, String>>)
-  fullName: Butterfly.Message.SendMessage.ParseFile(System.String, Dictionary<System.String, Func<System.String, System.Collections.Generic.Dictionary<System.String, System.Object>, System.String, System.String>>)
-  type: Method
-  source:
-    remote:
-      path: Butterfly.Message/SendMessage.cs
-      branch: master
-      repo: https://github.com/firesharkstudios/butterfly-message.git
-    id: ParseFile
-    path: ../Butterfly.Message/SendMessage.cs
-    startLine: 66
-  assemblies:
-  - Butterfly.Message
-  namespace: Butterfly.Message
-  syntax:
-    content: public static SendMessage ParseFile(string fileName, Dictionary<string, Func<string, System.Collections.Generic.Dictionary<string, object>, string, string>> evaluatorByExtension)
-    parameters:
-    - id: fileName
-      type: System.String
-    - id: evaluatorByExtension
-      type: Dictionary{System.String,Func{System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.String,System.String}}
-    return:
-      type: Butterfly.Message.SendMessage
-    content.vb: Public Shared Function ParseFile(fileName As String, evaluatorByExtension As Dictionary(Of String, Func(Of String, System.Collections.Generic.Dictionary(Of String, Object), String, String))) As SendMessage
-  overload: Butterfly.Message.SendMessage.ParseFile*
-  nameWithType.vb: SendMessage.ParseFile(String, Dictionary(Of String, Func(Of String, System.Collections.Generic.Dictionary(Of String, Object), String, String)))
-  modifiers.csharp:
-  - public
-  - static
-  modifiers.vb:
-  - Public
-  - Shared
-  fullName.vb: Butterfly.Message.SendMessage.ParseFile(System.String, Dictionary(Of System.String, Func(Of System.String, System.Collections.Generic.Dictionary(Of System.String, System.Object), System.String, System.String)))
-  name.vb: ParseFile(String, Dictionary(Of String, Func(Of String, System.Collections.Generic.Dictionary(Of String, Object), String, String)))
 - uid: Butterfly.Message.SendMessage.Parse(System.String,Func{System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.String,System.String},System.String)
   commentId: M:Butterfly.Message.SendMessage.Parse(System.String,Func{System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.String,System.String},System.String)
   id: Parse(System.String,Func{System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.String,System.String},System.String)
@@ -627,22 +584,22 @@ items:
       repo: https://github.com/firesharkstudios/butterfly-message.git
     id: Parse
     path: ../Butterfly.Message/SendMessage.cs
-    startLine: 75
+    startLine: 66
   assemblies:
   - Butterfly.Message
   namespace: Butterfly.Message
   syntax:
-    content: public static SendMessage Parse(string text, Func<string, System.Collections.Generic.Dictionary<string, object>, string, string> evaluator, string sourceFile)
+    content: public static SendMessage Parse(string text, Func<string, System.Collections.Generic.Dictionary<string, object>, string, string> evaluator, string path = null)
     parameters:
     - id: text
       type: System.String
     - id: evaluator
       type: Func{System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.String,System.String}
-    - id: sourceFile
+    - id: path
       type: System.String
     return:
       type: Butterfly.Message.SendMessage
-    content.vb: Public Shared Function Parse(text As String, evaluator As Func(Of String, System.Collections.Generic.Dictionary(Of String, Object), String, String), sourceFile As String) As SendMessage
+    content.vb: Public Shared Function Parse(text As String, evaluator As Func(Of String, System.Collections.Generic.Dictionary(Of String, Object), String, String), path As String = Nothing) As SendMessage
   overload: Butterfly.Message.SendMessage.Parse*
   nameWithType.vb: SendMessage.Parse(String, Func(Of String, System.Collections.Generic.Dictionary(Of String, Object), String, String), String)
   modifiers.csharp:
@@ -1008,229 +965,6 @@ references:
   name: SendMessage
   nameWithType: SendMessage
   fullName: Butterfly.Message.SendMessage
-- uid: Butterfly.Message.SendMessage.ParseFile*
-  commentId: Overload:Butterfly.Message.SendMessage.ParseFile
-  name: ParseFile
-  nameWithType: SendMessage.ParseFile
-  fullName: Butterfly.Message.SendMessage.ParseFile
-- uid: Dictionary{System.String,Func{System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.String,System.String}}
-  commentId: '!:Dictionary{System.String,Func{System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.String,System.String}}'
-  definition: Dictionary`2
-  name: Dictionary<String, Func<String, System.Collections.Generic.Dictionary<String, Object>, String, String>>
-  nameWithType: Dictionary<String, Func<String, System.Collections.Generic.Dictionary<String, Object>, String, String>>
-  fullName: Dictionary<System.String, Func<System.String, System.Collections.Generic.Dictionary<System.String, System.Object>, System.String, System.String>>
-  nameWithType.vb: Dictionary(Of String, Func(Of String, System.Collections.Generic.Dictionary(Of String, Object), String, String))
-  fullName.vb: Dictionary(Of System.String, Func(Of System.String, System.Collections.Generic.Dictionary(Of System.String, System.Object), System.String, System.String))
-  name.vb: Dictionary(Of String, Func(Of String, System.Collections.Generic.Dictionary(Of String, Object), String, String))
-  spec.csharp:
-  - uid: Dictionary`2
-    name: Dictionary
-    nameWithType: Dictionary
-    fullName: Dictionary
-    isExternal: true
-  - name: <
-    nameWithType: <
-    fullName: <
-  - uid: System.String
-    name: String
-    nameWithType: String
-    fullName: System.String
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: Func`4
-    name: Func
-    nameWithType: Func
-    fullName: Func
-    isExternal: true
-  - name: <
-    nameWithType: <
-    fullName: <
-  - uid: System.String
-    name: String
-    nameWithType: String
-    fullName: System.String
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Collections.Generic.Dictionary`2
-    name: System.Collections.Generic.Dictionary
-    nameWithType: System.Collections.Generic.Dictionary
-    fullName: System.Collections.Generic.Dictionary
-    isExternal: true
-  - name: <
-    nameWithType: <
-    fullName: <
-  - uid: System.String
-    name: String
-    nameWithType: String
-    fullName: System.String
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: '>'
-    nameWithType: '>'
-    fullName: '>'
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.String
-    name: String
-    nameWithType: String
-    fullName: System.String
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.String
-    name: String
-    nameWithType: String
-    fullName: System.String
-    isExternal: true
-  - name: '>'
-    nameWithType: '>'
-    fullName: '>'
-  - name: '>'
-    nameWithType: '>'
-    fullName: '>'
-  spec.vb:
-  - uid: Dictionary`2
-    name: Dictionary
-    nameWithType: Dictionary
-    fullName: Dictionary
-    isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
-  - uid: System.String
-    name: String
-    nameWithType: String
-    fullName: System.String
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: Func`4
-    name: Func
-    nameWithType: Func
-    fullName: Func
-    isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
-  - uid: System.String
-    name: String
-    nameWithType: String
-    fullName: System.String
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Collections.Generic.Dictionary`2
-    name: System.Collections.Generic.Dictionary
-    nameWithType: System.Collections.Generic.Dictionary
-    fullName: System.Collections.Generic.Dictionary
-    isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
-  - uid: System.String
-    name: String
-    nameWithType: String
-    fullName: System.String
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.String
-    name: String
-    nameWithType: String
-    fullName: System.String
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.String
-    name: String
-    nameWithType: String
-    fullName: System.String
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: Dictionary`2
-  commentId: '!:Dictionary`2'
-  isExternal: true
-  name: Dictionary<, >
-  nameWithType: Dictionary<, >
-  fullName: Dictionary<, >
-  nameWithType.vb: Dictionary(Of , )
-  fullName.vb: Dictionary(Of , )
-  name.vb: Dictionary(Of , )
-  spec.csharp:
-  - uid: Dictionary`2
-    name: Dictionary
-    nameWithType: Dictionary
-    fullName: Dictionary
-    isExternal: true
-  - name: <
-    nameWithType: <
-    fullName: <
-  - name: ''
-    nameWithType: ''
-    fullName: ''
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - name: ''
-    nameWithType: ''
-    fullName: ''
-  - name: '>'
-    nameWithType: '>'
-    fullName: '>'
-  spec.vb:
-  - uid: Dictionary`2
-    name: Dictionary
-    nameWithType: Dictionary
-    fullName: Dictionary
-    isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
-  - name: ''
-    nameWithType: ''
-    fullName: ''
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - name: ''
-    nameWithType: ''
-    fullName: ''
-  - name: )
-    nameWithType: )
-    fullName: )
 - uid: Butterfly.Message.SendMessage.Parse*
   commentId: Overload:Butterfly.Message.SendMessage.Parse
   name: Parse
