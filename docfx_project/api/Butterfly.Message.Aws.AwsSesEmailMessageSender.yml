@@ -21,7 +21,7 @@ items:
       repo: https://github.com/firesharkstudios/butterfly-message.git
     id: AwsSesEmailMessageSender
     path: ../Butterfly.Message.Aws/AwsSesEmailMessageSender.cs
-    startLine: 18
+    startLine: 14
   assemblies:
   - Butterfly.Message.Aws
   namespace: Butterfly.Message.Aws
@@ -65,7 +65,7 @@ items:
       repo: https://github.com/firesharkstudios/butterfly-message.git
     id: logger
     path: ../Butterfly.Message.Aws/AwsSesEmailMessageSender.cs
-    startLine: 20
+    startLine: 16
   assemblies:
   - Butterfly.Message.Aws
   namespace: Butterfly.Message.Aws
@@ -100,7 +100,7 @@ items:
       repo: https://github.com/firesharkstudios/butterfly-message.git
     id: DoSendAsync
     path: ../Butterfly.Message.Aws/AwsSesEmailMessageSender.cs
-    startLine: 23
+    startLine: 19
   assemblies:
   - Butterfly.Message.Aws
   namespace: Butterfly.Message.Aws

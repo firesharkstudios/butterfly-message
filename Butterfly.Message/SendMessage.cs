@@ -24,17 +24,20 @@ namespace Butterfly.Message {
         public readonly string bodyText;
         public readonly string bodyHtml;
         public readonly byte priority;
+        public readonly Func<string, Dict , string, string> evaluator;
+        public readonly string sourceFile;
 
         public Dict extraData = null;
-        public Func<string, Dict, string> formatter = null;
 
-        public SendMessage(string from, string to, string subject, string bodyText, string bodyHtml = null, byte priority = 0) {
+        public SendMessage(string from, string to, string subject, string bodyText, string bodyHtml = null, byte priority = 0, Func<string, Dict, string, string> evaluator = null, string sourceFile = null) {
             this.from = from;
             this.to = to;
             this.subject = subject;
             this.bodyText = bodyText;
             this.bodyHtml = bodyHtml;
-            this.priority = 0;
+            this.priority = priority;
+            this.evaluator = evaluator;
+            this.sourceFile = sourceFile;
             this.extraData = null;
         }
 
@@ -43,6 +46,8 @@ namespace Butterfly.Message {
         protected const string SECTION_DELIM = "===";
 
         public SendMessage Evaluate(dynamic vars) {
+            if (this.evaluator == null) throw new Exception("Evaluator cannot be null");
+
             Dict values;
             if (vars is Dict) {
                 values = vars as Dict;
@@ -51,26 +56,24 @@ namespace Butterfly.Message {
                 values = DynamicX.ToDictionary(vars);
             }
 
-            Func<string, Dict, string> myFormatter = this.formatter;
-            if (myFormatter==null) {
-                myFormatter = (formatText, formatVars) => formatVars.Format(formatText);
-            }
-
-            string from = myFormatter(this.from, values);
-            string to = myFormatter(this.to, values);
-            string subject = myFormatter(this.subject, values);
-            string bodyText = myFormatter(this.bodyText, values);
-            string bodyHtml = myFormatter(this.bodyHtml, values);
+            string from = this.evaluator(this.from, values, this.sourceFile);
+            string to = this.evaluator(this.to, values, this.sourceFile);
+            string subject = this.evaluator(this.subject, values, this.sourceFile);
+            string bodyText = this.evaluator(this.bodyText, values, this.sourceFile);
+            string bodyHtml = this.evaluator(this.bodyHtml, values, this.sourceFile);
             return new SendMessage(from, to, subject, bodyText, bodyHtml, this.priority);
         }
 
-        public static SendMessage ParseFile(string fileName) {
+        public static SendMessage ParseFile(string fileName, Dictionary<string, Func<string, Dict, string, string>> evaluatorByExtension) {
             if (!File.Exists(fileName)) throw new Exception("Could not find file '" + fileName + "'");
+            var extension = Path.GetExtension(fileName);
+            if (!evaluatorByExtension.TryGetValue(extension, out Func<string, Dict, string, string> evaluator)) throw new Exception($"Unknown evaluator extension {extension}");
+
             string text = File.ReadAllText(fileName);
-            return Parse(text);
+            return Parse(text, evaluator, fileName);
         }
 
-        public static SendMessage Parse(string text) {
+        public static SendMessage Parse(string text, Func<string, Dict, string, string> evaluator, string sourceFile) {
             string from = null;
             string to = null;
             string subject = null;
@@ -133,7 +136,7 @@ namespace Butterfly.Message {
                 }
             }
 
-            return new SendMessage(from, to, subject, sectionByName.GetAs(TEXT_SECTION_NAME, (string)null), sectionByName.GetAs(HTML_SECTION_NAME, (string)null), priority);
+            return new SendMessage(from, to, subject, sectionByName.GetAs(TEXT_SECTION_NAME, (string)null), sectionByName.GetAs(HTML_SECTION_NAME, (string)null), priority, evaluator, sourceFile);
         }
     }
 }

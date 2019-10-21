@@ -5,7 +5,7 @@ items:
   id: SendMessageQueueManager
   parent: Butterfly.Message
   children:
-  - Butterfly.Message.SendMessageQueueManager.#ctor(Butterfly.Db.IDatabase,Butterfly.Message.IMessageSender,Butterfly.Message.IMessageSender,System.String,System.String,System.Int32,System.String,System.String,System.String)
+  - Butterfly.Message.SendMessageQueueManager.#ctor(Butterfly.Db.IDatabase,Butterfly.Message.IMessageSender,Butterfly.Message.IMessageSender,System.String,System.String,System.Int32,Butterfly.Message.SendMessage,Butterfly.Message.SendMessage,System.String)
   - Butterfly.Message.SendMessageQueueManager.database
   - Butterfly.Message.SendMessageQueueManager.DetectSendMessageType(System.String)
   - Butterfly.Message.SendMessageQueueManager.EMAIL_FIELD_VALIDATOR
@@ -494,16 +494,16 @@ items:
   - Protected
   - Shared
   - ReadOnly
-- uid: Butterfly.Message.SendMessageQueueManager.#ctor(Butterfly.Db.IDatabase,Butterfly.Message.IMessageSender,Butterfly.Message.IMessageSender,System.String,System.String,System.Int32,System.String,System.String,System.String)
-  commentId: M:Butterfly.Message.SendMessageQueueManager.#ctor(Butterfly.Db.IDatabase,Butterfly.Message.IMessageSender,Butterfly.Message.IMessageSender,System.String,System.String,System.Int32,System.String,System.String,System.String)
-  id: '#ctor(Butterfly.Db.IDatabase,Butterfly.Message.IMessageSender,Butterfly.Message.IMessageSender,System.String,System.String,System.Int32,System.String,System.String,System.String)'
+- uid: Butterfly.Message.SendMessageQueueManager.#ctor(Butterfly.Db.IDatabase,Butterfly.Message.IMessageSender,Butterfly.Message.IMessageSender,System.String,System.String,System.Int32,Butterfly.Message.SendMessage,Butterfly.Message.SendMessage,System.String)
+  commentId: M:Butterfly.Message.SendMessageQueueManager.#ctor(Butterfly.Db.IDatabase,Butterfly.Message.IMessageSender,Butterfly.Message.IMessageSender,System.String,System.String,System.Int32,Butterfly.Message.SendMessage,Butterfly.Message.SendMessage,System.String)
+  id: '#ctor(Butterfly.Db.IDatabase,Butterfly.Message.IMessageSender,Butterfly.Message.IMessageSender,System.String,System.String,System.Int32,Butterfly.Message.SendMessage,Butterfly.Message.SendMessage,System.String)'
   parent: Butterfly.Message.SendMessageQueueManager
   langs:
   - csharp
   - vb
-  name: SendMessageQueueManager(IDatabase, IMessageSender, IMessageSender, String, String, Int32, String, String, String)
-  nameWithType: SendMessageQueueManager.SendMessageQueueManager(IDatabase, IMessageSender, IMessageSender, String, String, Int32, String, String, String)
-  fullName: Butterfly.Message.SendMessageQueueManager.SendMessageQueueManager(Butterfly.Db.IDatabase, Butterfly.Message.IMessageSender, Butterfly.Message.IMessageSender, System.String, System.String, System.Int32, System.String, System.String, System.String)
+  name: SendMessageQueueManager(IDatabase, IMessageSender, IMessageSender, String, String, Int32, SendMessage, SendMessage, String)
+  nameWithType: SendMessageQueueManager.SendMessageQueueManager(IDatabase, IMessageSender, IMessageSender, String, String, Int32, SendMessage, SendMessage, String)
+  fullName: Butterfly.Message.SendMessageQueueManager.SendMessageQueueManager(Butterfly.Db.IDatabase, Butterfly.Message.IMessageSender, Butterfly.Message.IMessageSender, System.String, System.String, System.Int32, Butterfly.Message.SendMessage, Butterfly.Message.SendMessage, System.String)
   type: Constructor
   source:
     remote:
@@ -517,7 +517,7 @@ items:
   - Butterfly.Message
   namespace: Butterfly.Message
   syntax:
-    content: public SendMessageQueueManager(IDatabase database, IMessageSender emailMessageSender = null, IMessageSender textMessageSender = null, string sendMessageTableName = "send_message", string sendVerifyTableName = "send_verify", int verifyCodeExpiresSeconds = 3600, string verifyEmailFile = null, string verifyPhoneTextFile = null, string verifyCodeFormat = "###-###")
+    content: public SendMessageQueueManager(IDatabase database, IMessageSender emailMessageSender = null, IMessageSender textMessageSender = null, string sendMessageTableName = "send_message", string sendVerifyTableName = "send_verify", int verifyCodeExpiresSeconds = 3600, SendMessage verifyEmailSendMessage = null, SendMessage verifyTextSendMessage = null, string verifyCodeFormat = "###-###")
     parameters:
     - id: database
       type: Butterfly.Db.IDatabase
@@ -531,13 +531,13 @@ items:
       type: System.String
     - id: verifyCodeExpiresSeconds
       type: System.Int32
-    - id: verifyEmailFile
-      type: System.String
-    - id: verifyPhoneTextFile
-      type: System.String
+    - id: verifyEmailSendMessage
+      type: Butterfly.Message.SendMessage
+    - id: verifyTextSendMessage
+      type: Butterfly.Message.SendMessage
     - id: verifyCodeFormat
       type: System.String
-    content.vb: Public Sub New(database As IDatabase, emailMessageSender As IMessageSender = Nothing, textMessageSender As IMessageSender = Nothing, sendMessageTableName As String = "send_message", sendVerifyTableName As String = "send_verify", verifyCodeExpiresSeconds As Integer = 3600, verifyEmailFile As String = Nothing, verifyPhoneTextFile As String = Nothing, verifyCodeFormat As String = "###-###")
+    content.vb: Public Sub New(database As IDatabase, emailMessageSender As IMessageSender = Nothing, textMessageSender As IMessageSender = Nothing, sendMessageTableName As String = "send_message", sendVerifyTableName As String = "send_verify", verifyCodeExpiresSeconds As Integer = 3600, verifyEmailSendMessage As SendMessage = Nothing, verifyTextSendMessage As SendMessage = Nothing, verifyCodeFormat As String = "###-###")
   overload: Butterfly.Message.SendMessageQueueManager.#ctor*
   modifiers.csharp:
   - public

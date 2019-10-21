@@ -9,17 +9,15 @@ using Scriban.Runtime;
 using Dict = System.Collections.Generic.Dictionary<string, object>;
 
 namespace Butterfly.Message {
-    public static class ScribanFormatter {
+    public static class ScribanEvaluator {
 
-        public static Func<string, Dict, string> GetFormatter(string sourceFilePath) {
-            return (text, vars) => {
-                Template template = Template.Parse(text, sourceFilePath: sourceFilePath);
-                return template.RenderWithRelativeIncludes(vars);
-            };
+        public static string Evaluate(string text, Dict vars, string sourceFilePath) {
+            Template template = Template.Parse(text, sourceFilePath: sourceFilePath);
+            return template.RenderWithRelativeIncludes(vars);
         }
 
         public static string RenderWithRelativeIncludes(this Template me, object model) {
-            if (string.IsNullOrEmpty(me.SourceFilePath)) throw new System.Exception("Must call Template.Parse() with sourceFilePath parameter to call RenderWithRelativeIncludes()");
+            if (string.IsNullOrEmpty(me.SourceFilePath)) throw new Exception("Must call Template.Parse() with sourceFilePath parameter to call RenderWithRelativeIncludes()");
 
             var scriptObject = new ScriptObject();
             scriptObject.Import(model);

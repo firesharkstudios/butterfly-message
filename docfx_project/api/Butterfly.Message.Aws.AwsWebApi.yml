@@ -20,7 +20,7 @@ items:
       repo: https://github.com/firesharkstudios/butterfly-message.git
     id: AwsWebApi
     path: ../Butterfly.Message.Aws/AwsWebApi.cs
-    startLine: 27
+    startLine: 26
   assemblies:
   - Butterfly.Message.Aws
   namespace: Butterfly.Message.Aws
@@ -56,7 +56,7 @@ items:
       repo: https://github.com/firesharkstudios/butterfly-message.git
     id: SetupAsync
     path: ../Butterfly.Message.Aws/AwsWebApi.cs
-    startLine: 32
+    startLine: 31
   assemblies:
   - Butterfly.Message.Aws
   namespace: Butterfly.Message.Aws
@@ -244,7 +244,6 @@ references:
   nameWithType: Butterfly.Web.WebApi
   fullName: Butterfly.Web.WebApi
 - uid: Func`4
-  commentId: '!:Func`4'
   isExternal: true
   name: Func<, , , >
   nameWithType: Func<, , , >

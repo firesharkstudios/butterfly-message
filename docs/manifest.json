@@ -84,16 +84,16 @@
           "hash": "LNXh+dxrmNp/jA15SZhQ9g=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Butterfly.Message.ScribanFormatter.yml",
+      "source_relative_path": "api/Butterfly.Message.ScribanEvaluator.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Butterfly.Message.ScribanFormatter.html",
-          "hash": "mWEKknydQEsWeDhW+xdqSA=="
+          "relative_path": "api/Butterfly.Message.ScribanEvaluator.html",
+          "hash": "uO1ieHc/sBEkjwk03dAsAQ=="
         }
       },
       "is_incremental": false,
@@ -105,7 +105,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Butterfly.Message.SendMessage.html",
-          "hash": "5d+2xWhRp48eBFz5E8rvwQ=="
+          "hash": "JWFSxkGpWi20/MX+hbE1nQ=="
         }
       },
       "is_incremental": false,
@@ -129,7 +129,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Butterfly.Message.SendMessageQueueManager.html",
-          "hash": "x8ZyI5btjjL5HqY0GMzONg=="
+          "hash": "mWAgZmousjGAfcp38ottXw=="
         }
       },
       "is_incremental": false,
@@ -144,7 +144,19 @@
           "hash": "KiahHQr1AB1wgJkzib9DkA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Butterfly.Message.SimpleEvaluator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Butterfly.Message.SimpleEvaluator.html",
+          "hash": "z4fFgBJWFz3TOHccR/+JbA=="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -173,6 +185,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Butterfly.Message.Twilio.Test.TwilioTest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Butterfly.Message.Twilio.Test.TwilioTest.html",
+          "hash": "vGPAcCEfLy1q4eEpQcvTsQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Butterfly.Message.Twilio.Test.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Butterfly.Message.Twilio.Test.html",
+          "hash": "8DbFvf8pzwWsOPDxkmHNbQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Butterfly.Message.Twilio.TwilioTextMessageSender.yml",
       "output": {
         ".html": {
@@ -192,7 +228,7 @@
           "hash": "f1uATuRU/bCdNYPbWXUfow=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -213,34 +249,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Butterfly.Message.html",
-          "hash": "yceufAzqL8+munIBDTmWYg=="
+          "hash": "pi5KhD221GPoWeKzgUTEIQ=="
         }
       },
       "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Butterfly.Notify.Test.TwilioTest.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Butterfly.Notify.Test.TwilioTest.html",
-          "hash": "AtKJXNr3Kt9O4fZiYGo/6w=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Butterfly.Notify.Test.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Butterfly.Notify.Test.html",
-          "hash": "HKCVKN1buIbYgTeoKN5U2Q=="
-        }
-      },
-      "is_incremental": true,
       "version": ""
     },
     {
@@ -252,7 +264,7 @@
           "hash": "LO3XnDWiEpYKNfOjJrosmA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -261,7 +273,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "RiGIa6FEoxWKeFyNERawcA=="
+          "hash": "F89HNHJ4YmSMfgZ6t12vcw=="
         }
       },
       "is_incremental": false,
@@ -335,7 +347,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 20,
+          "total_file_count": 21,
           "skipped_file_count": 11
         }
       }

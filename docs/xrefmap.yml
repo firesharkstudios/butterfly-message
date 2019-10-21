@@ -199,50 +199,56 @@ references:
   isSpec: "True"
   fullName: Butterfly.Message.IMessageSender.SendAsync
   nameWithType: IMessageSender.SendAsync
-- uid: Butterfly.Message.ScribanFormatter
-  name: ScribanFormatter
-  href: api/Butterfly.Message.ScribanFormatter.html
-  commentId: T:Butterfly.Message.ScribanFormatter
-  fullName: Butterfly.Message.ScribanFormatter
-  nameWithType: ScribanFormatter
-- uid: Butterfly.Message.ScribanFormatter.GetFormatter(System.String)
-  name: GetFormatter(String)
-  href: api/Butterfly.Message.ScribanFormatter.html#Butterfly_Message_ScribanFormatter_GetFormatter_System_String_
-  commentId: M:Butterfly.Message.ScribanFormatter.GetFormatter(System.String)
-  fullName: Butterfly.Message.ScribanFormatter.GetFormatter(System.String)
-  nameWithType: ScribanFormatter.GetFormatter(String)
-- uid: Butterfly.Message.ScribanFormatter.GetFormatter*
-  name: GetFormatter
-  href: api/Butterfly.Message.ScribanFormatter.html#Butterfly_Message_ScribanFormatter_GetFormatter_
-  commentId: Overload:Butterfly.Message.ScribanFormatter.GetFormatter
+- uid: Butterfly.Message.ScribanEvaluator
+  name: ScribanEvaluator
+  href: api/Butterfly.Message.ScribanEvaluator.html
+  commentId: T:Butterfly.Message.ScribanEvaluator
+  fullName: Butterfly.Message.ScribanEvaluator
+  nameWithType: ScribanEvaluator
+- uid: Butterfly.Message.ScribanEvaluator.Evaluate(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.String)
+  name: Evaluate(String, System.Collections.Generic.Dictionary<String, Object>, String)
+  href: api/Butterfly.Message.ScribanEvaluator.html#Butterfly_Message_ScribanEvaluator_Evaluate_System_String_System_Collections_Generic_Dictionary_System_String_System_Object__System_String_
+  commentId: M:Butterfly.Message.ScribanEvaluator.Evaluate(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.String)
+  name.vb: Evaluate(String, System.Collections.Generic.Dictionary(Of String, Object), String)
+  fullName: Butterfly.Message.ScribanEvaluator.Evaluate(System.String, System.Collections.Generic.Dictionary<System.String, System.Object>, System.String)
+  fullName.vb: Butterfly.Message.ScribanEvaluator.Evaluate(System.String, System.Collections.Generic.Dictionary(Of System.String, System.Object), System.String)
+  nameWithType: ScribanEvaluator.Evaluate(String, System.Collections.Generic.Dictionary<String, Object>, String)
+  nameWithType.vb: ScribanEvaluator.Evaluate(String, System.Collections.Generic.Dictionary(Of String, Object), String)
+- uid: Butterfly.Message.ScribanEvaluator.Evaluate*
+  name: Evaluate
+  href: api/Butterfly.Message.ScribanEvaluator.html#Butterfly_Message_ScribanEvaluator_Evaluate_
+  commentId: Overload:Butterfly.Message.ScribanEvaluator.Evaluate
   isSpec: "True"
-  fullName: Butterfly.Message.ScribanFormatter.GetFormatter
-  nameWithType: ScribanFormatter.GetFormatter
-- uid: Butterfly.Message.ScribanFormatter.RenderWithRelativeIncludes(Template,System.Object)
+  fullName: Butterfly.Message.ScribanEvaluator.Evaluate
+  nameWithType: ScribanEvaluator.Evaluate
+- uid: Butterfly.Message.ScribanEvaluator.RenderWithRelativeIncludes(Template,System.Object)
   name: RenderWithRelativeIncludes(Template, Object)
-  href: api/Butterfly.Message.ScribanFormatter.html#Butterfly_Message_ScribanFormatter_RenderWithRelativeIncludes_Template_System_Object_
-  commentId: M:Butterfly.Message.ScribanFormatter.RenderWithRelativeIncludes(Template,System.Object)
-  fullName: Butterfly.Message.ScribanFormatter.RenderWithRelativeIncludes(Template, System.Object)
-  nameWithType: ScribanFormatter.RenderWithRelativeIncludes(Template, Object)
-- uid: Butterfly.Message.ScribanFormatter.RenderWithRelativeIncludes*
+  href: api/Butterfly.Message.ScribanEvaluator.html#Butterfly_Message_ScribanEvaluator_RenderWithRelativeIncludes_Template_System_Object_
+  commentId: M:Butterfly.Message.ScribanEvaluator.RenderWithRelativeIncludes(Template,System.Object)
+  fullName: Butterfly.Message.ScribanEvaluator.RenderWithRelativeIncludes(Template, System.Object)
+  nameWithType: ScribanEvaluator.RenderWithRelativeIncludes(Template, Object)
+- uid: Butterfly.Message.ScribanEvaluator.RenderWithRelativeIncludes*
   name: RenderWithRelativeIncludes
-  href: api/Butterfly.Message.ScribanFormatter.html#Butterfly_Message_ScribanFormatter_RenderWithRelativeIncludes_
-  commentId: Overload:Butterfly.Message.ScribanFormatter.RenderWithRelativeIncludes
+  href: api/Butterfly.Message.ScribanEvaluator.html#Butterfly_Message_ScribanEvaluator_RenderWithRelativeIncludes_
+  commentId: Overload:Butterfly.Message.ScribanEvaluator.RenderWithRelativeIncludes
   isSpec: "True"
-  fullName: Butterfly.Message.ScribanFormatter.RenderWithRelativeIncludes
-  nameWithType: ScribanFormatter.RenderWithRelativeIncludes
+  fullName: Butterfly.Message.ScribanEvaluator.RenderWithRelativeIncludes
+  nameWithType: ScribanEvaluator.RenderWithRelativeIncludes
 - uid: Butterfly.Message.SendMessage
   name: SendMessage
   href: api/Butterfly.Message.SendMessage.html
   commentId: T:Butterfly.Message.SendMessage
   fullName: Butterfly.Message.SendMessage
   nameWithType: SendMessage
-- uid: Butterfly.Message.SendMessage.#ctor(System.String,System.String,System.String,System.String,System.String,System.Byte)
-  name: SendMessage(String, String, String, String, String, Byte)
-  href: api/Butterfly.Message.SendMessage.html#Butterfly_Message_SendMessage__ctor_System_String_System_String_System_String_System_String_System_String_System_Byte_
-  commentId: M:Butterfly.Message.SendMessage.#ctor(System.String,System.String,System.String,System.String,System.String,System.Byte)
-  fullName: Butterfly.Message.SendMessage.SendMessage(System.String, System.String, System.String, System.String, System.String, System.Byte)
-  nameWithType: SendMessage.SendMessage(String, String, String, String, String, Byte)
+- uid: Butterfly.Message.SendMessage.#ctor(System.String,System.String,System.String,System.String,System.String,System.Byte,Func{System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.String,System.String},System.String)
+  name: SendMessage(String, String, String, String, String, Byte, Func<String, System.Collections.Generic.Dictionary<String, Object>, String, String>, String)
+  href: api/Butterfly.Message.SendMessage.html#Butterfly_Message_SendMessage__ctor_System_String_System_String_System_String_System_String_System_String_System_Byte_Func_System_String_System_Collections_Generic_Dictionary_System_String_System_Object__System_String_System_String__System_String_
+  commentId: M:Butterfly.Message.SendMessage.#ctor(System.String,System.String,System.String,System.String,System.String,System.Byte,Func{System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.String,System.String},System.String)
+  name.vb: SendMessage(String, String, String, String, String, Byte, Func(Of String, System.Collections.Generic.Dictionary(Of String, Object), String, String), String)
+  fullName: Butterfly.Message.SendMessage.SendMessage(System.String, System.String, System.String, System.String, System.String, System.Byte, Func<System.String, System.Collections.Generic.Dictionary<System.String, System.Object>, System.String, System.String>, System.String)
+  fullName.vb: Butterfly.Message.SendMessage.SendMessage(System.String, System.String, System.String, System.String, System.String, System.Byte, Func(Of System.String, System.Collections.Generic.Dictionary(Of System.String, System.Object), System.String, System.String), System.String)
+  nameWithType: SendMessage.SendMessage(String, String, String, String, String, Byte, Func<String, System.Collections.Generic.Dictionary<String, Object>, String, String>, String)
+  nameWithType.vb: SendMessage.SendMessage(String, String, String, String, String, Byte, Func(Of String, System.Collections.Generic.Dictionary(Of String, Object), String, String), String)
 - uid: Butterfly.Message.SendMessage.#ctor*
   name: SendMessage
   href: api/Butterfly.Message.SendMessage.html#Butterfly_Message_SendMessage__ctor_
@@ -275,18 +281,18 @@ references:
   isSpec: "True"
   fullName: Butterfly.Message.SendMessage.Evaluate
   nameWithType: SendMessage.Evaluate
+- uid: Butterfly.Message.SendMessage.evaluator
+  name: evaluator
+  href: api/Butterfly.Message.SendMessage.html#Butterfly_Message_SendMessage_evaluator
+  commentId: F:Butterfly.Message.SendMessage.evaluator
+  fullName: Butterfly.Message.SendMessage.evaluator
+  nameWithType: SendMessage.evaluator
 - uid: Butterfly.Message.SendMessage.extraData
   name: extraData
   href: api/Butterfly.Message.SendMessage.html#Butterfly_Message_SendMessage_extraData
   commentId: F:Butterfly.Message.SendMessage.extraData
   fullName: Butterfly.Message.SendMessage.extraData
   nameWithType: SendMessage.extraData
-- uid: Butterfly.Message.SendMessage.formatter
-  name: formatter
-  href: api/Butterfly.Message.SendMessage.html#Butterfly_Message_SendMessage_formatter
-  commentId: F:Butterfly.Message.SendMessage.formatter
-  fullName: Butterfly.Message.SendMessage.formatter
-  nameWithType: SendMessage.formatter
 - uid: Butterfly.Message.SendMessage.from
   name: from
   href: api/Butterfly.Message.SendMessage.html#Butterfly_Message_SendMessage_from
@@ -305,12 +311,15 @@ references:
   commentId: F:Butterfly.Message.SendMessage.logger
   fullName: Butterfly.Message.SendMessage.logger
   nameWithType: SendMessage.logger
-- uid: Butterfly.Message.SendMessage.Parse(System.String)
-  name: Parse(String)
-  href: api/Butterfly.Message.SendMessage.html#Butterfly_Message_SendMessage_Parse_System_String_
-  commentId: M:Butterfly.Message.SendMessage.Parse(System.String)
-  fullName: Butterfly.Message.SendMessage.Parse(System.String)
-  nameWithType: SendMessage.Parse(String)
+- uid: Butterfly.Message.SendMessage.Parse(System.String,Func{System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.String,System.String},System.String)
+  name: Parse(String, Func<String, System.Collections.Generic.Dictionary<String, Object>, String, String>, String)
+  href: api/Butterfly.Message.SendMessage.html#Butterfly_Message_SendMessage_Parse_System_String_Func_System_String_System_Collections_Generic_Dictionary_System_String_System_Object__System_String_System_String__System_String_
+  commentId: M:Butterfly.Message.SendMessage.Parse(System.String,Func{System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.String,System.String},System.String)
+  name.vb: Parse(String, Func(Of String, System.Collections.Generic.Dictionary(Of String, Object), String, String), String)
+  fullName: Butterfly.Message.SendMessage.Parse(System.String, Func<System.String, System.Collections.Generic.Dictionary<System.String, System.Object>, System.String, System.String>, System.String)
+  fullName.vb: Butterfly.Message.SendMessage.Parse(System.String, Func(Of System.String, System.Collections.Generic.Dictionary(Of System.String, System.Object), System.String, System.String), System.String)
+  nameWithType: SendMessage.Parse(String, Func<String, System.Collections.Generic.Dictionary<String, Object>, String, String>, String)
+  nameWithType.vb: SendMessage.Parse(String, Func(Of String, System.Collections.Generic.Dictionary(Of String, Object), String, String), String)
 - uid: Butterfly.Message.SendMessage.Parse*
   name: Parse
   href: api/Butterfly.Message.SendMessage.html#Butterfly_Message_SendMessage_Parse_
@@ -318,12 +327,15 @@ references:
   isSpec: "True"
   fullName: Butterfly.Message.SendMessage.Parse
   nameWithType: SendMessage.Parse
-- uid: Butterfly.Message.SendMessage.ParseFile(System.String)
-  name: ParseFile(String)
-  href: api/Butterfly.Message.SendMessage.html#Butterfly_Message_SendMessage_ParseFile_System_String_
-  commentId: M:Butterfly.Message.SendMessage.ParseFile(System.String)
-  fullName: Butterfly.Message.SendMessage.ParseFile(System.String)
-  nameWithType: SendMessage.ParseFile(String)
+- uid: Butterfly.Message.SendMessage.ParseFile(System.String,Dictionary{System.String,Func{System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.String,System.String}})
+  name: ParseFile(String, Dictionary<String, Func<String, System.Collections.Generic.Dictionary<String, Object>, String, String>>)
+  href: api/Butterfly.Message.SendMessage.html#Butterfly_Message_SendMessage_ParseFile_System_String_Dictionary_System_String_Func_System_String_System_Collections_Generic_Dictionary_System_String_System_Object__System_String_System_String___
+  commentId: M:Butterfly.Message.SendMessage.ParseFile(System.String,Dictionary{System.String,Func{System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.String,System.String}})
+  name.vb: ParseFile(String, Dictionary(Of String, Func(Of String, System.Collections.Generic.Dictionary(Of String, Object), String, String)))
+  fullName: Butterfly.Message.SendMessage.ParseFile(System.String, Dictionary<System.String, Func<System.String, System.Collections.Generic.Dictionary<System.String, System.Object>, System.String, System.String>>)
+  fullName.vb: Butterfly.Message.SendMessage.ParseFile(System.String, Dictionary(Of System.String, Func(Of System.String, System.Collections.Generic.Dictionary(Of System.String, System.Object), System.String, System.String)))
+  nameWithType: SendMessage.ParseFile(String, Dictionary<String, Func<String, System.Collections.Generic.Dictionary<String, Object>, String, String>>)
+  nameWithType.vb: SendMessage.ParseFile(String, Dictionary(Of String, Func(Of String, System.Collections.Generic.Dictionary(Of String, Object), String, String)))
 - uid: Butterfly.Message.SendMessage.ParseFile*
   name: ParseFile
   href: api/Butterfly.Message.SendMessage.html#Butterfly_Message_SendMessage_ParseFile_
@@ -343,6 +355,12 @@ references:
   commentId: F:Butterfly.Message.SendMessage.SECTION_DELIM
   fullName: Butterfly.Message.SendMessage.SECTION_DELIM
   nameWithType: SendMessage.SECTION_DELIM
+- uid: Butterfly.Message.SendMessage.sourceFile
+  name: sourceFile
+  href: api/Butterfly.Message.SendMessage.html#Butterfly_Message_SendMessage_sourceFile
+  commentId: F:Butterfly.Message.SendMessage.sourceFile
+  fullName: Butterfly.Message.SendMessage.sourceFile
+  nameWithType: SendMessage.sourceFile
 - uid: Butterfly.Message.SendMessage.subject
   name: subject
   href: api/Butterfly.Message.SendMessage.html#Butterfly_Message_SendMessage_subject
@@ -367,12 +385,12 @@ references:
   commentId: T:Butterfly.Message.SendMessageQueueManager
   fullName: Butterfly.Message.SendMessageQueueManager
   nameWithType: SendMessageQueueManager
-- uid: Butterfly.Message.SendMessageQueueManager.#ctor(Butterfly.Db.IDatabase,Butterfly.Message.IMessageSender,Butterfly.Message.IMessageSender,System.String,System.String,System.Int32,System.String,System.String,System.String)
-  name: SendMessageQueueManager(IDatabase, IMessageSender, IMessageSender, String, String, Int32, String, String, String)
-  href: api/Butterfly.Message.SendMessageQueueManager.html#Butterfly_Message_SendMessageQueueManager__ctor_Butterfly_Db_IDatabase_Butterfly_Message_IMessageSender_Butterfly_Message_IMessageSender_System_String_System_String_System_Int32_System_String_System_String_System_String_
-  commentId: M:Butterfly.Message.SendMessageQueueManager.#ctor(Butterfly.Db.IDatabase,Butterfly.Message.IMessageSender,Butterfly.Message.IMessageSender,System.String,System.String,System.Int32,System.String,System.String,System.String)
-  fullName: Butterfly.Message.SendMessageQueueManager.SendMessageQueueManager(Butterfly.Db.IDatabase, Butterfly.Message.IMessageSender, Butterfly.Message.IMessageSender, System.String, System.String, System.Int32, System.String, System.String, System.String)
-  nameWithType: SendMessageQueueManager.SendMessageQueueManager(IDatabase, IMessageSender, IMessageSender, String, String, Int32, String, String, String)
+- uid: Butterfly.Message.SendMessageQueueManager.#ctor(Butterfly.Db.IDatabase,Butterfly.Message.IMessageSender,Butterfly.Message.IMessageSender,System.String,System.String,System.Int32,Butterfly.Message.SendMessage,Butterfly.Message.SendMessage,System.String)
+  name: SendMessageQueueManager(IDatabase, IMessageSender, IMessageSender, String, String, Int32, SendMessage, SendMessage, String)
+  href: api/Butterfly.Message.SendMessageQueueManager.html#Butterfly_Message_SendMessageQueueManager__ctor_Butterfly_Db_IDatabase_Butterfly_Message_IMessageSender_Butterfly_Message_IMessageSender_System_String_System_String_System_Int32_Butterfly_Message_SendMessage_Butterfly_Message_SendMessage_System_String_
+  commentId: M:Butterfly.Message.SendMessageQueueManager.#ctor(Butterfly.Db.IDatabase,Butterfly.Message.IMessageSender,Butterfly.Message.IMessageSender,System.String,System.String,System.Int32,Butterfly.Message.SendMessage,Butterfly.Message.SendMessage,System.String)
+  fullName: Butterfly.Message.SendMessageQueueManager.SendMessageQueueManager(Butterfly.Db.IDatabase, Butterfly.Message.IMessageSender, Butterfly.Message.IMessageSender, System.String, System.String, System.Int32, Butterfly.Message.SendMessage, Butterfly.Message.SendMessage, System.String)
+  nameWithType: SendMessageQueueManager.SendMessageQueueManager(IDatabase, IMessageSender, IMessageSender, String, String, Int32, SendMessage, SendMessage, String)
 - uid: Butterfly.Message.SendMessageQueueManager.#ctor*
   name: SendMessageQueueManager
   href: api/Butterfly.Message.SendMessageQueueManager.html#Butterfly_Message_SendMessageQueueManager__ctor_
@@ -680,6 +698,28 @@ references:
   commentId: F:Butterfly.Message.SendMessageType.Text
   fullName: Butterfly.Message.SendMessageType.Text
   nameWithType: SendMessageType.Text
+- uid: Butterfly.Message.SimpleEvaluator
+  name: SimpleEvaluator
+  href: api/Butterfly.Message.SimpleEvaluator.html
+  commentId: T:Butterfly.Message.SimpleEvaluator
+  fullName: Butterfly.Message.SimpleEvaluator
+  nameWithType: SimpleEvaluator
+- uid: Butterfly.Message.SimpleEvaluator.Evaluate(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.String)
+  name: Evaluate(String, System.Collections.Generic.Dictionary<String, Object>, String)
+  href: api/Butterfly.Message.SimpleEvaluator.html#Butterfly_Message_SimpleEvaluator_Evaluate_System_String_System_Collections_Generic_Dictionary_System_String_System_Object__System_String_
+  commentId: M:Butterfly.Message.SimpleEvaluator.Evaluate(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.String)
+  name.vb: Evaluate(String, System.Collections.Generic.Dictionary(Of String, Object), String)
+  fullName: Butterfly.Message.SimpleEvaluator.Evaluate(System.String, System.Collections.Generic.Dictionary<System.String, System.Object>, System.String)
+  fullName.vb: Butterfly.Message.SimpleEvaluator.Evaluate(System.String, System.Collections.Generic.Dictionary(Of System.String, System.Object), System.String)
+  nameWithType: SimpleEvaluator.Evaluate(String, System.Collections.Generic.Dictionary<String, Object>, String)
+  nameWithType.vb: SimpleEvaluator.Evaluate(String, System.Collections.Generic.Dictionary(Of String, Object), String)
+- uid: Butterfly.Message.SimpleEvaluator.Evaluate*
+  name: Evaluate
+  href: api/Butterfly.Message.SimpleEvaluator.html#Butterfly_Message_SimpleEvaluator_Evaluate_
+  commentId: Overload:Butterfly.Message.SimpleEvaluator.Evaluate
+  isSpec: "True"
+  fullName: Butterfly.Message.SimpleEvaluator.Evaluate
+  nameWithType: SimpleEvaluator.Evaluate
 - uid: Butterfly.Message.Test
   name: Butterfly.Message.Test
   href: api/Butterfly.Message.Test.html
@@ -737,6 +777,31 @@ references:
   commentId: N:Butterfly.Message.Twilio
   fullName: Butterfly.Message.Twilio
   nameWithType: Butterfly.Message.Twilio
+- uid: Butterfly.Message.Twilio.Test
+  name: Butterfly.Message.Twilio.Test
+  href: api/Butterfly.Message.Twilio.Test.html
+  commentId: N:Butterfly.Message.Twilio.Test
+  fullName: Butterfly.Message.Twilio.Test
+  nameWithType: Butterfly.Message.Twilio.Test
+- uid: Butterfly.Message.Twilio.Test.TwilioTest
+  name: TwilioTest
+  href: api/Butterfly.Message.Twilio.Test.TwilioTest.html
+  commentId: T:Butterfly.Message.Twilio.Test.TwilioTest
+  fullName: Butterfly.Message.Twilio.Test.TwilioTest
+  nameWithType: TwilioTest
+- uid: Butterfly.Message.Twilio.Test.TwilioTest.SendTwilioSmsNotifyMessage
+  name: SendTwilioSmsNotifyMessage()
+  href: api/Butterfly.Message.Twilio.Test.TwilioTest.html#Butterfly_Message_Twilio_Test_TwilioTest_SendTwilioSmsNotifyMessage
+  commentId: M:Butterfly.Message.Twilio.Test.TwilioTest.SendTwilioSmsNotifyMessage
+  fullName: Butterfly.Message.Twilio.Test.TwilioTest.SendTwilioSmsNotifyMessage()
+  nameWithType: TwilioTest.SendTwilioSmsNotifyMessage()
+- uid: Butterfly.Message.Twilio.Test.TwilioTest.SendTwilioSmsNotifyMessage*
+  name: SendTwilioSmsNotifyMessage
+  href: api/Butterfly.Message.Twilio.Test.TwilioTest.html#Butterfly_Message_Twilio_Test_TwilioTest_SendTwilioSmsNotifyMessage_
+  commentId: Overload:Butterfly.Message.Twilio.Test.TwilioTest.SendTwilioSmsNotifyMessage
+  isSpec: "True"
+  fullName: Butterfly.Message.Twilio.Test.TwilioTest.SendTwilioSmsNotifyMessage
+  nameWithType: TwilioTest.SendTwilioSmsNotifyMessage
 - uid: Butterfly.Message.Twilio.TwilioTextMessageSender
   name: TwilioTextMessageSender
   href: api/Butterfly.Message.Twilio.TwilioTextMessageSender.html
@@ -812,28 +877,3 @@ references:
   isSpec: "True"
   fullName: Butterfly.Message.Twilio.TwilioWebApi.Setup
   nameWithType: TwilioWebApi.Setup
-- uid: Butterfly.Notify.Test
-  name: Butterfly.Notify.Test
-  href: api/Butterfly.Notify.Test.html
-  commentId: N:Butterfly.Notify.Test
-  fullName: Butterfly.Notify.Test
-  nameWithType: Butterfly.Notify.Test
-- uid: Butterfly.Notify.Test.TwilioTest
-  name: TwilioTest
-  href: api/Butterfly.Notify.Test.TwilioTest.html
-  commentId: T:Butterfly.Notify.Test.TwilioTest
-  fullName: Butterfly.Notify.Test.TwilioTest
-  nameWithType: TwilioTest
-- uid: Butterfly.Notify.Test.TwilioTest.SendTwilioSmsNotifyMessage
-  name: SendTwilioSmsNotifyMessage()
-  href: api/Butterfly.Notify.Test.TwilioTest.html#Butterfly_Notify_Test_TwilioTest_SendTwilioSmsNotifyMessage
-  commentId: M:Butterfly.Notify.Test.TwilioTest.SendTwilioSmsNotifyMessage
-  fullName: Butterfly.Notify.Test.TwilioTest.SendTwilioSmsNotifyMessage()
-  nameWithType: TwilioTest.SendTwilioSmsNotifyMessage()
-- uid: Butterfly.Notify.Test.TwilioTest.SendTwilioSmsNotifyMessage*
-  name: SendTwilioSmsNotifyMessage
-  href: api/Butterfly.Notify.Test.TwilioTest.html#Butterfly_Notify_Test_TwilioTest_SendTwilioSmsNotifyMessage_
-  commentId: Overload:Butterfly.Notify.Test.TwilioTest.SendTwilioSmsNotifyMessage
-  isSpec: "True"
-  fullName: Butterfly.Notify.Test.TwilioTest.SendTwilioSmsNotifyMessage
-  nameWithType: TwilioTest.SendTwilioSmsNotifyMessage

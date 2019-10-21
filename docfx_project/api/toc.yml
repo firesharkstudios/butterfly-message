@@ -6,8 +6,8 @@
     name: BaseMessageSender
   - uid: Butterfly.Message.IMessageSender
     name: IMessageSender
-  - uid: Butterfly.Message.ScribanFormatter
-    name: ScribanFormatter
+  - uid: Butterfly.Message.ScribanEvaluator
+    name: ScribanEvaluator
   - uid: Butterfly.Message.SendMessage
     name: SendMessage
   - uid: Butterfly.Message.SendMessageQueueManager
@@ -16,6 +16,8 @@
     name: SendMessageQueueManager.SendMessageEngine
   - uid: Butterfly.Message.SendMessageType
     name: SendMessageType
+  - uid: Butterfly.Message.SimpleEvaluator
+    name: SimpleEvaluator
 - uid: Butterfly.Message.Aws
   name: Butterfly.Message.Aws
   items:
@@ -40,8 +42,8 @@
     name: TwilioTextMessageSender
   - uid: Butterfly.Message.Twilio.TwilioWebApi
     name: TwilioWebApi
-- uid: Butterfly.Notify.Test
-  name: Butterfly.Notify.Test
+- uid: Butterfly.Message.Twilio.Test
+  name: Butterfly.Message.Twilio.Test
   items:
-  - uid: Butterfly.Notify.Test.TwilioTest
+  - uid: Butterfly.Message.Twilio.Test.TwilioTest
     name: TwilioTest

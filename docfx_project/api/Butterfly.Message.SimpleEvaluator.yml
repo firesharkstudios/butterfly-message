@@ -1,0 +1,216 @@
+### YamlMime:ManagedReference
+items:
+- uid: Butterfly.Message.SimpleEvaluator
+  commentId: T:Butterfly.Message.SimpleEvaluator
+  id: SimpleEvaluator
+  parent: Butterfly.Message
+  children:
+  - Butterfly.Message.SimpleEvaluator.Evaluate(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.String)
+  langs:
+  - csharp
+  - vb
+  name: SimpleEvaluator
+  nameWithType: SimpleEvaluator
+  fullName: Butterfly.Message.SimpleEvaluator
+  type: Class
+  source:
+    remote:
+      path: Butterfly.Message/SimpleEvaluator.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-message.git
+    id: SimpleEvaluator
+    path: ../Butterfly.Message/SimpleEvaluator.cs
+    startLine: 5
+  assemblies:
+  - Butterfly.Message
+  namespace: Butterfly.Message
+  syntax:
+    content: 'public static class SimpleEvaluator : object'
+    content.vb: >-
+      Public Module SimpleEvaluator
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Butterfly.Message.SimpleEvaluator.Evaluate(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.String)
+  commentId: M:Butterfly.Message.SimpleEvaluator.Evaluate(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.String)
+  id: Evaluate(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.String)
+  parent: Butterfly.Message.SimpleEvaluator
+  langs:
+  - csharp
+  - vb
+  name: Evaluate(String, System.Collections.Generic.Dictionary<String, Object>, String)
+  nameWithType: SimpleEvaluator.Evaluate(String, System.Collections.Generic.Dictionary<String, Object>, String)
+  fullName: Butterfly.Message.SimpleEvaluator.Evaluate(System.String, System.Collections.Generic.Dictionary<System.String, System.Object>, System.String)
+  type: Method
+  source:
+    remote:
+      path: Butterfly.Message/SimpleEvaluator.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-message.git
+    id: Evaluate
+    path: ../Butterfly.Message/SimpleEvaluator.cs
+    startLine: 6
+  assemblies:
+  - Butterfly.Message
+  namespace: Butterfly.Message
+  syntax:
+    content: public static string Evaluate(string text, System.Collections.Generic.Dictionary<string, object> vars, string sourceFilePath)
+    parameters:
+    - id: text
+      type: System.String
+    - id: vars
+      type: System.Collections.Generic.Dictionary{System.String,System.Object}
+    - id: sourceFilePath
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function Evaluate(text As String, vars As System.Collections.Generic.Dictionary(Of String, Object), sourceFilePath As String) As String
+  overload: Butterfly.Message.SimpleEvaluator.Evaluate*
+  nameWithType.vb: SimpleEvaluator.Evaluate(String, System.Collections.Generic.Dictionary(Of String, Object), String)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Butterfly.Message.SimpleEvaluator.Evaluate(System.String, System.Collections.Generic.Dictionary(Of System.String, System.Object), System.String)
+  name.vb: Evaluate(String, System.Collections.Generic.Dictionary(Of String, Object), String)
+references:
+- uid: Butterfly.Message
+  commentId: N:Butterfly.Message
+  name: Butterfly.Message
+  nameWithType: Butterfly.Message
+  fullName: Butterfly.Message
+- uid: System.Object
+  commentId: T:System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Butterfly.Message.SimpleEvaluator.Evaluate*
+  commentId: Overload:Butterfly.Message.SimpleEvaluator.Evaluate
+  name: Evaluate
+  nameWithType: SimpleEvaluator.Evaluate
+  fullName: Butterfly.Message.SimpleEvaluator.Evaluate
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Collections.Generic.Dictionary{System.String,System.Object}
+  commentId: '!:System.Collections.Generic.Dictionary{System.String,System.Object}'
+  definition: System.Collections.Generic.Dictionary`2
+  name: System.Collections.Generic.Dictionary<String, Object>
+  nameWithType: System.Collections.Generic.Dictionary<String, Object>
+  fullName: System.Collections.Generic.Dictionary<System.String, System.Object>
+  nameWithType.vb: System.Collections.Generic.Dictionary(Of String, Object)
+  fullName.vb: System.Collections.Generic.Dictionary(Of System.String, System.Object)
+  name.vb: System.Collections.Generic.Dictionary(Of String, Object)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: System.Collections.Generic.Dictionary
+    nameWithType: System.Collections.Generic.Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: System.Collections.Generic.Dictionary
+    nameWithType: System.Collections.Generic.Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.Dictionary`2
+  isExternal: true
+  name: System.Collections.Generic.Dictionary<, >
+  nameWithType: System.Collections.Generic.Dictionary<, >
+  fullName: System.Collections.Generic.Dictionary<, >
+  nameWithType.vb: System.Collections.Generic.Dictionary(Of , )
+  fullName.vb: System.Collections.Generic.Dictionary(Of , )
+  name.vb: System.Collections.Generic.Dictionary(Of , )
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: System.Collections.Generic.Dictionary
+    nameWithType: System.Collections.Generic.Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: System.Collections.Generic.Dictionary
+    nameWithType: System.Collections.Generic.Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+shouldSkipMarkup: true

@@ -44,7 +44,7 @@ namespace Butterfly.Message {
 
         protected readonly static Random RANDOM = new Random();
 
-        public SendMessageQueueManager(IDatabase database, IMessageSender emailMessageSender = null, IMessageSender textMessageSender = null, string sendMessageTableName = "send_message", string sendVerifyTableName = "send_verify", int verifyCodeExpiresSeconds = 3600, string verifyEmailFile = null, string verifyPhoneTextFile = null, string verifyCodeFormat = "###-###") {
+        public SendMessageQueueManager(IDatabase database, IMessageSender emailMessageSender = null, IMessageSender textMessageSender = null, string sendMessageTableName = "send_message", string sendVerifyTableName = "send_verify", int verifyCodeExpiresSeconds = 3600, SendMessage verifyEmailSendMessage = null, SendMessage verifyTextSendMessage = null, string verifyCodeFormat = "###-###") {
             this.database = database;
             this.emailSendMessageEngine = emailMessageSender == null ? null : new SendMessageEngine(SendMessageType.Email, emailMessageSender, database, sendMessageTableName);
             this.textSendMessageEngine = textMessageSender == null ? null : new SendMessageEngine(SendMessageType.Text, textMessageSender, database, sendMessageTableName);
@@ -52,8 +52,8 @@ namespace Butterfly.Message {
             this.sendVerifyTableName = sendVerifyTableName;
             this.verifyCodeExpiresSeconds = verifyCodeExpiresSeconds;
 
-            this.verifyEmailSendMessage = verifyEmailFile!=null ? SendMessage.ParseFile(verifyEmailFile) : null;
-            this.verifyTextSendMessage = verifyPhoneTextFile!=null ? SendMessage.ParseFile(verifyPhoneTextFile) : null;
+            this.verifyEmailSendMessage = verifyEmailSendMessage;
+            this.verifyTextSendMessage = verifyTextSendMessage;
             this.verifyCodeFormat = verifyCodeFormat;
         }
 

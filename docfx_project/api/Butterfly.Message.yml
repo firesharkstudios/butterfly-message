@@ -6,11 +6,12 @@ items:
   children:
   - Butterfly.Message.BaseMessageSender
   - Butterfly.Message.IMessageSender
-  - Butterfly.Message.ScribanFormatter
+  - Butterfly.Message.ScribanEvaluator
   - Butterfly.Message.SendMessage
   - Butterfly.Message.SendMessageQueueManager
   - Butterfly.Message.SendMessageQueueManager.SendMessageEngine
   - Butterfly.Message.SendMessageType
+  - Butterfly.Message.SimpleEvaluator
   langs:
   - csharp
   - vb
@@ -33,11 +34,11 @@ references:
   name: IMessageSender
   nameWithType: IMessageSender
   fullName: Butterfly.Message.IMessageSender
-- uid: Butterfly.Message.ScribanFormatter
-  commentId: T:Butterfly.Message.ScribanFormatter
-  name: ScribanFormatter
-  nameWithType: ScribanFormatter
-  fullName: Butterfly.Message.ScribanFormatter
+- uid: Butterfly.Message.ScribanEvaluator
+  commentId: T:Butterfly.Message.ScribanEvaluator
+  name: ScribanEvaluator
+  nameWithType: ScribanEvaluator
+  fullName: Butterfly.Message.ScribanEvaluator
 - uid: Butterfly.Message.SendMessage
   commentId: T:Butterfly.Message.SendMessage
   parent: Butterfly.Message
@@ -61,6 +62,11 @@ references:
   name: SendMessageQueueManager.SendMessageEngine
   nameWithType: SendMessageQueueManager.SendMessageEngine
   fullName: Butterfly.Message.SendMessageQueueManager.SendMessageEngine
+- uid: Butterfly.Message.SimpleEvaluator
+  commentId: T:Butterfly.Message.SimpleEvaluator
+  name: SimpleEvaluator
+  nameWithType: SimpleEvaluator
+  fullName: Butterfly.Message.SimpleEvaluator
 - uid: Butterfly.Message
   commentId: N:Butterfly.Message
   name: Butterfly.Message

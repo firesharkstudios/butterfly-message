@@ -89,12 +89,12 @@
   <h3 id="constructors">Constructors
   </h3>
   <a id="Butterfly_Message_SendMessageQueueManager__ctor_" data-uid="Butterfly.Message.SendMessageQueueManager.#ctor*"></a>
-  <h4 id="Butterfly_Message_SendMessageQueueManager__ctor_Butterfly_Db_IDatabase_Butterfly_Message_IMessageSender_Butterfly_Message_IMessageSender_System_String_System_String_System_Int32_System_String_System_String_System_String_" data-uid="Butterfly.Message.SendMessageQueueManager.#ctor(Butterfly.Db.IDatabase,Butterfly.Message.IMessageSender,Butterfly.Message.IMessageSender,System.String,System.String,System.Int32,System.String,System.String,System.String)">SendMessageQueueManager(IDatabase, IMessageSender, IMessageSender, String, String, Int32, String, String, String)</h4>
+  <h4 id="Butterfly_Message_SendMessageQueueManager__ctor_Butterfly_Db_IDatabase_Butterfly_Message_IMessageSender_Butterfly_Message_IMessageSender_System_String_System_String_System_Int32_Butterfly_Message_SendMessage_Butterfly_Message_SendMessage_System_String_" data-uid="Butterfly.Message.SendMessageQueueManager.#ctor(Butterfly.Db.IDatabase,Butterfly.Message.IMessageSender,Butterfly.Message.IMessageSender,System.String,System.String,System.Int32,Butterfly.Message.SendMessage,Butterfly.Message.SendMessage,System.String)">SendMessageQueueManager(IDatabase, IMessageSender, IMessageSender, String, String, Int32, SendMessage, SendMessage, String)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public SendMessageQueueManager(IDatabase database, IMessageSender emailMessageSender = null, IMessageSender textMessageSender = null, string sendMessageTableName = &quot;send_message&quot;, string sendVerifyTableName = &quot;send_verify&quot;, int verifyCodeExpiresSeconds = 3600, string verifyEmailFile = null, string verifyPhoneTextFile = null, string verifyCodeFormat = &quot;###-###&quot;)</code></pre>
+    <pre><code class="lang-csharp hljs">public SendMessageQueueManager(IDatabase database, IMessageSender emailMessageSender = null, IMessageSender textMessageSender = null, string sendMessageTableName = &quot;send_message&quot;, string sendVerifyTableName = &quot;send_verify&quot;, int verifyCodeExpiresSeconds = 3600, SendMessage verifyEmailSendMessage = null, SendMessage verifyTextSendMessage = null, string verifyCodeFormat = &quot;###-###&quot;)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -137,13 +137,13 @@
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">verifyEmailFile</span></td>
+        <td><a class="xref" href="Butterfly.Message.SendMessage.html">SendMessage</a></td>
+        <td><span class="parametername">verifyEmailSendMessage</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">verifyPhoneTextFile</span></td>
+        <td><a class="xref" href="Butterfly.Message.SendMessage.html">SendMessage</a></td>
+        <td><span class="parametername">verifyTextSendMessage</span></td>
         <td></td>
       </tr>
       <tr>

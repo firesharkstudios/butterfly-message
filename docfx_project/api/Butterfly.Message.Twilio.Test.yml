@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Butterfly.Message.Twilio.Test
+  commentId: N:Butterfly.Message.Twilio.Test
+  id: Butterfly.Message.Twilio.Test
+  children:
+  - Butterfly.Message.Twilio.Test.TwilioTest
+  langs:
+  - csharp
+  - vb
+  name: Butterfly.Message.Twilio.Test
+  nameWithType: Butterfly.Message.Twilio.Test
+  fullName: Butterfly.Message.Twilio.Test
+  type: Namespace
+  assemblies:
+  - Butterfly.Message.Twilio.Test
+references:
+- uid: Butterfly.Message.Twilio.Test.TwilioTest
+  commentId: T:Butterfly.Message.Twilio.Test.TwilioTest
+  name: TwilioTest
+  nameWithType: TwilioTest
+  fullName: Butterfly.Message.Twilio.Test.TwilioTest
+shouldSkipMarkup: true
