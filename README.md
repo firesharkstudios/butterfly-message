@@ -16,6 +16,9 @@
 
 # Overview
 
+Any files parsed with the ```.liquid``` extension will use the excellent [Scriban](https://github.com/lunet-io/scriban) template
+engine which is based on the Liquid template language.
+
 ```cs
 // Parse messages
 var sendMessageFileParser = new SendMessageFileParser();
