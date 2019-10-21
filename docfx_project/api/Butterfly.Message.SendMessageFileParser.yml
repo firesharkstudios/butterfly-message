@@ -30,6 +30,7 @@ items:
     content: 'public class SendMessageFileParser : object'
     content.vb: >-
       Public Class SendMessageFileParser
+
           Inherits Object
   inheritance:
   - System.Object

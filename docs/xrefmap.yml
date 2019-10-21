@@ -19,6 +19,37 @@ references:
   commentId: T:Butterfly.Message.Aws.AwsSesEmailMessageSender
   fullName: Butterfly.Message.Aws.AwsSesEmailMessageSender
   nameWithType: AwsSesEmailMessageSender
+- uid: Butterfly.Message.Aws.AwsSesEmailMessageSender.#ctor
+  name: AwsSesEmailMessageSender()
+  href: api/Butterfly.Message.Aws.AwsSesEmailMessageSender.html#Butterfly_Message_Aws_AwsSesEmailMessageSender__ctor
+  commentId: M:Butterfly.Message.Aws.AwsSesEmailMessageSender.#ctor
+  fullName: Butterfly.Message.Aws.AwsSesEmailMessageSender.AwsSesEmailMessageSender()
+  nameWithType: AwsSesEmailMessageSender.AwsSesEmailMessageSender()
+- uid: Butterfly.Message.Aws.AwsSesEmailMessageSender.#ctor(System.String,System.String)
+  name: AwsSesEmailMessageSender(String, String)
+  href: api/Butterfly.Message.Aws.AwsSesEmailMessageSender.html#Butterfly_Message_Aws_AwsSesEmailMessageSender__ctor_System_String_System_String_
+  commentId: M:Butterfly.Message.Aws.AwsSesEmailMessageSender.#ctor(System.String,System.String)
+  fullName: Butterfly.Message.Aws.AwsSesEmailMessageSender.AwsSesEmailMessageSender(System.String, System.String)
+  nameWithType: AwsSesEmailMessageSender.AwsSesEmailMessageSender(String, String)
+- uid: Butterfly.Message.Aws.AwsSesEmailMessageSender.#ctor*
+  name: AwsSesEmailMessageSender
+  href: api/Butterfly.Message.Aws.AwsSesEmailMessageSender.html#Butterfly_Message_Aws_AwsSesEmailMessageSender__ctor_
+  commentId: Overload:Butterfly.Message.Aws.AwsSesEmailMessageSender.#ctor
+  isSpec: "True"
+  fullName: Butterfly.Message.Aws.AwsSesEmailMessageSender.AwsSesEmailMessageSender
+  nameWithType: AwsSesEmailMessageSender.AwsSesEmailMessageSender
+- uid: Butterfly.Message.Aws.AwsSesEmailMessageSender.awsAccessKeyId
+  name: awsAccessKeyId
+  href: api/Butterfly.Message.Aws.AwsSesEmailMessageSender.html#Butterfly_Message_Aws_AwsSesEmailMessageSender_awsAccessKeyId
+  commentId: F:Butterfly.Message.Aws.AwsSesEmailMessageSender.awsAccessKeyId
+  fullName: Butterfly.Message.Aws.AwsSesEmailMessageSender.awsAccessKeyId
+  nameWithType: AwsSesEmailMessageSender.awsAccessKeyId
+- uid: Butterfly.Message.Aws.AwsSesEmailMessageSender.awsSecretAccessKey
+  name: awsSecretAccessKey
+  href: api/Butterfly.Message.Aws.AwsSesEmailMessageSender.html#Butterfly_Message_Aws_AwsSesEmailMessageSender_awsSecretAccessKey
+  commentId: F:Butterfly.Message.Aws.AwsSesEmailMessageSender.awsSecretAccessKey
+  fullName: Butterfly.Message.Aws.AwsSesEmailMessageSender.awsSecretAccessKey
+  nameWithType: AwsSesEmailMessageSender.awsSecretAccessKey
 - uid: Butterfly.Message.Aws.AwsSesEmailMessageSender.DoSendAsync(System.String,System.String,System.String,System.String,System.String,System.String[])
   name: DoSendAsync(String, String, String, String, String, String[])
   href: api/Butterfly.Message.Aws.AwsSesEmailMessageSender.html#Butterfly_Message_Aws_AwsSesEmailMessageSender_DoSendAsync_System_String_System_String_System_String_System_String_System_String_System_String___
@@ -35,6 +66,19 @@ references:
   isSpec: "True"
   fullName: Butterfly.Message.Aws.AwsSesEmailMessageSender.DoSendAsync
   nameWithType: AwsSesEmailMessageSender.DoSendAsync
+- uid: Butterfly.Message.Aws.AwsSesEmailMessageSender.GetClient
+  name: GetClient()
+  href: api/Butterfly.Message.Aws.AwsSesEmailMessageSender.html#Butterfly_Message_Aws_AwsSesEmailMessageSender_GetClient
+  commentId: M:Butterfly.Message.Aws.AwsSesEmailMessageSender.GetClient
+  fullName: Butterfly.Message.Aws.AwsSesEmailMessageSender.GetClient()
+  nameWithType: AwsSesEmailMessageSender.GetClient()
+- uid: Butterfly.Message.Aws.AwsSesEmailMessageSender.GetClient*
+  name: GetClient
+  href: api/Butterfly.Message.Aws.AwsSesEmailMessageSender.html#Butterfly_Message_Aws_AwsSesEmailMessageSender_GetClient_
+  commentId: Overload:Butterfly.Message.Aws.AwsSesEmailMessageSender.GetClient
+  isSpec: "True"
+  fullName: Butterfly.Message.Aws.AwsSesEmailMessageSender.GetClient
+  nameWithType: AwsSesEmailMessageSender.GetClient
 - uid: Butterfly.Message.Aws.AwsSesEmailMessageSender.logger
   name: logger
   href: api/Butterfly.Message.Aws.AwsSesEmailMessageSender.html#Butterfly_Message_Aws_AwsSesEmailMessageSender_logger

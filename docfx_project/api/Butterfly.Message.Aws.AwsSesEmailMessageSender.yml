@@ -5,7 +5,12 @@ items:
   id: AwsSesEmailMessageSender
   parent: Butterfly.Message.Aws
   children:
+  - Butterfly.Message.Aws.AwsSesEmailMessageSender.#ctor
+  - Butterfly.Message.Aws.AwsSesEmailMessageSender.#ctor(System.String,System.String)
+  - Butterfly.Message.Aws.AwsSesEmailMessageSender.awsAccessKeyId
+  - Butterfly.Message.Aws.AwsSesEmailMessageSender.awsSecretAccessKey
   - Butterfly.Message.Aws.AwsSesEmailMessageSender.DoSendAsync(System.String,System.String,System.String,System.String,System.String,System.String[])
+  - Butterfly.Message.Aws.AwsSesEmailMessageSender.GetClient
   - Butterfly.Message.Aws.AwsSesEmailMessageSender.logger
   langs:
   - csharp
@@ -82,6 +87,137 @@ items:
   - Protected
   - Shared
   - ReadOnly
+- uid: Butterfly.Message.Aws.AwsSesEmailMessageSender.awsAccessKeyId
+  commentId: F:Butterfly.Message.Aws.AwsSesEmailMessageSender.awsAccessKeyId
+  id: awsAccessKeyId
+  parent: Butterfly.Message.Aws.AwsSesEmailMessageSender
+  langs:
+  - csharp
+  - vb
+  name: awsAccessKeyId
+  nameWithType: AwsSesEmailMessageSender.awsAccessKeyId
+  fullName: Butterfly.Message.Aws.AwsSesEmailMessageSender.awsAccessKeyId
+  type: Field
+  source:
+    remote:
+      path: Butterfly.Message.Aws/AwsSesEmailMessageSender.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-message.git
+    id: awsAccessKeyId
+    path: ../Butterfly.Message.Aws/AwsSesEmailMessageSender.cs
+    startLine: 18
+  assemblies:
+  - Butterfly.Message.Aws
+  namespace: Butterfly.Message.Aws
+  syntax:
+    content: protected readonly string awsAccessKeyId
+    return:
+      type: System.String
+    content.vb: Protected ReadOnly awsAccessKeyId As String
+  modifiers.csharp:
+  - protected
+  - readonly
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+- uid: Butterfly.Message.Aws.AwsSesEmailMessageSender.awsSecretAccessKey
+  commentId: F:Butterfly.Message.Aws.AwsSesEmailMessageSender.awsSecretAccessKey
+  id: awsSecretAccessKey
+  parent: Butterfly.Message.Aws.AwsSesEmailMessageSender
+  langs:
+  - csharp
+  - vb
+  name: awsSecretAccessKey
+  nameWithType: AwsSesEmailMessageSender.awsSecretAccessKey
+  fullName: Butterfly.Message.Aws.AwsSesEmailMessageSender.awsSecretAccessKey
+  type: Field
+  source:
+    remote:
+      path: Butterfly.Message.Aws/AwsSesEmailMessageSender.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-message.git
+    id: awsSecretAccessKey
+    path: ../Butterfly.Message.Aws/AwsSesEmailMessageSender.cs
+    startLine: 19
+  assemblies:
+  - Butterfly.Message.Aws
+  namespace: Butterfly.Message.Aws
+  syntax:
+    content: protected readonly string awsSecretAccessKey
+    return:
+      type: System.String
+    content.vb: Protected ReadOnly awsSecretAccessKey As String
+  modifiers.csharp:
+  - protected
+  - readonly
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+- uid: Butterfly.Message.Aws.AwsSesEmailMessageSender.#ctor
+  commentId: M:Butterfly.Message.Aws.AwsSesEmailMessageSender.#ctor
+  id: '#ctor'
+  parent: Butterfly.Message.Aws.AwsSesEmailMessageSender
+  langs:
+  - csharp
+  - vb
+  name: AwsSesEmailMessageSender()
+  nameWithType: AwsSesEmailMessageSender.AwsSesEmailMessageSender()
+  fullName: Butterfly.Message.Aws.AwsSesEmailMessageSender.AwsSesEmailMessageSender()
+  type: Constructor
+  source:
+    remote:
+      path: Butterfly.Message.Aws/AwsSesEmailMessageSender.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-message.git
+    id: .ctor
+    path: ../Butterfly.Message.Aws/AwsSesEmailMessageSender.cs
+    startLine: 22
+  assemblies:
+  - Butterfly.Message.Aws
+  namespace: Butterfly.Message.Aws
+  syntax:
+    content: public AwsSesEmailMessageSender()
+    content.vb: Public Sub New
+  overload: Butterfly.Message.Aws.AwsSesEmailMessageSender.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Butterfly.Message.Aws.AwsSesEmailMessageSender.#ctor(System.String,System.String)
+  commentId: M:Butterfly.Message.Aws.AwsSesEmailMessageSender.#ctor(System.String,System.String)
+  id: '#ctor(System.String,System.String)'
+  parent: Butterfly.Message.Aws.AwsSesEmailMessageSender
+  langs:
+  - csharp
+  - vb
+  name: AwsSesEmailMessageSender(String, String)
+  nameWithType: AwsSesEmailMessageSender.AwsSesEmailMessageSender(String, String)
+  fullName: Butterfly.Message.Aws.AwsSesEmailMessageSender.AwsSesEmailMessageSender(System.String, System.String)
+  type: Constructor
+  source:
+    remote:
+      path: Butterfly.Message.Aws/AwsSesEmailMessageSender.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-message.git
+    id: .ctor
+    path: ../Butterfly.Message.Aws/AwsSesEmailMessageSender.cs
+    startLine: 25
+  assemblies:
+  - Butterfly.Message.Aws
+  namespace: Butterfly.Message.Aws
+  syntax:
+    content: public AwsSesEmailMessageSender(string awsAccessKeyId, string awsSecretAccessKey)
+    parameters:
+    - id: awsAccessKeyId
+      type: System.String
+    - id: awsSecretAccessKey
+      type: System.String
+    content.vb: Public Sub New(awsAccessKeyId As String, awsSecretAccessKey As String)
+  overload: Butterfly.Message.Aws.AwsSesEmailMessageSender.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
 - uid: Butterfly.Message.Aws.AwsSesEmailMessageSender.DoSendAsync(System.String,System.String,System.String,System.String,System.String,System.String[])
   commentId: M:Butterfly.Message.Aws.AwsSesEmailMessageSender.DoSendAsync(System.String,System.String,System.String,System.String,System.String,System.String[])
   id: DoSendAsync(System.String,System.String,System.String,System.String,System.String,System.String[])
@@ -100,7 +236,7 @@ items:
       repo: https://github.com/firesharkstudios/butterfly-message.git
     id: DoSendAsync
     path: ../Butterfly.Message.Aws/AwsSesEmailMessageSender.cs
-    startLine: 19
+    startLine: 31
   assemblies:
   - Butterfly.Message.Aws
   namespace: Butterfly.Message.Aws
@@ -133,6 +269,38 @@ items:
   - Overrides
   fullName.vb: Butterfly.Message.Aws.AwsSesEmailMessageSender.DoSendAsync(System.String, System.String, System.String, System.String, System.String, System.String())
   name.vb: DoSendAsync(String, String, String, String, String, String())
+- uid: Butterfly.Message.Aws.AwsSesEmailMessageSender.GetClient
+  commentId: M:Butterfly.Message.Aws.AwsSesEmailMessageSender.GetClient
+  id: GetClient
+  parent: Butterfly.Message.Aws.AwsSesEmailMessageSender
+  langs:
+  - csharp
+  - vb
+  name: GetClient()
+  nameWithType: AwsSesEmailMessageSender.GetClient()
+  fullName: Butterfly.Message.Aws.AwsSesEmailMessageSender.GetClient()
+  type: Method
+  source:
+    remote:
+      path: Butterfly.Message.Aws/AwsSesEmailMessageSender.cs
+      branch: master
+      repo: https://github.com/firesharkstudios/butterfly-message.git
+    id: GetClient
+    path: ../Butterfly.Message.Aws/AwsSesEmailMessageSender.cs
+    startLine: 62
+  assemblies:
+  - Butterfly.Message.Aws
+  namespace: Butterfly.Message.Aws
+  syntax:
+    content: protected AmazonSimpleEmailServiceClient GetClient()
+    return:
+      type: AmazonSimpleEmailServiceClient
+    content.vb: Protected Function GetClient As AmazonSimpleEmailServiceClient
+  overload: Butterfly.Message.Aws.AwsSesEmailMessageSender.GetClient*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
 references:
 - uid: Butterfly.Message.Aws
   commentId: N:Butterfly.Message.Aws
@@ -313,6 +481,16 @@ references:
   name: Logger
   nameWithType: Logger
   fullName: Logger
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Butterfly.Message.Aws.AwsSesEmailMessageSender.#ctor*
+  commentId: Overload:Butterfly.Message.Aws.AwsSesEmailMessageSender.#ctor
+  name: AwsSesEmailMessageSender
+  nameWithType: AwsSesEmailMessageSender.AwsSesEmailMessageSender
+  fullName: Butterfly.Message.Aws.AwsSesEmailMessageSender.AwsSesEmailMessageSender
 - uid: Butterfly.Message.BaseMessageSender.DoSendAsync(System.String,System.String,System.String,System.String,System.String,System.String[])
   commentId: M:Butterfly.Message.BaseMessageSender.DoSendAsync(System.String,System.String,System.String,System.String,System.String,System.String[])
   parent: Butterfly.Message.BaseMessageSender
@@ -446,11 +624,6 @@ references:
   name: DoSendAsync
   nameWithType: AwsSesEmailMessageSender.DoSendAsync
   fullName: Butterfly.Message.Aws.AwsSesEmailMessageSender.DoSendAsync
-- uid: System.String
-  isExternal: true
-  name: String
-  nameWithType: String
-  fullName: System.String
 - uid: System.String[]
   isExternal: true
   name: String[]
@@ -558,4 +731,15 @@ references:
   - name: )
     nameWithType: )
     fullName: )
+- uid: Butterfly.Message.Aws.AwsSesEmailMessageSender.GetClient*
+  commentId: Overload:Butterfly.Message.Aws.AwsSesEmailMessageSender.GetClient
+  name: GetClient
+  nameWithType: AwsSesEmailMessageSender.GetClient
+  fullName: Butterfly.Message.Aws.AwsSesEmailMessageSender.GetClient
+- uid: AmazonSimpleEmailServiceClient
+  commentId: '!:AmazonSimpleEmailServiceClient'
+  isExternal: true
+  name: AmazonSimpleEmailServiceClient
+  nameWithType: AmazonSimpleEmailServiceClient
+  fullName: AmazonSimpleEmailServiceClient
 shouldSkipMarkup: true

@@ -35,7 +35,7 @@ items:
       repo: https://github.com/firesharkstudios/butterfly-message.git
     id: SendMessage
     path: ../Butterfly.Message/SendMessage.cs
-    startLine: 16
+    startLine: 15
   assemblies:
   - Butterfly.Message
   namespace: Butterfly.Message
@@ -43,6 +43,7 @@ items:
     content: 'public class SendMessage : object'
     content.vb: >-
       Public Class SendMessage
+
           Inherits Object
   inheritance:
   - System.Object
@@ -70,7 +71,7 @@ items:
       repo: https://github.com/firesharkstudios/butterfly-message.git
     id: logger
     path: ../Butterfly.Message/SendMessage.cs
-    startLine: 18
+    startLine: 17
   assemblies:
   - Butterfly.Message
   namespace: Butterfly.Message
@@ -105,7 +106,7 @@ items:
       repo: https://github.com/firesharkstudios/butterfly-message.git
     id: from
     path: ../Butterfly.Message/SendMessage.cs
-    startLine: 20
+    startLine: 19
   assemblies:
   - Butterfly.Message
   namespace: Butterfly.Message
@@ -138,7 +139,7 @@ items:
       repo: https://github.com/firesharkstudios/butterfly-message.git
     id: to
     path: ../Butterfly.Message/SendMessage.cs
-    startLine: 21
+    startLine: 20
   assemblies:
   - Butterfly.Message
   namespace: Butterfly.Message
@@ -171,7 +172,7 @@ items:
       repo: https://github.com/firesharkstudios/butterfly-message.git
     id: subject
     path: ../Butterfly.Message/SendMessage.cs
-    startLine: 22
+    startLine: 21
   assemblies:
   - Butterfly.Message
   namespace: Butterfly.Message
@@ -204,7 +205,7 @@ items:
       repo: https://github.com/firesharkstudios/butterfly-message.git
     id: bodyText
     path: ../Butterfly.Message/SendMessage.cs
-    startLine: 23
+    startLine: 22
   assemblies:
   - Butterfly.Message
   namespace: Butterfly.Message
@@ -237,7 +238,7 @@ items:
       repo: https://github.com/firesharkstudios/butterfly-message.git
     id: bodyHtml
     path: ../Butterfly.Message/SendMessage.cs
-    startLine: 24
+    startLine: 23
   assemblies:
   - Butterfly.Message
   namespace: Butterfly.Message
@@ -270,7 +271,7 @@ items:
       repo: https://github.com/firesharkstudios/butterfly-message.git
     id: priority
     path: ../Butterfly.Message/SendMessage.cs
-    startLine: 25
+    startLine: 24
   assemblies:
   - Butterfly.Message
   namespace: Butterfly.Message
@@ -303,7 +304,7 @@ items:
       repo: https://github.com/firesharkstudios/butterfly-message.git
     id: evaluator
     path: ../Butterfly.Message/SendMessage.cs
-    startLine: 26
+    startLine: 25
   assemblies:
   - Butterfly.Message
   namespace: Butterfly.Message
@@ -336,7 +337,7 @@ items:
       repo: https://github.com/firesharkstudios/butterfly-message.git
     id: path
     path: ../Butterfly.Message/SendMessage.cs
-    startLine: 27
+    startLine: 26
   assemblies:
   - Butterfly.Message
   namespace: Butterfly.Message
@@ -369,7 +370,7 @@ items:
       repo: https://github.com/firesharkstudios/butterfly-message.git
     id: extraData
     path: ../Butterfly.Message/SendMessage.cs
-    startLine: 29
+    startLine: 28
   assemblies:
   - Butterfly.Message
   namespace: Butterfly.Message
@@ -400,7 +401,7 @@ items:
       repo: https://github.com/firesharkstudios/butterfly-message.git
     id: .ctor
     path: ../Butterfly.Message/SendMessage.cs
-    startLine: 31
+    startLine: 30
   assemblies:
   - Butterfly.Message
   namespace: Butterfly.Message
@@ -450,7 +451,7 @@ items:
       repo: https://github.com/firesharkstudios/butterfly-message.git
     id: TEXT_SECTION_NAME
     path: ../Butterfly.Message/SendMessage.cs
-    startLine: 43
+    startLine: 42
   assemblies:
   - Butterfly.Message
   namespace: Butterfly.Message
@@ -483,7 +484,7 @@ items:
       repo: https://github.com/firesharkstudios/butterfly-message.git
     id: HTML_SECTION_NAME
     path: ../Butterfly.Message/SendMessage.cs
-    startLine: 44
+    startLine: 43
   assemblies:
   - Butterfly.Message
   namespace: Butterfly.Message
@@ -516,7 +517,7 @@ items:
       repo: https://github.com/firesharkstudios/butterfly-message.git
     id: SECTION_DELIM
     path: ../Butterfly.Message/SendMessage.cs
-    startLine: 45
+    startLine: 44
   assemblies:
   - Butterfly.Message
   namespace: Butterfly.Message
@@ -549,7 +550,7 @@ items:
       repo: https://github.com/firesharkstudios/butterfly-message.git
     id: Evaluate
     path: ../Butterfly.Message/SendMessage.cs
-    startLine: 47
+    startLine: 46
   assemblies:
   - Butterfly.Message
   namespace: Butterfly.Message
@@ -584,7 +585,7 @@ items:
       repo: https://github.com/firesharkstudios/butterfly-message.git
     id: Parse
     path: ../Butterfly.Message/SendMessage.cs
-    startLine: 66
+    startLine: 65
   assemblies:
   - Butterfly.Message
   namespace: Butterfly.Message

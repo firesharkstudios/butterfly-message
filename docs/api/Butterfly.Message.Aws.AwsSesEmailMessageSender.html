@@ -106,8 +106,92 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class AwsSesEmailMessageSender : BaseMessageSender, IMessageSender</code></pre>
   </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <a id="Butterfly_Message_Aws_AwsSesEmailMessageSender__ctor_" data-uid="Butterfly.Message.Aws.AwsSesEmailMessageSender.#ctor*"></a>
+  <h4 id="Butterfly_Message_Aws_AwsSesEmailMessageSender__ctor" data-uid="Butterfly.Message.Aws.AwsSesEmailMessageSender.#ctor">AwsSesEmailMessageSender()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AwsSesEmailMessageSender()</code></pre>
+  </div>
+  <a id="Butterfly_Message_Aws_AwsSesEmailMessageSender__ctor_" data-uid="Butterfly.Message.Aws.AwsSesEmailMessageSender.#ctor*"></a>
+  <h4 id="Butterfly_Message_Aws_AwsSesEmailMessageSender__ctor_System_String_System_String_" data-uid="Butterfly.Message.Aws.AwsSesEmailMessageSender.#ctor(System.String,System.String)">AwsSesEmailMessageSender(String, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AwsSesEmailMessageSender(string awsAccessKeyId, string awsSecretAccessKey)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">awsAccessKeyId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">awsSecretAccessKey</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="fields">Fields
   </h3>
+  <h4 id="Butterfly_Message_Aws_AwsSesEmailMessageSender_awsAccessKeyId" data-uid="Butterfly.Message.Aws.AwsSesEmailMessageSender.awsAccessKeyId">awsAccessKeyId</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly string awsAccessKeyId</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="Butterfly_Message_Aws_AwsSesEmailMessageSender_awsSecretAccessKey" data-uid="Butterfly.Message.Aws.AwsSesEmailMessageSender.awsSecretAccessKey">awsSecretAccessKey</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly string awsSecretAccessKey</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h4 id="Butterfly_Message_Aws_AwsSesEmailMessageSender_logger" data-uid="Butterfly.Message.Aws.AwsSesEmailMessageSender.logger">logger</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
@@ -199,6 +283,29 @@
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="Butterfly.Message.BaseMessageSender.html#Butterfly_Message_BaseMessageSender_DoSendAsync_System_String_System_String_System_String_System_String_System_String_System_String___">BaseMessageSender.DoSendAsync(String, String, String, String, String, String[])</a></div>
+  <a id="Butterfly_Message_Aws_AwsSesEmailMessageSender_GetClient_" data-uid="Butterfly.Message.Aws.AwsSesEmailMessageSender.GetClient*"></a>
+  <h4 id="Butterfly_Message_Aws_AwsSesEmailMessageSender_GetClient" data-uid="Butterfly.Message.Aws.AwsSesEmailMessageSender.GetClient">GetClient()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected AmazonSimpleEmailServiceClient GetClient()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">AmazonSimpleEmailServiceClient</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="implements">Implements</h3>
   <div>
       <a class="xref" href="Butterfly.Message.IMessageSender.html">IMessageSender</a>

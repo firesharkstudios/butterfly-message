@@ -62,12 +62,13 @@ namespace Butterfly.Message.Aws {
 
         protected AmazonSimpleEmailServiceClient GetClient() {
             if (string.IsNullOrEmpty(this.awsAccessKeyId)) {
-                return new AmazonSimpleEmailServiceClient(Amazon.RegionEndpoint.USEast1))
+                return new AmazonSimpleEmailServiceClient(Amazon.RegionEndpoint.USEast1);
             }
             else {
-                return new AmazonSimpleEmailServiceClient(this.awsAccessKeyId, this.awsSecretAccessKey, Amazon.RegionEndpoint.USEast1))
+                return new AmazonSimpleEmailServiceClient(this.awsAccessKeyId, this.awsSecretAccessKey, Amazon.RegionEndpoint.USEast1);
             }
         }
+
         /*
         protected override async Task<string> DoSendAsync(string from, string to, string subject, string bodyText, string bodyHtml) {
             logger.Debug($"DoSendAsync():from={from},to={to},subject={subject}");

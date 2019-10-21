@@ -28,6 +28,7 @@ items:
     content: 'public static class SimpleEvaluator : object'
     content.vb: >-
       Public Module SimpleEvaluator
+
           Inherits Object
   inheritance:
   - System.Object

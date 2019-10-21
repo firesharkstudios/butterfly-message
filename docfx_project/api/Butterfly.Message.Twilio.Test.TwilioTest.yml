@@ -28,6 +28,7 @@ items:
     content: 'public class TwilioTest : object'
     content.vb: >-
       Public Class TwilioTest
+
           Inherits Object
   inheritance:
   - System.Object

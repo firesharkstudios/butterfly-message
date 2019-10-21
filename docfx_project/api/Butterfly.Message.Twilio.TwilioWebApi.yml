@@ -28,6 +28,7 @@ items:
     content: 'public static class TwilioWebApi : object'
     content.vb: >-
       Public Module TwilioWebApi
+
           Inherits Object
   inheritance:
   - System.Object

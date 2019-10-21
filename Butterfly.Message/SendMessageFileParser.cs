@@ -12,8 +12,8 @@ namespace Butterfly.Message {
         public SendMessageFileParser(Dictionary<string, Func<string, Dict, string, string>> evaluatorByExtension = null) {
             if (evaluatorByExtension==null) {
                 this.evaluatorByExtension = new Dictionary<string, Func<string, Dict, string, string>> {
-                    ["liquid"] = ScribanEvaluator.Evaluate,
-                    ["txt"] = SimpleEvaluator.Evaluate
+                    [".liquid"] = ScribanEvaluator.Evaluate,
+                    [".txt"] = SimpleEvaluator.Evaluate
                 };
             }
             else {
