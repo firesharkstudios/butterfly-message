@@ -454,12 +454,12 @@ references:
   commentId: T:Butterfly.Message.SendMessageQueueManager
   fullName: Butterfly.Message.SendMessageQueueManager
   nameWithType: SendMessageQueueManager
-- uid: Butterfly.Message.SendMessageQueueManager.#ctor(Butterfly.Db.IDatabase,Butterfly.Message.IMessageSender,Butterfly.Message.IMessageSender,System.String,System.String,System.Int32,Butterfly.Message.SendMessage,Butterfly.Message.SendMessage,System.String)
-  name: SendMessageQueueManager(IDatabase, IMessageSender, IMessageSender, String, String, Int32, SendMessage, SendMessage, String)
-  href: api/Butterfly.Message.SendMessageQueueManager.html#Butterfly_Message_SendMessageQueueManager__ctor_Butterfly_Db_IDatabase_Butterfly_Message_IMessageSender_Butterfly_Message_IMessageSender_System_String_System_String_System_Int32_Butterfly_Message_SendMessage_Butterfly_Message_SendMessage_System_String_
-  commentId: M:Butterfly.Message.SendMessageQueueManager.#ctor(Butterfly.Db.IDatabase,Butterfly.Message.IMessageSender,Butterfly.Message.IMessageSender,System.String,System.String,System.Int32,Butterfly.Message.SendMessage,Butterfly.Message.SendMessage,System.String)
-  fullName: Butterfly.Message.SendMessageQueueManager.SendMessageQueueManager(Butterfly.Db.IDatabase, Butterfly.Message.IMessageSender, Butterfly.Message.IMessageSender, System.String, System.String, System.Int32, Butterfly.Message.SendMessage, Butterfly.Message.SendMessage, System.String)
-  nameWithType: SendMessageQueueManager.SendMessageQueueManager(IDatabase, IMessageSender, IMessageSender, String, String, Int32, SendMessage, SendMessage, String)
+- uid: Butterfly.Message.SendMessageQueueManager.#ctor(Butterfly.Db.IDatabase,Butterfly.Message.IMessageSender,Butterfly.Message.IMessageSender,System.String)
+  name: SendMessageQueueManager(IDatabase, IMessageSender, IMessageSender, String)
+  href: api/Butterfly.Message.SendMessageQueueManager.html#Butterfly_Message_SendMessageQueueManager__ctor_Butterfly_Db_IDatabase_Butterfly_Message_IMessageSender_Butterfly_Message_IMessageSender_System_String_
+  commentId: M:Butterfly.Message.SendMessageQueueManager.#ctor(Butterfly.Db.IDatabase,Butterfly.Message.IMessageSender,Butterfly.Message.IMessageSender,System.String)
+  fullName: Butterfly.Message.SendMessageQueueManager.SendMessageQueueManager(Butterfly.Db.IDatabase, Butterfly.Message.IMessageSender, Butterfly.Message.IMessageSender, System.String)
+  nameWithType: SendMessageQueueManager.SendMessageQueueManager(IDatabase, IMessageSender, IMessageSender, String)
 - uid: Butterfly.Message.SendMessageQueueManager.#ctor*
   name: SendMessageQueueManager
   href: api/Butterfly.Message.SendMessageQueueManager.html#Butterfly_Message_SendMessageQueueManager__ctor_
@@ -526,12 +526,6 @@ references:
   isSpec: "True"
   fullName: Butterfly.Message.SendMessageQueueManager.Queue
   nameWithType: SendMessageQueueManager.Queue
-- uid: Butterfly.Message.SendMessageQueueManager.RANDOM
-  name: RANDOM
-  href: api/Butterfly.Message.SendMessageQueueManager.html#Butterfly_Message_SendMessageQueueManager_RANDOM
-  commentId: F:Butterfly.Message.SendMessageQueueManager.RANDOM
-  fullName: Butterfly.Message.SendMessageQueueManager.RANDOM
-  nameWithType: SendMessageQueueManager.RANDOM
 - uid: Butterfly.Message.SendMessageQueueManager.SendMessageEngine
   name: SendMessageQueueManager.SendMessageEngine
   href: api/Butterfly.Message.SendMessageQueueManager.SendMessageEngine.html
@@ -648,25 +642,6 @@ references:
   commentId: F:Butterfly.Message.SendMessageQueueManager.sendMessageTableName
   fullName: Butterfly.Message.SendMessageQueueManager.sendMessageTableName
   nameWithType: SendMessageQueueManager.sendMessageTableName
-- uid: Butterfly.Message.SendMessageQueueManager.SendVerifyCodeAsync(System.String)
-  name: SendVerifyCodeAsync(String)
-  href: api/Butterfly.Message.SendMessageQueueManager.html#Butterfly_Message_SendMessageQueueManager_SendVerifyCodeAsync_System_String_
-  commentId: M:Butterfly.Message.SendMessageQueueManager.SendVerifyCodeAsync(System.String)
-  fullName: Butterfly.Message.SendMessageQueueManager.SendVerifyCodeAsync(System.String)
-  nameWithType: SendMessageQueueManager.SendVerifyCodeAsync(String)
-- uid: Butterfly.Message.SendMessageQueueManager.SendVerifyCodeAsync*
-  name: SendVerifyCodeAsync
-  href: api/Butterfly.Message.SendMessageQueueManager.html#Butterfly_Message_SendMessageQueueManager_SendVerifyCodeAsync_
-  commentId: Overload:Butterfly.Message.SendMessageQueueManager.SendVerifyCodeAsync
-  isSpec: "True"
-  fullName: Butterfly.Message.SendMessageQueueManager.SendVerifyCodeAsync
-  nameWithType: SendMessageQueueManager.SendVerifyCodeAsync
-- uid: Butterfly.Message.SendMessageQueueManager.sendVerifyTableName
-  name: sendVerifyTableName
-  href: api/Butterfly.Message.SendMessageQueueManager.html#Butterfly_Message_SendMessageQueueManager_sendVerifyTableName
-  commentId: F:Butterfly.Message.SendMessageQueueManager.sendVerifyTableName
-  fullName: Butterfly.Message.SendMessageQueueManager.sendVerifyTableName
-  nameWithType: SendMessageQueueManager.sendVerifyTableName
 - uid: Butterfly.Message.SendMessageQueueManager.Start
   name: Start()
   href: api/Butterfly.Message.SendMessageQueueManager.html#Butterfly_Message_SendMessageQueueManager_Start
@@ -712,43 +687,6 @@ references:
   isSpec: "True"
   fullName: Butterfly.Message.SendMessageQueueManager.Validate
   nameWithType: SendMessageQueueManager.Validate
-- uid: Butterfly.Message.SendMessageQueueManager.VerifyAsync(System.String,System.Int32)
-  name: VerifyAsync(String, Int32)
-  href: api/Butterfly.Message.SendMessageQueueManager.html#Butterfly_Message_SendMessageQueueManager_VerifyAsync_System_String_System_Int32_
-  commentId: M:Butterfly.Message.SendMessageQueueManager.VerifyAsync(System.String,System.Int32)
-  fullName: Butterfly.Message.SendMessageQueueManager.VerifyAsync(System.String, System.Int32)
-  nameWithType: SendMessageQueueManager.VerifyAsync(String, Int32)
-- uid: Butterfly.Message.SendMessageQueueManager.VerifyAsync*
-  name: VerifyAsync
-  href: api/Butterfly.Message.SendMessageQueueManager.html#Butterfly_Message_SendMessageQueueManager_VerifyAsync_
-  commentId: Overload:Butterfly.Message.SendMessageQueueManager.VerifyAsync
-  isSpec: "True"
-  fullName: Butterfly.Message.SendMessageQueueManager.VerifyAsync
-  nameWithType: SendMessageQueueManager.VerifyAsync
-- uid: Butterfly.Message.SendMessageQueueManager.verifyCodeExpiresSeconds
-  name: verifyCodeExpiresSeconds
-  href: api/Butterfly.Message.SendMessageQueueManager.html#Butterfly_Message_SendMessageQueueManager_verifyCodeExpiresSeconds
-  commentId: F:Butterfly.Message.SendMessageQueueManager.verifyCodeExpiresSeconds
-  fullName: Butterfly.Message.SendMessageQueueManager.verifyCodeExpiresSeconds
-  nameWithType: SendMessageQueueManager.verifyCodeExpiresSeconds
-- uid: Butterfly.Message.SendMessageQueueManager.verifyCodeFormat
-  name: verifyCodeFormat
-  href: api/Butterfly.Message.SendMessageQueueManager.html#Butterfly_Message_SendMessageQueueManager_verifyCodeFormat
-  commentId: F:Butterfly.Message.SendMessageQueueManager.verifyCodeFormat
-  fullName: Butterfly.Message.SendMessageQueueManager.verifyCodeFormat
-  nameWithType: SendMessageQueueManager.verifyCodeFormat
-- uid: Butterfly.Message.SendMessageQueueManager.verifyEmailSendMessage
-  name: verifyEmailSendMessage
-  href: api/Butterfly.Message.SendMessageQueueManager.html#Butterfly_Message_SendMessageQueueManager_verifyEmailSendMessage
-  commentId: F:Butterfly.Message.SendMessageQueueManager.verifyEmailSendMessage
-  fullName: Butterfly.Message.SendMessageQueueManager.verifyEmailSendMessage
-  nameWithType: SendMessageQueueManager.verifyEmailSendMessage
-- uid: Butterfly.Message.SendMessageQueueManager.verifyTextSendMessage
-  name: verifyTextSendMessage
-  href: api/Butterfly.Message.SendMessageQueueManager.html#Butterfly_Message_SendMessageQueueManager_verifyTextSendMessage
-  commentId: F:Butterfly.Message.SendMessageQueueManager.verifyTextSendMessage
-  fullName: Butterfly.Message.SendMessageQueueManager.verifyTextSendMessage
-  nameWithType: SendMessageQueueManager.verifyTextSendMessage
 - uid: Butterfly.Message.SendMessageType
   name: SendMessageType
   href: api/Butterfly.Message.SendMessageType.html

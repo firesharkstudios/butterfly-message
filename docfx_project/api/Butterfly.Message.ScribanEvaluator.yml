@@ -29,7 +29,6 @@ items:
     content: 'public static class ScribanEvaluator : object'
     content.vb: >-
       Public Module ScribanEvaluator
-
           Inherits Object
   inheritance:
   - System.Object

@@ -32,9 +32,7 @@ items:
     content: 'public class TwilioTextMessageSender : BaseMessageSender, IMessageSender'
     content.vb: >-
       Public Class TwilioTextMessageSender
-
           Inherits BaseMessageSender
-
           Implements IMessageSender
   inheritance:
   - System.Object

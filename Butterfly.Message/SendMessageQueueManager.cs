@@ -32,29 +32,15 @@ namespace Butterfly.Message {
         protected readonly SendMessageEngine textSendMessageEngine;
 
         protected readonly string sendMessageTableName;
-        protected readonly string sendVerifyTableName;
-        protected readonly int verifyCodeExpiresSeconds;
-
-        protected readonly SendMessage verifyEmailSendMessage;
-        protected readonly SendMessage verifyTextSendMessage;
-        protected readonly string verifyCodeFormat;
 
         protected readonly static EmailFieldValidator EMAIL_FIELD_VALIDATOR = new EmailFieldValidator("email", false, true);
         protected readonly static PhoneFieldValidator PHONE_FIELD_VALIDATOR = new PhoneFieldValidator("phone", false);
 
-        protected readonly static Random RANDOM = new Random();
-
-        public SendMessageQueueManager(IDatabase database, IMessageSender emailMessageSender = null, IMessageSender textMessageSender = null, string sendMessageTableName = "send_message", string sendVerifyTableName = "send_verify", int verifyCodeExpiresSeconds = 3600, SendMessage verifyEmailSendMessage = null, SendMessage verifyTextSendMessage = null, string verifyCodeFormat = "###-###") {
+        public SendMessageQueueManager(IDatabase database, IMessageSender emailMessageSender = null, IMessageSender textMessageSender = null, string sendMessageTableName = "send_message") {
             this.database = database;
             this.emailSendMessageEngine = emailMessageSender == null ? null : new SendMessageEngine(SendMessageType.Email, emailMessageSender, database, sendMessageTableName);
             this.textSendMessageEngine = textMessageSender == null ? null : new SendMessageEngine(SendMessageType.Text, textMessageSender, database, sendMessageTableName);
             this.sendMessageTableName = sendMessageTableName;
-            this.sendVerifyTableName = sendVerifyTableName;
-            this.verifyCodeExpiresSeconds = verifyCodeExpiresSeconds;
-
-            this.verifyEmailSendMessage = verifyEmailSendMessage;
-            this.verifyTextSendMessage = verifyTextSendMessage;
-            this.verifyCodeFormat = verifyCodeFormat;
         }
 
         public void Start() {
@@ -65,90 +51,6 @@ namespace Butterfly.Message {
         public void Stop() {
             this.emailSendMessageEngine?.Stop();
             this.textSendMessageEngine?.Stop();
-        }
-
-        public async Task SendVerifyCodeAsync(string contact) {
-            logger.Debug($"SendVerifyCodeAsync():contact={contact}");
-
-            // Scrub contact
-            string scrubbedContact = Validate(contact);
-            logger.Debug($"SendVerifyCodeAsync():scrubbedContact={scrubbedContact}");
-
-            // Generate code and expires at
-            int digits = this.verifyCodeFormat.Count(x => x=='#');
-            int min = (int)Math.Pow(10, digits - 1);
-            int max = (int)Math.Pow(10, digits) - 1;
-            int code = RANDOM.Next(0, max - min) + min;
-            logger.Debug($"SendVerifyCodeAsync():digits={digits},min={min},max={max},code={code}");
-            DateTime expiresAt = DateTime.Now.AddSeconds(this.verifyCodeExpiresSeconds);
-
-            // Insert/update database
-            string id = await this.database.SelectValueAsync<string>($"SELECT id FROM {this.sendVerifyTableName}", new {
-                contact = scrubbedContact
-            });
-
-            using (ITransaction transaction = await this.database.BeginTransactionAsync()) {
-                if (id == null) {
-                    await transaction.InsertAsync<string>(this.sendVerifyTableName, new {
-                        contact = scrubbedContact,
-                        verify_code = code,
-                        expires_at = expiresAt,
-                    });
-                }
-                else {
-                    await transaction.UpdateAsync(this.sendVerifyTableName, new {
-                        id,
-                        verify_code = code,
-                        expires_at = expiresAt,
-                    });
-                }
-
-                // Send message
-                var sendMessageType = DetectSendMessageType(scrubbedContact);
-                SendMessage sendMessage = null;
-                switch (sendMessageType) {
-                    case SendMessageType.Email:
-                        if (this.verifyEmailSendMessage == null) throw new Exception("Server must be configured with verify email send message");
-                        sendMessage = this.verifyEmailSendMessage;
-                        break;
-                    case SendMessageType.Text:
-                        if (this.verifyTextSendMessage == null) throw new Exception("Server must be configured with verify text send message");
-                        sendMessage = this.verifyTextSendMessage;
-                        break;
-                }
-                var evaluatedSendMessage = sendMessage.Evaluate(new {
-                    contact = scrubbedContact,
-                    code = code.ToString(this.verifyCodeFormat)
-                });
-                await this.Queue(transaction, evaluatedSendMessage);
-
-                await transaction.CommitAsync();
-            }
-        }
-
-        public async Task<string> VerifyAsync(string contact, int code) {
-            logger.Debug($"VerifyAsync():contact={contact},code={code}");
-            string scrubbedContact = Validate(contact);
-            Dict result = await this.database.SelectRowAsync($"SELECT verify_code, expires_at FROM {this.sendVerifyTableName}", new {
-                contact = scrubbedContact
-            });
-            int verifyCode = result.GetAs("verify_code", -1);
-            if (code == -1 || code!=verifyCode) throw new Exception("Invalid contact and/or verify code");
-
-            int expiresAtUnix = result.GetAs("expires_at", -1);
-            if (DateTimeX.FromUnixTimestamp(expiresAtUnix) < DateTime.Now) throw new Exception("Expired verify code");
-
-            return scrubbedContact;
-        }
-
-        protected static string Validate(string value) {
-            logger.Debug($"Validate():value={value}");
-            if (value.Contains("@")) {
-                return EMAIL_FIELD_VALIDATOR.Validate(value);
-            }
-            else {
-                return PHONE_FIELD_VALIDATOR.Validate(value);
-            }
         }
 
         /// <summary>
@@ -300,6 +202,15 @@ namespace Butterfly.Message {
                     }
 
                 }
+            }
+        }
+        protected static string Validate(string value) {
+            logger.Debug($"Validate():value={value}");
+            if (value.Contains("@")) {
+                return EMAIL_FIELD_VALIDATOR.Validate(value);
+            }
+            else {
+                return PHONE_FIELD_VALIDATOR.Validate(value);
             }
         }
     }

@@ -30,7 +30,7 @@ items:
       repo: https://github.com/firesharkstudios/butterfly-message.git
     id: SendMessageEngine
     path: ../Butterfly.Message/SendMessageQueueManager.cs
-    startLine: 200
+    startLine: 102
   assemblies:
   - Butterfly.Message
   namespace: Butterfly.Message
@@ -38,7 +38,6 @@ items:
     content: 'protected class SendMessageEngine : object'
     content.vb: >-
       Protected Class SendMessageEngine
-
           Inherits Object
   inheritance:
   - System.Object
@@ -66,7 +65,7 @@ items:
       repo: https://github.com/firesharkstudios/butterfly-message.git
     id: sendMessageType
     path: ../Butterfly.Message/SendMessageQueueManager.cs
-    startLine: 201
+    startLine: 103
   assemblies:
   - Butterfly.Message
   namespace: Butterfly.Message
@@ -99,7 +98,7 @@ items:
       repo: https://github.com/firesharkstudios/butterfly-message.git
     id: sendMessageSender
     path: ../Butterfly.Message/SendMessageQueueManager.cs
-    startLine: 202
+    startLine: 104
   assemblies:
   - Butterfly.Message
   namespace: Butterfly.Message
@@ -132,7 +131,7 @@ items:
       repo: https://github.com/firesharkstudios/butterfly-message.git
     id: database
     path: ../Butterfly.Message/SendMessageQueueManager.cs
-    startLine: 203
+    startLine: 105
   assemblies:
   - Butterfly.Message
   namespace: Butterfly.Message
@@ -165,7 +164,7 @@ items:
       repo: https://github.com/firesharkstudios/butterfly-message.git
     id: sendMessageTableName
     path: ../Butterfly.Message/SendMessageQueueManager.cs
-    startLine: 204
+    startLine: 106
   assemblies:
   - Butterfly.Message
   namespace: Butterfly.Message
@@ -198,7 +197,7 @@ items:
       repo: https://github.com/firesharkstudios/butterfly-message.git
     id: cancellationTokenSource
     path: ../Butterfly.Message/SendMessageQueueManager.cs
-    startLine: 206
+    startLine: 108
   assemblies:
   - Butterfly.Message
   namespace: Butterfly.Message
@@ -229,7 +228,7 @@ items:
       repo: https://github.com/firesharkstudios/butterfly-message.git
     id: .ctor
     path: ../Butterfly.Message/SendMessageQueueManager.cs
-    startLine: 208
+    startLine: 110
   assemblies:
   - Butterfly.Message
   namespace: Butterfly.Message
@@ -268,7 +267,7 @@ items:
       repo: https://github.com/firesharkstudios/butterfly-message.git
     id: started
     path: ../Butterfly.Message/SendMessageQueueManager.cs
-    startLine: 215
+    startLine: 117
   assemblies:
   - Butterfly.Message
   namespace: Butterfly.Message
@@ -299,7 +298,7 @@ items:
       repo: https://github.com/firesharkstudios/butterfly-message.git
     id: Start
     path: ../Butterfly.Message/SendMessageQueueManager.cs
-    startLine: 217
+    startLine: 119
   assemblies:
   - Butterfly.Message
   namespace: Butterfly.Message
@@ -329,7 +328,7 @@ items:
       repo: https://github.com/firesharkstudios/butterfly-message.git
     id: Stop
     path: ../Butterfly.Message/SendMessageQueueManager.cs
-    startLine: 223
+    startLine: 125
   assemblies:
   - Butterfly.Message
   namespace: Butterfly.Message
@@ -359,7 +358,7 @@ items:
       repo: https://github.com/firesharkstudios/butterfly-message.git
     id: Queue
     path: ../Butterfly.Message/SendMessageQueueManager.cs
-    startLine: 228
+    startLine: 130
   assemblies:
   - Butterfly.Message
   namespace: Butterfly.Message
@@ -411,7 +410,7 @@ items:
       repo: https://github.com/firesharkstudios/butterfly-message.git
     id: Pulse
     path: ../Butterfly.Message/SendMessageQueueManager.cs
-    startLine: 243
+    startLine: 145
   assemblies:
   - Butterfly.Message
   namespace: Butterfly.Message
