@@ -28,7 +28,7 @@ namespace Butterfly.Message.Twilio {
                     string toPhone = evt.GetAs("To", (string)null);
                     string body = evt.GetAs("Body", (string)null);
                     int numMedia = evt.GetAs("NumMedia", 0);
-                    string[] mediaUrls = Enumerable.Range(1, numMedia).Select(x => evt.GetAs($"MediaUrl{x}", (string)null)).ToArray();
+                    string[] mediaUrls = Enumerable.Range(0, numMedia).Select(x => evt.GetAs($"MediaUrl{x}", (string)null)).ToArray();
                     string responseText = await handler(fromPhone, toPhone, body, mediaUrls);
                     //logger.Debug($"/api/twilio/webhook,responseText={responseText}");
                     if (!string.IsNullOrEmpty(responseText)) {
