@@ -89,12 +89,12 @@
   <h3 id="methods">Methods
   </h3>
   <a id="Butterfly_Message_Aws_AwsWebApi_SetupAsync_" data-uid="Butterfly.Message.Aws.AwsWebApi.SetupAsync*"></a>
-  <h4 id="Butterfly_Message_Aws_AwsWebApi_SetupAsync_Butterfly_Web_WebApi_IWebApi_System_String_System_String_System_String_Func_System_String_System_String_System_String___Task_System_String___" data-uid="Butterfly.Message.Aws.AwsWebApi.SetupAsync(Butterfly.Web.WebApi.IWebApi,System.String,System.String,System.String,Func{System.String,System.String,System.String[],Task{System.String}})">SetupAsync(IWebApi, String, String, String, Func&lt;String, String, String[], Task&lt;String&gt;&gt;)</h4>
+  <h4 id="Butterfly_Message_Aws_AwsWebApi_SetupAsync_Butterfly_Web_WebApi_IWebApi_System_String_System_String_System_String_System_String_System_String_Func_System_String_System_String_System_String___Task_System_String___" data-uid="Butterfly.Message.Aws.AwsWebApi.SetupAsync(Butterfly.Web.WebApi.IWebApi,System.String,System.String,System.String,System.String,System.String,Func{System.String,System.String,System.String[],Task{System.String}})">SetupAsync(IWebApi, String, String, String, String, String, Func&lt;String, String, String[], Task&lt;String&gt;&gt;)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Task SetupAsync(IWebApi webApi, string topicArn, string endPoint, string bucketName, Func&lt;string, string, string[], Task&lt;string&gt;&gt; handler)</code></pre>
+    <pre><code class="lang-csharp hljs">public static Task SetupAsync(IWebApi webApi, string awsAccessKeyId, string awsSecretAccessKey, string awsTopicArn, string awsEndPoint, string awsBucketName, Func&lt;string, string, string[], Task&lt;string&gt;&gt; handler)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -113,17 +113,27 @@
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">topicArn</span></td>
+        <td><span class="parametername">awsAccessKeyId</span></td>
         <td></td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">endPoint</span></td>
+        <td><span class="parametername">awsSecretAccessKey</span></td>
         <td></td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">bucketName</span></td>
+        <td><span class="parametername">awsTopicArn</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">awsEndPoint</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">awsBucketName</span></td>
         <td></td>
       </tr>
       <tr>

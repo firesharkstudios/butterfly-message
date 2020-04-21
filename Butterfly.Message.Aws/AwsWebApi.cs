@@ -29,16 +29,16 @@ namespace Butterfly.Message.Aws {
 
         static readonly Regex IN_REPLY_TO_REGEX = new Regex(@"\<([^\@]+)\@");
 
-        public static async Task SetupAsync(IWebApi webApi, string topicArn, string endPoint, string bucketName, Func<string, string, string[], Task<string>> handler) {
-            if (!string.IsNullOrEmpty(endPoint)) {
-                Uri endPointUri = new Uri(endPoint);
+        public static async Task SetupAsync(IWebApi webApi, string awsAccessKeyId, string awsSecretAccessKey, string awsTopicArn, string awsEndPoint, string awsBucketName, Func<string, string, string[], Task<string>> handler) {
+            if (!string.IsNullOrEmpty(awsEndPoint)) {
+                Uri endPointUri = new Uri(awsEndPoint);
                 //logger.Debug($"SetupWebApi():endPointUri.PathAndQuery={endPointUri.PathAndQuery}");
 
-                using (AmazonSimpleNotificationServiceClient amazonSimpleNotificationServiceClient = new AmazonSimpleNotificationServiceClient(Amazon.RegionEndpoint.USEast1)) {
+                using (AmazonSimpleNotificationServiceClient amazonSimpleNotificationServiceClient = new AmazonSimpleNotificationServiceClient(awsAccessKeyId, awsSecretAccessKey, Amazon.RegionEndpoint.USEast1)) {
                     SubscribeResponse subscribeResponse = await amazonSimpleNotificationServiceClient.SubscribeAsync(new SubscribeRequest {
-                        TopicArn = topicArn,
+                        TopicArn = awsTopicArn,
                         Protocol = endPointUri.Scheme,
-                        Endpoint = endPoint
+                        Endpoint = awsEndPoint
                     });
                 }
 
@@ -77,7 +77,7 @@ namespace Butterfly.Message.Aws {
                                 logger.Debug($"{endPointUri.PathAndQuery},sentMessageId={sentMessageId},bucketKey={bucketKey}");
                                 if (!string.IsNullOrEmpty(bucketKey)) {
                                     GetObjectResponse getObjectResponse = await amazonS3Client.GetObjectAsync(new GetObjectRequest {
-                                        BucketName = bucketName,
+                                        BucketName = awsBucketName,
                                         Key = bucketKey
                                     });
                                     logger.Debug($"{endPointUri.PathAndQuery},getObjectResponse={getObjectResponse}");

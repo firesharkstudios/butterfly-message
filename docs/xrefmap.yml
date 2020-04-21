@@ -91,15 +91,15 @@ references:
   commentId: T:Butterfly.Message.Aws.AwsWebApi
   fullName: Butterfly.Message.Aws.AwsWebApi
   nameWithType: AwsWebApi
-- uid: Butterfly.Message.Aws.AwsWebApi.SetupAsync(Butterfly.Web.WebApi.IWebApi,System.String,System.String,System.String,Func{System.String,System.String,System.String[],Task{System.String}})
-  name: SetupAsync(IWebApi, String, String, String, Func<String, String, String[], Task<String>>)
-  href: api/Butterfly.Message.Aws.AwsWebApi.html#Butterfly_Message_Aws_AwsWebApi_SetupAsync_Butterfly_Web_WebApi_IWebApi_System_String_System_String_System_String_Func_System_String_System_String_System_String___Task_System_String___
-  commentId: M:Butterfly.Message.Aws.AwsWebApi.SetupAsync(Butterfly.Web.WebApi.IWebApi,System.String,System.String,System.String,Func{System.String,System.String,System.String[],Task{System.String}})
-  name.vb: SetupAsync(IWebApi, String, String, String, Func(Of String, String, String(), Task(Of String)))
-  fullName: Butterfly.Message.Aws.AwsWebApi.SetupAsync(Butterfly.Web.WebApi.IWebApi, System.String, System.String, System.String, Func<System.String, System.String, System.String[], Task<System.String>>)
-  fullName.vb: Butterfly.Message.Aws.AwsWebApi.SetupAsync(Butterfly.Web.WebApi.IWebApi, System.String, System.String, System.String, Func(Of System.String, System.String, System.String(), Task(Of System.String)))
-  nameWithType: AwsWebApi.SetupAsync(IWebApi, String, String, String, Func<String, String, String[], Task<String>>)
-  nameWithType.vb: AwsWebApi.SetupAsync(IWebApi, String, String, String, Func(Of String, String, String(), Task(Of String)))
+- uid: Butterfly.Message.Aws.AwsWebApi.SetupAsync(Butterfly.Web.WebApi.IWebApi,System.String,System.String,System.String,System.String,System.String,Func{System.String,System.String,System.String[],Task{System.String}})
+  name: SetupAsync(IWebApi, String, String, String, String, String, Func<String, String, String[], Task<String>>)
+  href: api/Butterfly.Message.Aws.AwsWebApi.html#Butterfly_Message_Aws_AwsWebApi_SetupAsync_Butterfly_Web_WebApi_IWebApi_System_String_System_String_System_String_System_String_System_String_Func_System_String_System_String_System_String___Task_System_String___
+  commentId: M:Butterfly.Message.Aws.AwsWebApi.SetupAsync(Butterfly.Web.WebApi.IWebApi,System.String,System.String,System.String,System.String,System.String,Func{System.String,System.String,System.String[],Task{System.String}})
+  name.vb: SetupAsync(IWebApi, String, String, String, String, String, Func(Of String, String, String(), Task(Of String)))
+  fullName: Butterfly.Message.Aws.AwsWebApi.SetupAsync(Butterfly.Web.WebApi.IWebApi, System.String, System.String, System.String, System.String, System.String, Func<System.String, System.String, System.String[], Task<System.String>>)
+  fullName.vb: Butterfly.Message.Aws.AwsWebApi.SetupAsync(Butterfly.Web.WebApi.IWebApi, System.String, System.String, System.String, System.String, System.String, Func(Of System.String, System.String, System.String(), Task(Of System.String)))
+  nameWithType: AwsWebApi.SetupAsync(IWebApi, String, String, String, String, String, Func<String, String, String[], Task<String>>)
+  nameWithType.vb: AwsWebApi.SetupAsync(IWebApi, String, String, String, String, String, Func(Of String, String, String(), Task(Of String)))
 - uid: Butterfly.Message.Aws.AwsWebApi.SetupAsync*
   name: SetupAsync
   href: api/Butterfly.Message.Aws.AwsWebApi.html#Butterfly_Message_Aws_AwsWebApi_SetupAsync_

@@ -10,7 +10,7 @@
   "Butterfly.Message.Aws.AwsSesEmailMessageSender.GetClient": "Butterfly.Message.Aws.AwsSesEmailMessageSender.yml",
   "Butterfly.Message.Aws.AwsSesEmailMessageSender.logger": "Butterfly.Message.Aws.AwsSesEmailMessageSender.yml",
   "Butterfly.Message.Aws.AwsWebApi": "Butterfly.Message.Aws.AwsWebApi.yml",
-  "Butterfly.Message.Aws.AwsWebApi.SetupAsync(Butterfly.Web.WebApi.IWebApi,System.String,System.String,System.String,Func{System.String,System.String,System.String[],Task{System.String}})": "Butterfly.Message.Aws.AwsWebApi.yml",
+  "Butterfly.Message.Aws.AwsWebApi.SetupAsync(Butterfly.Web.WebApi.IWebApi,System.String,System.String,System.String,System.String,System.String,Func{System.String,System.String,System.String[],Task{System.String}})": "Butterfly.Message.Aws.AwsWebApi.yml",
   "Butterfly.Message.Aws.Test": "Butterfly.Message.Aws.Test.yml",
   "Butterfly.Message.Aws.Test.AwsTest": "Butterfly.Message.Aws.Test.AwsTest.yml",
   "Butterfly.Message.Aws.Test.AwsTest.SendAwsSesNotifyMessage": "Butterfly.Message.Aws.Test.AwsTest.yml",

@@ -5,7 +5,7 @@ items:
   id: AwsWebApi
   parent: Butterfly.Message.Aws
   children:
-  - Butterfly.Message.Aws.AwsWebApi.SetupAsync(Butterfly.Web.WebApi.IWebApi,System.String,System.String,System.String,Func{System.String,System.String,System.String[],Task{System.String}})
+  - Butterfly.Message.Aws.AwsWebApi.SetupAsync(Butterfly.Web.WebApi.IWebApi,System.String,System.String,System.String,System.String,System.String,Func{System.String,System.String,System.String[],Task{System.String}})
   langs:
   - csharp
   - vb
@@ -38,16 +38,16 @@ items:
   modifiers.vb:
   - Public
   - Module
-- uid: Butterfly.Message.Aws.AwsWebApi.SetupAsync(Butterfly.Web.WebApi.IWebApi,System.String,System.String,System.String,Func{System.String,System.String,System.String[],Task{System.String}})
-  commentId: M:Butterfly.Message.Aws.AwsWebApi.SetupAsync(Butterfly.Web.WebApi.IWebApi,System.String,System.String,System.String,Func{System.String,System.String,System.String[],Task{System.String}})
-  id: SetupAsync(Butterfly.Web.WebApi.IWebApi,System.String,System.String,System.String,Func{System.String,System.String,System.String[],Task{System.String}})
+- uid: Butterfly.Message.Aws.AwsWebApi.SetupAsync(Butterfly.Web.WebApi.IWebApi,System.String,System.String,System.String,System.String,System.String,Func{System.String,System.String,System.String[],Task{System.String}})
+  commentId: M:Butterfly.Message.Aws.AwsWebApi.SetupAsync(Butterfly.Web.WebApi.IWebApi,System.String,System.String,System.String,System.String,System.String,Func{System.String,System.String,System.String[],Task{System.String}})
+  id: SetupAsync(Butterfly.Web.WebApi.IWebApi,System.String,System.String,System.String,System.String,System.String,Func{System.String,System.String,System.String[],Task{System.String}})
   parent: Butterfly.Message.Aws.AwsWebApi
   langs:
   - csharp
   - vb
-  name: SetupAsync(IWebApi, String, String, String, Func<String, String, String[], Task<String>>)
-  nameWithType: AwsWebApi.SetupAsync(IWebApi, String, String, String, Func<String, String, String[], Task<String>>)
-  fullName: Butterfly.Message.Aws.AwsWebApi.SetupAsync(Butterfly.Web.WebApi.IWebApi, System.String, System.String, System.String, Func<System.String, System.String, System.String[], Task<System.String>>)
+  name: SetupAsync(IWebApi, String, String, String, String, String, Func<String, String, String[], Task<String>>)
+  nameWithType: AwsWebApi.SetupAsync(IWebApi, String, String, String, String, String, Func<String, String, String[], Task<String>>)
+  fullName: Butterfly.Message.Aws.AwsWebApi.SetupAsync(Butterfly.Web.WebApi.IWebApi, System.String, System.String, System.String, System.String, System.String, Func<System.String, System.String, System.String[], Task<System.String>>)
   type: Method
   source:
     remote:
@@ -61,31 +61,35 @@ items:
   - Butterfly.Message.Aws
   namespace: Butterfly.Message.Aws
   syntax:
-    content: public static Task SetupAsync(IWebApi webApi, string topicArn, string endPoint, string bucketName, Func<string, string, string[], Task<string>> handler)
+    content: public static Task SetupAsync(IWebApi webApi, string awsAccessKeyId, string awsSecretAccessKey, string awsTopicArn, string awsEndPoint, string awsBucketName, Func<string, string, string[], Task<string>> handler)
     parameters:
     - id: webApi
       type: Butterfly.Web.WebApi.IWebApi
-    - id: topicArn
+    - id: awsAccessKeyId
       type: System.String
-    - id: endPoint
+    - id: awsSecretAccessKey
       type: System.String
-    - id: bucketName
+    - id: awsTopicArn
+      type: System.String
+    - id: awsEndPoint
+      type: System.String
+    - id: awsBucketName
       type: System.String
     - id: handler
       type: Func{System.String,System.String,System.String[],Task{System.String}}
     return:
       type: Task
-    content.vb: Public Shared Function SetupAsync(webApi As IWebApi, topicArn As String, endPoint As String, bucketName As String, handler As Func(Of String, String, String(), Task(Of String))) As Task
+    content.vb: Public Shared Function SetupAsync(webApi As IWebApi, awsAccessKeyId As String, awsSecretAccessKey As String, awsTopicArn As String, awsEndPoint As String, awsBucketName As String, handler As Func(Of String, String, String(), Task(Of String))) As Task
   overload: Butterfly.Message.Aws.AwsWebApi.SetupAsync*
-  nameWithType.vb: AwsWebApi.SetupAsync(IWebApi, String, String, String, Func(Of String, String, String(), Task(Of String)))
+  nameWithType.vb: AwsWebApi.SetupAsync(IWebApi, String, String, String, String, String, Func(Of String, String, String(), Task(Of String)))
   modifiers.csharp:
   - public
   - static
   modifiers.vb:
   - Public
   - Shared
-  fullName.vb: Butterfly.Message.Aws.AwsWebApi.SetupAsync(Butterfly.Web.WebApi.IWebApi, System.String, System.String, System.String, Func(Of System.String, System.String, System.String(), Task(Of System.String)))
-  name.vb: SetupAsync(IWebApi, String, String, String, Func(Of String, String, String(), Task(Of String)))
+  fullName.vb: Butterfly.Message.Aws.AwsWebApi.SetupAsync(Butterfly.Web.WebApi.IWebApi, System.String, System.String, System.String, System.String, System.String, Func(Of System.String, System.String, System.String(), Task(Of System.String)))
+  name.vb: SetupAsync(IWebApi, String, String, String, String, String, Func(Of String, String, String(), Task(Of String)))
 references:
 - uid: Butterfly.Message.Aws
   commentId: N:Butterfly.Message.Aws
