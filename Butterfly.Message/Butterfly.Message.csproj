@@ -24,7 +24,7 @@
 
   <ItemGroup>
     <PackageReference Include="NLog" Version="4.7.0" />
-    <PackageReference Include="Scriban" Version="2.1.2" />
+    <PackageReference Include="Scriban" Version="7.0.0" />
   </ItemGroup>
 
   <ItemGroup>
